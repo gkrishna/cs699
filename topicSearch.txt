@@ -1,0 +1,6 @@
+Social Networking Analysis for XYZ
+Image classification using augmented data
+Image recommendation on the basis of social activity
+Image retriveal using textual information
+Topic modelling in social networking
+Image + Social metadata for image classification

@@ -1,0 +1,134 @@
+\begin{thebibliography}{22}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Everingham(2010)]{pascal}
+Van Gool-L. Williams C. Winn J. Zisserman~A. Everingham, M.
+\newblock The pascal visual object classes (voc) challenge.
+\newblock \emph{IJCV}, 2010.
+
+\bibitem[Huiskes(2008)]{MIR}
+Lew Huiskes, M.
+\newblock The mir flickr retrieval evaluation.
+\newblock \emph{CIVR}, 2008.
+
+\bibitem[Nowak(2010)]{CLEF}
+Huiskes~M.: Nowak, S.
+\newblock New strategies for image annotation: Overview of the photo annotation
+  task at imageclef 2010.
+\newblock \emph{CLEF (Notebook Papers/LABs/Workshops)}, 2010.
+
+\bibitem[Chua(2009)]{NUS}
+Tang J.-Hong R. Li H. Luo Z. Zheng~Y.T. Chua, T.S.
+\newblock Nus-wide: A realworld web image database from the national university
+  of singapore.
+\newblock \emph{CIVR}, 2009.
+
+\bibitem[Julian~McAuley(2012)]{Jure}
+Jure~Leskovec Julian~McAuley.
+\newblock Image labeling on a network: Using social-network metadata for image
+  classification.
+\newblock \emph{Computer Vision – ECCV}, 2012.
+
+\bibitem[Lowe()]{lowe}
+David~G Lowe.
+\newblock Object recognition from local scale-invariant features.
+\newblock In \emph{The proceedings of the seventh IEEE international conference
+  on Computer Vision}.
+
+\bibitem[Marko~Tkalcic(2003)]{CIELAB}
+Jurij F~Tasic Marko~Tkalcic.
+\newblock Colour spaces perceptual, historical and applicational background.
+\newblock \emph{Eurocon}, 2003.
+
+\bibitem[Haralick.(1979)]{haralick}
+Robert~M Haralick.
+\newblock Statistical and structural approaches to texture.
+\newblock \emph{Proceedings of the IEEE}, 1979.
+
+\bibitem[Deerwester(1988)]{Deerwester}
+et~al Deerwester, S.
+\newblock Improving information retrieval with latent semantic indexing.
+\newblock \emph{Proceedings of the 51st Annual Meeting of the American Society
+  for Information Science 25,}, 1988.
+
+\bibitem[Deerwester(2007)]{e-discovery}
+et~al Deerwester, S.
+\newblock Best practices commentary on the use of search and information
+  retrieval methods in e-discovery.
+\newblock In \emph{the Sedona Conference}, 2007.
+
+\bibitem[Blei(2003)]{Blei}
+Andrew Y.; Jordan Michael~I Blei, David M.;~Ng.
+\newblock "latent dirichlet allocation". in lafferty, john. journal of machine
+  learning research.
+\newblock \emph{Journal of Machine Learning Research}, 2003.
+
+\bibitem[Li(2005)]{Li}
+Pietro. Li, Fei-Fei;~Perona.
+\newblock A bayesian hierarchical model for learning natural scene categories.
+\newblock \emph{Proceedings of the 2005 IEEE Computer Society Conference on
+  Computer Vision and Pattern Recognition}, 2005.
+
+\bibitem[Bingham and Mannila()]{randproj}
+Ella Bingham and Heikki Mannila.
+\newblock Random projection in dimensionality reduction: Applications to image
+  and text data.
+
+\bibitem[Achlioptas.(2001)]{RP}
+D.~Achlioptas.
+\newblock Database-friendly random projections.
+\newblock \emph{In Proceeding of ACM Symposium on the Principles of Database
+  Systems}, 2001.
+
+\bibitem[Dasgupta(2000)]{Dasgupta}
+S.~Dasgupta.
+\newblock Experiments with random projection.
+\newblock \emph{In Proceeding on Uncertainty in Artificial Intelligence}, 2000.
+
+\bibitem[Rehurek and Sojka(2010)]{radimrehurek}
+Radim Rehurek and Petr Sojka.
+\newblock Gensim:software framework for topic modelling with large corpora.
+\newblock \emph{Natural Language Processing Laboratory Masaryk University,
+  Faculty of Informatics}, 2010.
+
+\bibitem[{\v R}eh{\r u}{\v r}ek and Sojka(2010)]{gensim}
+Radim {\v R}eh{\r u}{\v r}ek and Petr Sojka.
+\newblock Software framework for topic modelling with large corpora.
+\newblock In \emph{{Proceedings of the LREC 2010 Workshop on New Challenges for
+  NLP Frameworks}}, pages 45--50, Valletta, Malta, May 2010. ELRA.
+\newblock \url{http://is.muni.cz/publication/884893/en}.
+
+\bibitem[Huiskes(2010)]{MIRresults}
+Thomee B. Lew~M. Huiskes, M.
+\newblock New trends and ideas in visual concept detection:the mir flickr
+  retrieval evaluationinitiative.
+\newblock \emph{CIVR}, 2010.
+
+\bibitem[Chang and Lin(2011)]{libsvm}
+Chih-Chung Chang and Chih-Jen Lin.
+\newblock {LIBSVM}: A library for support vector machines.
+\newblock \emph{ACM Transactions on Intelligent Systems and Technology},
+  2:\penalty0 27:1--27:27, 2011.
+\newblock Software available at \url{http://www.csie.ntu.edu.tw/~cjlin/libsvm}.
+
+\bibitem[Agarwal(2014)]{siddra}
+Siddharth Agarwal.
+\newblock Genre and style tagging of paintings.
+\newblock Master's thesis, IIT Kanpur, 2014.
+\newblock Unpublished Manuscript.
+
+\bibitem[Svetlana~Lazebnik and Ponce()]{bagOfWords}
+Cordelia~Schmid Svetlana~Lazebnik and Jean Ponce.
+\newblock Beyond bags of features: Spatial pyramid matching for recognizing
+  natural scene categories.
+
+\bibitem[Ya-Chun~Cheng(2003)]{GLCM1}
+Shu-Yuan~Chen Ya-Chun~Cheng.
+\newblock Image classification using color, texture and regions.
+\newblock \emph{Image and Vision Computing}, 2003.
+
+\end{thebibliography}

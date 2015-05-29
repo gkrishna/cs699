@@ -1,0 +1,487 @@
+\begin{thebibliography}{67}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Blei(2003)]{Blei}
+Andrew Y.; Jordan Michael~I Blei, David M.;~Ng.
+\newblock "latent dirichlet allocation". in lafferty, john. journal of machine
+  learning research.
+\newblock \emph{Journal of Machine Learning Research}, 2003.
+
+\bibitem[Zhu et~al.(2011)Zhu, Chen, Lu, Pan, Xue, Yu, and Yang]{heterogenous}
+Yin Zhu, Yuqiang Chen, Zhongqi Lu, Sinno~Jialin Pan, Gui-Rong Xue, Yong Yu, and
+  Qiang Yang.
+\newblock Heterogeneous transfer learning for image classification.
+\newblock In \emph{AAAI}, 2011.
+
+\bibitem[Matusiak(2006)]{digiImage}
+Krystyna~K. Matusiak.
+\newblock Towards user-centered indexing in digital image collections.
+\newblock \emph{OCLC Systems \& Services: International digital library
+  perspectives}, 22\penalty0 (4):\penalty0 283--298, 2006.
+\newblock \doi{10.1108/10650750610706998}.
+\newblock URL \url{http://dx.doi.org/10.1108/10650750610706998}.
+
+\bibitem[Liu et~al.(2007)Liu, Zhang, Lu, and Ma]{liu}
+Ying Liu, Dengsheng Zhang, Guojun Lu, and Wei-Ying Ma.
+\newblock A survey of content-based image retrieval with high-level semantics.
+\newblock \emph{Pattern Recognition}, 40\penalty0 (1):\penalty0 262 -- 282,
+  2007.
+\newblock ISSN 0031-3203.
+\newblock \doi{http://dx.doi.org/10.1016/j.patcog.2006.04.045}.
+\newblock URL
+  \url{http://www.sciencedirect.com/science/article/pii/S0031320306002184}.
+
+\bibitem[McAuley and Leskovec(2012)]{McAuley}
+Julian~J. McAuley and Jure Leskovec.
+\newblock Image labeling on a network: Using social-network metadata for image
+  classification.
+\newblock In Andrew~W. Fitzgibbon, Svetlana Lazebnik, Pietro Perona, Yoichi
+  Sato, and Cordelia Schmid, editors, \emph{ECCV (4)}, volume 7575 of
+  \emph{Lecture Notes in Computer Science}, pages 828--841. Springer, 2012.
+\newblock ISBN 978-3-642-33764-2.
+\newblock URL
+  \url{http://dblp.uni-trier.de/db/conf/eccv/eccv2012-4.html#McAuleyL12}.
+
+\bibitem[Kesorn(2010)]{kesorn}
+Kraisak Kesorn.
+\newblock Multi-modal multi-semantic image retrieval, 2010.
+\newblock URL
+  \url{https://qmro.qmul.ac.uk/xmlui/bitstream/handle/123456789/438/KESORNMulti-modal2010.pdf?sequence=1}.
+
+\bibitem[Gupta et~al.(2008)Gupta, Kim, Grauman, and Mooney]{Gupta}
+Sonal Gupta, Joohyun Kim, Kristen Grauman, and Raymond~J. Mooney.
+\newblock Watch, listen \& learn: Co-training on captioned images and videos.
+\newblock In Walter Daelemans, Bart Goethals, and Katharina Morik, editors,
+  \emph{ECML/PKDD (1)}, volume 5211 of \emph{Lecture Notes in Computer
+  Science}, pages 457--472. Springer, 2008.
+\newblock ISBN 978-3-540-87478-2.
+\newblock URL
+  \url{http://dblp.uni-trier.de/db/conf/pkdd/pkdd2008-1.html#GuptaKGM08}.
+
+\bibitem[Stvilia et~al.(2012)Stvilia, J\"{o}rgensen, and Wu]{imageIndexing}
+Besiki Stvilia, Corinne J\"{o}rgensen, and Shuheng Wu.
+\newblock {Establishing the value of socially-created metadata to image
+  indexing}.
+\newblock \emph{Library \& Information Science Research}, 34\penalty0
+  (2):\penalty0 99--109, April 2012.
+\newblock ISSN 07408188.
+\newblock \doi{10.1016/j.lisr.2011.07.011}.
+\newblock URL \url{http://dx.doi.org/10.1016/j.lisr.2011.07.011}.
+
+\bibitem[Wikipedia(2015)]{wikiFolksonomy}
+Wikipedia.
+\newblock Folksonomy --- wikipedia{,} the free encyclopedia, 2015.
+\newblock [Online; accessed 18-May-2015].
+
+\bibitem[Nov et~al.(2008)Nov, Naaman, and Ye]{nov}
+Oded Nov, Mor Naaman, and Chen Ye.
+\newblock What drives content tagging: The case of photos on flickr.
+\newblock In \emph{Proceedings of the SIGCHI Conference on Human Factors in
+  Computing Systems}, CHI '08, pages 1097--1100, New York, NY, USA, 2008. ACM.
+\newblock ISBN 978-1-60558-011-1.
+\newblock \doi{10.1145/1357054.1357225}.
+\newblock URL \url{http://doi.acm.org/10.1145/1357054.1357225}.
+
+\bibitem[Kern et~al.(2008)Kern, Granitzer, and Pammer]{kern}
+R.~Kern, M.~Granitzer, and V.~Pammer.
+\newblock Extending folksonomies for image tagging.
+\newblock In \emph{Image Analysis for Multimedia Interactive Services, 2008.
+  WIAMIS '08. Ninth International Workshop on}, pages 126--129, May 2008.
+\newblock \doi{10.1109/WIAMIS.2008.43}.
+
+\bibitem[Chi and Mytkowicz(2008)]{chi2008understanding}
+Ed~H. Chi and Todd Mytkowicz.
+\newblock Understanding the efficiency of social tagging systems using
+  information theory.
+\newblock In \emph{HT '08: Proceedings of the nineteenth ACM conference on
+  Hypertext and hypermedia}, pages 81--88, New York, NY, USA, 2008. ACM.
+\newblock ISBN 978-1-59593-985-2.
+\newblock \doi{10.1145/1379092.1379110}.
+\newblock URL
+  \url{http://portal.acm.org/citation.cfm?id=1379110&coll=GUIDE&dl=GUIDE&CFID=37458772&CFTOKEN=13998061&ret=1}.
+
+\bibitem[Zhang and Watanabe(2013)]{textTransformed}
+Nuo Zhang and Toshinori Watanabe.
+\newblock Text-transformed image classification based on data compression,
+  2013.
+\newblock URL \url{http://dx.doi.org/10.1007/978-3-642-28807-4_51}.
+
+\bibitem[Mahajan and Slaney(2010)]{dhruv}
+Dhruv Mahajan and Malcolm Slaney.
+\newblock Image classification using the web graph.
+\newblock ACM Multimedia, 2010.
+\newblock URL
+  \url{http://research.microsoft.com/apps/pubs/default.aspx?id=192157}.
+
+\bibitem[da~Silva(2013)]{silva}
+Leandro~Augusto da~Silva.
+\newblock Image classification combining visual features and text data: neural
+  approach and based on swarms.
+\newblock 2013.
+\newblock URL \url{http://www.bv.fapesp.br/25294}.
+
+\bibitem[Raina et~al.(2007)Raina, Battle, Lee, Packer, and Ng]{raina}
+Rajat Raina, Alexis Battle, Honglak Lee, Benjamin Packer, and Andrew~Y. Ng.
+\newblock Self-taught learning: Transfer learning from unlabeled data.
+\newblock In \emph{Proceedings of the 24th International Conference on Machine
+  Learning}, ICML '07, pages 759--766, New York, NY, USA, 2007. ACM.
+\newblock ISBN 978-1-59593-793-3.
+\newblock \doi{10.1145/1273496.1273592}.
+\newblock URL \url{http://doi.acm.org/10.1145/1273496.1273592}.
+
+\bibitem[Rae et~al.(2010)Rae, Sigurbj\"{o}rnsson, and van Zwol]{rae}
+Adam Rae, B\"{o}rkur Sigurbj\"{o}rnsson, and Roelof van Zwol.
+\newblock Improving tag recommendation using social networks.
+\newblock In \emph{Adaptivity, Personalization and Fusion of Heterogeneous
+  Information}, RIAO '10, pages 92--99, Paris, France, France, 2010. LE CENTRE
+  DE HAUTES ETUDES INTERNATIONALES D'INFORMATIQUE DOCUMENTAIRE.
+\newblock URL \url{http://dl.acm.org/citation.cfm?id=1937055.1937077}.
+
+\bibitem[van Zwol et~al.(2010)van Zwol, Rae, and Garcia~Pueyo]{vanZwol}
+Roelof van Zwol, Adam Rae, and Lluis Garcia~Pueyo.
+\newblock Prediction of favourite photos using social, visual, and textual
+  signals.
+\newblock In \emph{Proceedings of the International Conference on Multimedia},
+  MM '10, pages 1015--1018, New York, NY, USA, 2010. ACM.
+\newblock ISBN 978-1-60558-933-6.
+\newblock \doi{10.1145/1873951.1874138}.
+\newblock URL \url{http://doi.acm.org/10.1145/1873951.1874138}.
+
+\bibitem[Tang et~al.(2009)Tang, Sun, Wang, and Yang]{tang}
+Jie Tang, Jimeng Sun, Chi Wang, and Zi~Yang.
+\newblock Social influence analysis in large-scale networks.
+\newblock In \emph{Proceedings of the 15th ACM SIGKDD International Conference
+  on Knowledge Discovery and Data Mining}, KDD '09, pages 807--816, New York,
+  NY, USA, 2009. ACM.
+\newblock ISBN 978-1-60558-495-9.
+\newblock \doi{10.1145/1557019.1557108}.
+\newblock URL \url{http://doi.acm.org/10.1145/1557019.1557108}.
+
+\bibitem[Boutell and Luo(2005)]{Boutell2005935}
+Matthew Boutell and Jiebo Luo.
+\newblock Beyond pixels: Exploiting camera metadata for photo classification.
+\newblock \emph{Pattern Recognition}, 38\penalty0 (6):\penalty0 935 -- 946,
+  2005.
+\newblock ISSN 0031-3203.
+\newblock \doi{http://dx.doi.org/10.1016/j.patcog.2004.11.013}.
+\newblock URL
+  \url{http://www.sciencedirect.com/science/article/pii/S0031320304003978}.
+\newblock Image Understanding for Photographs.
+
+\bibitem[Bartell et~al.(1994)Bartell, Cottrell, and
+  Belew]{Bartell:1994:ACM:188490.188554}
+Brian~T. Bartell, Garrison~W. Cottrell, and Richard~K. Belew.
+\newblock Automatic combination of multiple ranked retrieval systems.
+\newblock In \emph{Proceedings of the 17th Annual International ACM SIGIR
+  Conference on Research and Development in Information Retrieval}, SIGIR '94,
+  pages 173--181, New York, NY, USA, 1994. Springer-Verlag New York, Inc.
+\newblock ISBN 0-387-19889-X.
+\newblock URL \url{http://dl.acm.org/citation.cfm?id=188490.188554}.
+
+\bibitem[Bindra(2012)]{socialLDA}
+Ashish Bindra.
+\newblock Sociallda:scalable topic modeling in social networks.
+\newblock Master's thesis, University of Washington, 2012.
+
+\bibitem[Julian~McAuley(2012)]{Jure}
+Jure~Leskovec Julian~McAuley.
+\newblock Image labeling on a network: Using social-network metadata for image
+  classification.
+\newblock \emph{Computer Vision – ECCV}, 2012.
+
+\bibitem[Everingham(2010)]{pascal}
+Van Gool L. Williams C. Winn J. Zisserman~A. Everingham, M.
+\newblock The pascal visual object classes (voc) challenge.
+\newblock \emph{IJCV}, 2010.
+
+\bibitem[Huiskes(2008)]{MIR}
+Lew Huiskes, M.
+\newblock The mir flickr retrieval evaluation.
+\newblock \emph{CIVR}, 2008.
+
+\bibitem[Nowak(2010)]{CLEF}
+Huiskes~M.: Nowak, S.
+\newblock New strategies for image annotation: Overview of the photo annotation
+  task at imageclef 2010.
+\newblock \emph{CLEF (Notebook Papers/LABs/Workshops)}, 2010.
+
+\bibitem[Chua(2009)]{NUS}
+Tang J. Hong R. Li H. Luo Z. Zheng~Y.T. Chua, T.S.
+\newblock Nus-wide: A realworld web image database from the national university
+  of singapore.
+\newblock \emph{CIVR}, 2009.
+
+\bibitem[Lowe()]{lowe}
+David~G Lowe.
+\newblock Object recognition from local scale-invariant features.
+\newblock In \emph{The proceedings of the seventh IEEE international conference
+  on Computer Vision}.
+
+\bibitem[Fei-Fei and Perona(2005)]{naturalSceneRecognition}
+Li~Fei-Fei and Pietro Perona.
+\newblock A bayesian hierarchical model for learning natural scene categories.
+\newblock \emph{IEEE Computer Society Conference on Computer Vision and Pattern
+  Recognition, 2005}, 2005.
+
+\bibitem[Svetlana~Lazebnik and Ponce()]{bagOfWords}
+Cordelia~Schmid Svetlana~Lazebnik and Jean Ponce.
+\newblock Beyond bags of features: Spatial pyramid matching for recognizing
+  natural scene categories.
+
+\bibitem[Vedaldi and Fulkerson.(2008)]{vlfeat}
+A.~Vedaldi and B.~Fulkerson.
+\newblock Vlfeat: An open and portable library of computer vision algorithms.
+  http://www.vlfeat.org/, 2008.
+
+\bibitem[Oliva and Torralba.(2001)]{GIST}
+Aude Oliva and Antonio Torralba.
+\newblock Modeling the shape of the scene: A holistic representation of the
+  spatial envelope.
+\newblock \emph{International journal of Computer Vision}, 2001.
+
+\bibitem[Barrow and Tannenbaum(1978)]{barrow}
+H.G. Barrow and J.M. Tannenbaum.
+\newblock Recovering intrinsec scene characteristics from images.
+\newblock \emph{A. Hanson and E. Riseman (Eds.)}, 1978.
+
+\bibitem[Douze et~al.(2009)Douze, J{\'e}gou, Sandhawalia, Amsaleg, and
+  Schmid]{douze}
+Matthijs Douze, Herv{\'e} J{\'e}gou, Harsimrat Sandhawalia, Laurent Amsaleg,
+  and Cordelia Schmid.
+\newblock Evaluation of gist descriptors for web-scale image search.
+\newblock In \emph{Proceedings of the ACM International Conference on Image and
+  Video Retrieval}, CIVR '09, pages 19:1--19:8, New York, NY, USA, 2009. ACM.
+\newblock ISBN 978-1-60558-480-5.
+\newblock \doi{10.1145/1646396.1646421}.
+\newblock URL \url{http://doi.acm.org/10.1145/1646396.1646421}.
+
+
+\bibitem[Marko~Tkalcic(2003)]{CIELAB}
+Jurij F~Tasic Marko~Tkalcic.
+\newblock Colour spaces perceptual, historical and applicational background.
+\newblock \emph{Eurocon}, 2003.
+
+\bibitem[Haralick.(1979)]{haralick}
+Robert~M Haralick.
+\newblock Statistical and structural approaches to texture.
+\newblock \emph{Proceedings of the IEEE}, 1979.
+
+\bibitem[Dalal and Triggs(2005)]{HOG}
+Navneet Dalal and Bill Triggs.
+\newblock Histograms of oriented gradients for human detection.
+\newblock In \emph{Proceedings of the 2005 IEEE Computer Society Conference on
+  Computer Vision and Pattern Recognition (CVPR'05) - Volume 1 - Volume 01},
+  CVPR '05, pages 886--893, Washington, DC, USA, 2005. IEEE Computer Society.
+\newblock ISBN 0-7695-2372-2.
+\newblock \doi{10.1109/CVPR.2005.177}.
+\newblock URL \url{http://dx.doi.org/10.1109/CVPR.2005.177}.
+
+\bibitem[Torrione et~al.(2014)Torrione, Morton, Sakaguchi, and Collins]{hog1}
+P.A. Torrione, K.D. Morton, R.~Sakaguchi, and L.M. Collins.
+\newblock Histograms of oriented gradients for landmine detection in
+  ground-penetrating radar data.
+\newblock \emph{Geoscience and Remote Sensing, IEEE Transactions on},
+  52\penalty0 (3):\penalty0 1539--1550, March 2014.
+\newblock ISSN 0196-2892.
+\newblock \doi{10.1109/TGRS.2013.2252016}.
+
+\bibitem[Yu et~al.(2010)Yu, Zhang, Huang, Zheng, Ren, and Wang]{hog2}
+Yinan Yu, Junge Zhang, Yongzhen Huang, Shuai Zheng, Weiqiang Ren, and Chong
+  Wang.
+\newblock {Object Detection by Context and Boosted HOG-LBP}.
+\newblock 2010.
+\newblock URL
+  \url{http://pascallin.ecs.soton.ac.uk/challenges/VOC/voc2010/workshop/nlpr.pdf}.
+
+\bibitem[Zhang et~al.(2011)Zhang, Huang, Yu, and Tan]{hog3}
+Junge Zhang, Kaiqi Huang, Yinan Yu, and Tieniu Tan.
+\newblock Boosted local structured hog-lbp for object localization.
+\newblock In \emph{Computer Vision and Pattern Recognition (CVPR), 2011 IEEE
+  Conference on}, pages 1393--1400, June 2011.
+\newblock \doi{10.1109/CVPR.2011.5995678}.
+
+\bibitem[Ojala et~al.(1994)Ojala, Pietikainen, and Harwood]{ojala}
+T.~Ojala, M.~Pietikainen, and D.~Harwood.
+\newblock Performance evaluation of texture measures with classification based
+  on kullback discrimination of distributions.
+\newblock In \emph{Pattern Recognition, 1994. Vol. 1 - Conference A: Computer
+  Vision amp; Image Processing., Proceedings of the 12th IAPR International
+  Conference on}, volume~1, pages 582--585 vol.1, Oct 1994.
+\newblock \doi{10.1109/ICPR.1994.576366}.
+
+\bibitem[Wang et~al.(2009{\natexlab{a}})Wang, Han, and Yan]{wangHOG}
+Xiaoyu Wang, Tony~X Han, and Shuicheng Yan.
+\newblock An hog-lbp human detector with partial occlusion handling.
+\newblock In \emph{Computer Vision, 2009 IEEE 12th International Conference
+  on}, pages 32--39. IEEE, 2009{\natexlab{a}}.
+
+\bibitem[Castrillón-Santana et~al.(2013)Castrillón-Santana, Lorenzo-Navarro,
+  and Ramón-Balmaseda]{santana}
+Modesto Castrillón-Santana, Javier Lorenzo-Navarro, and Enrique
+  Ramón-Balmaseda.
+\newblock Improving gender classification accuracy in the wild.
+\newblock In José Ruiz-Shulcloper and Gabriella Sanniti~di Baja, editors,
+  \emph{Progress in Pattern Recognition, Image Analysis, Computer Vision, and
+  Applications}, volume 8259 of \emph{Lecture Notes in Computer Science}, pages
+  270--277. Springer Berlin Heidelberg, 2013.
+\newblock ISBN 978-3-642-41826-6.
+\newblock \doi{10.1007/978-3-642-41827-3_34}.
+\newblock URL \url{http://dx.doi.org/10.1007/978-3-642-41827-3_34}.
+
+\bibitem[Deerwester(1988)]{Deerwester}
+et~al Deerwester, S.
+\newblock Improving information retrieval with latent semantic indexing.
+\newblock \emph{Proceedings of the 51st Annual Meeting of the American Society
+  for Information Science 25,}, 1988.
+
+\bibitem[Deerwester(2007)]{e-discovery}
+et~al Deerwester, S.
+\newblock Best practices commentary on the use of search and information
+  retrieval methods in e-discovery.
+\newblock In \emph{the Sedona Conference}, 2007.
+
+\bibitem[{\v R}eh{\r u}{\v r}ek and Sojka(2010)]{gensim}
+Radim {\v R}eh{\r u}{\v r}ek and Petr Sojka.
+\newblock Software framework for topic modelling with large corpora.
+\newblock In \emph{{Proceedings of the LREC 2010 Workshop on New Challenges for
+  NLP Frameworks}}, pages 45--50, Valletta, Malta, May 2010. ELRA.
+\newblock \url{http://is.muni.cz/publication/884893/en}.
+
+\bibitem[Rehurek and Sojka(2010)]{radimrehurek}
+Radim Rehurek and Petr Sojka.
+\newblock Gensim:software framework for topic modelling with large corpora.
+\newblock \emph{Natural Language Processing Laboratory Masaryk University,
+  Faculty of Informatics}, 2010.
+
+\bibitem[Li(2005)]{Li}
+Pietro. Li, Fei-Fei;~Perona.
+\newblock A bayesian hierarchical model for learning natural scene categories.
+\newblock \emph{Proceedings of the 2005 IEEE Computer Society Conference on
+  Computer Vision and Pattern Recognition}, 2005.
+
+\bibitem[Bingham and Mannila()]{randproj}
+Ella Bingham and Heikki Mannila.
+\newblock Random projection in dimensionality reduction: Applications to image
+  and text data.
+
+\bibitem[Bingham and Mannila(2001)]{rpCite}
+Ella Bingham and Heikki Mannila.
+\newblock Random projection in dimensionality reduction: Applications to image
+  and text data.
+\newblock In \emph{Proceedings of the Seventh ACM SIGKDD International
+  Conference on Knowledge Discovery and Data Mining}, KDD '01, pages 245--250,
+  New York, NY, USA, 2001. ACM.
+\newblock ISBN 1-58113-391-X.
+\newblock \doi{10.1145/502512.502546}.
+\newblock URL \url{http://doi.acm.org/10.1145/502512.502546}.
+
+\bibitem[Johnson et~al.(1986)Johnson, Lindenstrauss, and Schechtman]{lemma}
+WilliamB. Johnson, Joram Lindenstrauss, and Gideon Schechtman.
+\newblock Extensions of lipschitz maps into banach spaces.
+\newblock \emph{Israel Journal of Mathematics}, 54\penalty0 (2):\penalty0
+  129--138, 1986.
+\newblock ISSN 0021-2172.
+\newblock \doi{10.1007/BF02764938}.
+\newblock URL \url{http://dx.doi.org/10.1007/BF02764938}.
+
+\bibitem[Dasgupta(2000)]{Dasgupta}
+S.~Dasgupta.
+\newblock Experiments with random projection.
+\newblock \emph{In Proceeding on Uncertainty in Artificial Intelligence}, 2000.
+
+\bibitem[Huiskes(2010)]{MIRresults}
+Thomee B. Lew~M. Huiskes, M.
+\newblock New trends and ideas in visual concept detection:the mir flickr
+  retrieval evaluationinitiative.
+\newblock \emph{CIVR}, 2010.
+
+\bibitem[{Chang, Chih-Chung and Lin, Chih-Jen}(2011)]{libsvm}
+{Chang, Chih-Chung and Lin, Chih-Jen}.
+\newblock {LIBSVM}: A library for support vector machines.
+\newblock \emph{ACM Transactions on Intelligent Systems and Technology},
+  2:\penalty0 27:1--27:27, 2011.
+\newblock Software available at \url{http://www.csie.ntu.edu.tw/~cjlin/libsvm}.
+
+\bibitem[Agarwal(2014)]{siddra}
+Siddharth Agarwal.
+\newblock Genre and style tagging of paintings.
+\newblock Master's thesis, IIT Kanpur, 2014.
+\newblock Unpublished Manuscript.
+
+\bibitem[Achlioptas.(2001)]{RP}
+D.~Achlioptas.
+\newblock Database-friendly random projections.
+\newblock \emph{In Proceeding of ACM Symposium on the Principles of Database
+  Systems}, 2001.
+
+\bibitem[Ya-Chun~Cheng(2003)]{GLCM1}
+Shu-Yuan~Chen Ya-Chun~Cheng.
+\newblock Image classification using color, texture and regions.
+\newblock \emph{Image and Vision Computing}, 2003.
+
+\bibitem[Lowe(2004)]{lowe2004method}
+D.G. Lowe.
+\newblock Method and apparatus for identifying scale invariant features in an
+  image and use of same for locating an object in an image, March~23 2004.
+\newblock URL \url{http://www.google.com/patents/US6711293}.
+\newblock US Patent 6,711,293.
+
+\bibitem[Lindeberg(2013)]{theoryOfReceptiveFields}
+Tony Lindeberg.
+\newblock A computational theory of visual receptive fields.
+\newblock \emph{Biological Cybernetics}, 107\penalty0 (6):\penalty0 589--635,
+  2013.
+\newblock ISSN 0340-1200.
+\newblock \doi{10.1007/s00422-013-0569-z}.
+\newblock URL \url{http://dx.doi.org/10.1007/s00422-013-0569-z}.
+
+\bibitem[Letsche and Berry(1997)]{lsiRetrieval}
+Todd~A Letsche and Michael~W Berry.
+\newblock Large-scale information retrieval with latent semantic indexing.
+\newblock \emph{Information sciences}, 100\penalty0 (1):\penalty0 105--137,
+  1997.
+
+\bibitem[Kalva et~al.(2007)Kalva, Enembreck, and Koerich]{kalva}
+Pedro~R Kalva, Fabricio Enembreck, and Alessandro~L Koerich.
+\newblock Web image classification based on the fusion of image and text
+  classifiers.
+\newblock In \emph{Document Analysis and Recognition, 2007. ICDAR 2007. Ninth
+  International Conference on}, volume~1, pages 561--568. IEEE, 2007.
+
+\bibitem[Wang et~al.(2009{\natexlab{b}})Wang, Hoiem, and Forsyth]{gang}
+Gang Wang, D.~Hoiem, and D.~Forsyth.
+\newblock Building text features for object image classification.
+\newblock In \emph{Computer Vision and Pattern Recognition, 2009. CVPR 2009.
+  IEEE Conference on}, pages 1367--1374, June 2009{\natexlab{b}}.
+\newblock \doi{10.1109/CVPR.2009.5206816}.
+
+\bibitem[Mohamed(2006)]{webResource}
+Khaled~A.F. Mohamed.
+\newblock The impact of metadata in web resources discovering.
+\newblock \emph{Online Information Review}, 30\penalty0 (2):\penalty0 155--167,
+  2006.
+\newblock \doi{10.1108/14684520610659184}.
+\newblock URL \url{http://dx.doi.org/10.1108/14684520610659184}.
+
+\bibitem[Blum and Mitchell(1998)]{blum}
+Avrim Blum and Tom Mitchell.
+\newblock Combining labeled and unlabeled data with co-training.
+\newblock In \emph{Proceedings of the Eleventh Annual Conference on
+  Computational Learning Theory}, COLT' 98, pages 92--100, New York, NY, USA,
+  1998. ACM.
+\newblock ISBN 1-58113-057-0.
+\newblock \doi{10.1145/279943.279962}.
+\newblock URL \url{http://doi.acm.org/10.1145/279943.279962}.
+
+\bibitem[Guillaumin et~al.(2010)Guillaumin, Verbeek, and Schmid]{mmodel}
+Matthieu Guillaumin, Jakob Verbeek, and Cordelia Schmid.
+\newblock Multimodal semi-supervised learning for image classification.
+\newblock In \emph{IEEE Conference on Computer Vision \& Pattern Recognition},
+  pages 902 -- 909, jun 2010.
+\newblock URL \url{http://lear.inrialpes.fr/pubs/2010/GVS10}.
+
+\end{thebibliography}
