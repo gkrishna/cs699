@@ -2,16 +2,131 @@
 \chapter{Introduction} % Main chapter title
 \label{INTR} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
 \lhead{Chapter 1. \emph{Introduction}} 
-It has become a cliche to start a discussion on the field related to classification or tagging the online multimedia information by stating just how the meteoric growth of data has been in recent decade. While it may be a very trivial and obsolete way of introducing about the online digital corpora, but it is, nonetheless, true for work in this field.\\
-\hspace*{1cm}The proliferation of personalized gadgets, cheap digital cameras and any such diversification away from single use devices like mobile phones and into everything from computer web-cams to tablets, it has now become a culture of saving the every moment of our lives in digitized format. The internet services like Facebook, Flickr, Instagram etc also made it very easy for common person to share their pictures with their (online) social connections.\\
-\hspace*{1cm}In present scenario, where we have proliferating robust systems effectively handling the billions of photos, images and videos; the renaissance of the 'socialization' of web activity has produced a massive amount of social interaction information. The social interaction on multimedia supporting websites have also opened a new avenue of managing this ever growing corpora of multimedia data. The point is that this social interaction data like tags, comments, likes, groups, galleries, playlists etc. all leaves some clues about the content in the question.\\
-\hspace*{1cm}This social meta-data, the data related to the content, can be a pathway to manage the whole multimedia burst in proper classifications, themes  or may be ontological perspective. This meta-data can help us in many ways for example information retrieval, multimedia classification, heterogeneous learning etc. In our thesis, we are going to focus upon the images and their social meta data.\\
-\hspace*{1cm}Photos are unlike the text documents have a far more immediate emotive impact - reportage from people dying in Somalia because of poverty to striking wild life photography can make an impression on viewers very quickly. In past, photographs were normally confined to an album and were rarely opened to relish the old memories. The photos were difficult to share and normally do not contain any contextual information. Where as in present scenarios, people can upload images to world wide web direct from the capture devices (like phone, tablets). They can also encode pertinent contextual information automatically and share it with all their social network contacts. This starts a cycle of interaction and annotation of that image. Over the time, the social aspect of image becomes more prevalent. This creates a need of expanding our understanding and power of utilizing this social data.\\
-This thesis have focused on exploring the role; which can be played by social context information in enhancing the image classification. In image classification, an image is classified according to its visual content. For example does it contain clouds or not. We analyze some of the visual characteristics based features and then, we try to fuse these visual features with the social context information to follow a multimodal approach of classification. \\
+It has become a cliche to start a discussion on the field related to 
+classification or tagging of online multimedia information by 
+stating just how the meteoric growth of data has been in recent 
+decades. While this may be a very mundane way to introduce the need 
+for annotated online digital corpora and the quantum of effort 
+required, it is nonetheless, true for work in this field.
+
+The proliferation of personalized gadgets, cheap digital cameras and 
+diversification away from single use devices like old generation mobile 
+phones to new generation smart phones, tablets and wearable devices has
+spawned a culture of documenting and saving every moment of our lives in 
+digital form. Internet services like Facebook, Flickr, 
+Instagram etc also make it very easy for anyone to share 
+their pictures with their (online) social connections.
+
+In present scenario, where we have several robust systems 
+effectively handling billions of photos, images and videos; the 
+renaissance of the 'socialization' of web activity has produced a 
+massive amount of social interaction information. The social 
+interaction on multimedia supporting websites have also opened a new 
+avenue of managing this ever growing corpora of multimedia data. The 
+point is that this social interaction data like tags, comments, likes, 
+groups, galleries, playlists etc. all leave some clues about the 
+content in question.
+
+This social meta-data, the data related to the content, can be a 
+pathway to organize the whole multimedia corpus through a labelling
+exercise using classification, theming and ontology creation and use. 
+This meta-data can help us in many ways for example in 
+information retrieval, multimedia classification, heterogeneous 
+learning etc. In this thesis, we focus on images and their social meta data.
+
+Photos unlike text documents have a far more immediate 
+emotive impact - reportage from people dying in Somalia because of 
+poverty to striking wild life photography can make an impression on 
+viewers very quickly. In the past, photographs were normally confined to 
+an album and were rarely opened to relive old memories. The 
+photos were difficult to share and normally did not contain any 
+contextual information. Whereas today people can 
+upload images to the world wide web directly from capture devices 
+(like phone, tablets). They can also encode pertinent contextual 
+information automatically and share it with all their social network 
+contacts. This starts a cycle of interaction and annotation of that 
+image. Over time, the social aspect of the image becomes more 
+prevalent. This creates a need for expanding our understanding and 
+power of utilizing this social data.
+
+This thesis focuses on exploring the role which can be played 
+by social context information in enhancing image classification. 
+In image classification, an image is classified according to its 
+visual content. For example does it contain clouds or not. We 
+analyze some of the visual characteristics based features and then, 
+we try to fuse these visual features with social context 
+information to follow a multimodal approach to classification. 
 \section{Motivation}
-Image classification has many application ranging from multimedia information delivery to web search. In the past, image classification has faced two major difficulties. First, the labeled images for training are generally hard to extract out and short in supply plus labeling new images costs human labor. Secondary images can be ambiguous; e.g. an image can have multiple concepts hidden. To overcome these problems, we can leverage the other information about the images. Even when labeled data is hard to create, we can take advantage of the text data related to images or the social interaction data associated with images \cite{heterogenous}.\\
-\hspace*{1cm} Apart from these problems, we also experience the problem of ambiguity of key objects in image classification. The low level features of visual information can often be ambiguous. An object can belong to more than one concepts (polysemy). In such cases, we need some help of extra data to gracefully handle such ambiguous conditions in order to get high classification accuracy.\\
-\hspace*{1cm} Text and images are two distinct type of information resources and belong to two different modalities, as they present an object in different ways. However, there are some implicit connections and invariant properties, shared between images and textual information (Smeulders et al. 2000). In fact, the texts associated with images includes some form of human generated descriptions of images; thus these can be regarded as supplement to the image content.\\
-\hspace*{1cm} The combination of textual information with image features has been proposed to improve the image classification results(Swain et al. 1997; Zhao \& Grosky 2002; Hu \& Bagga 2004; Song et al. 2004; Smith \& Chang 1997). \\
-\hspace*{1cm} With all these cues about heterogeneous learning, we get ample motivation of taking the help of data in different modalities to have better classification of images. The unprecedented evolution of social networking gives us such data with very ease. People talk about images, puts likes, comments, tags and other different markers. These markers or rather,  we say social meta-data can be instrumental in inferring the content of images.\\
- \hspace*{1cm} Krystyna K. Matusiak has shown that how the social tagging can be a tool for enhancing the description of digital objects\cite{digiImage}. In some recent studies, it has been shown that the social-metadata can be utilize in case for better classification. (Yuan Lin and Yuqiang Chen et al \cite{heterogenous}, Lua, and Wei-Ying \cite{liu},Julian McAuley and Jure Leskovec \cite{McAuley} )\\
+Image classification has many application ranging from multimedia 
+information delivery to web search. In the past, image 
+classification has faced two major difficulties. First, the labeled 
+images for training are generally hard to extract and short in 
+supply plus labeling new images is costly and requires significant
+human input. Second, images can be ambiguous; e.g. an image can have 
+multiple concepts hidden. 
+
+To overcome these problems, we can leverage the other information 
+about the images. Even when labeled data is hard to create, we can 
+take advantage of the text data related to images or the social 
+interaction data associated with images.
+
+Apart from these problems, we also experience the problem of 
+ambiguity of key objects in image classification. The low level 
+features of visual information can often be ambiguous. An object can 
+belong to more than one concept (polysemy). In such cases, we need 
+some help from extra data to gracefully handle such ambiguous 
+conditions in order to get high classification accuracy.
+
+Text and images are two distinct type of information resource and 
+belong to two different modalities as they present an object in 
+different ways. However, there are some implicit connections and 
+invariant properties shared between images and textual information. In fact, the texts associated with images 
+includes some form of human generated descriptions of images; thus 
+these can be regarded as a supplement to the image content.
+
+The combination of textual information with image features can be a way of improving image classification results. With all these cues about heterogeneous learning, we wish
+to take the help of data in different modalities to 
+have better classification of images. The unprecedented evolution of 
+social networking gives us such data with reasonable ease. People talk 
+about images, puts likes, comments, tags and other markers. 
+These markers or rather social meta-data can be 
+instrumental in inferring the content of images.
+
+ In the light of all these motivating facts, we decided to pursue the social meta data as an additional instrumental information for enhancing the image classification.
+
+\section{Problem Statement}
+In this thesis, we will focus on classification of images, which have some of the social meta-data available with them. The social meta data for an instance can be  tags on images, groups in which image is featured in or comments on image etc. 
+
+If we try to break an image classification problem for multi-labeled images , we can talk in terms of labeling an image with different labels. We will be using supervised learning technique to do this, which means we will first develop a classification system by creating classification models using already labeled images and then use these models to automatically label the unknown images with the label.
+Annotating an image  with a labels can be considered as a multi-class classification problem where the classes are represented by labels. For example an image with ship floating in sea, can labeled as "sea", "ship" or "water". So, the problem of annotating an image with its labels is equivalent to classifying that images into one of the  labels. We can define a problem in following manner:
+
+	Suppose we have an image data set consisting of N images $X = \{x_1 ...x_N\}$ and a label space consisting of L categories $L = \{-1, 1\}^L$. 
+	
+	We can denote the ground truth labeling for the image $x_n$ as $y^n\in L$. Then the ground truth for a particular category $c$ can be denoted as $y^n:y^n \in \{-1,1\}$.When we combine the ground truth for the entire data set for category c, we get $Y_c \in \{-1,1\}^N$. 
+	
+	 We try to learn a prediction made for an image $x_n$ and category $c$, which will be $\bar{y_c} (x_n,\theta_c)\in\{-1,1\} $. Predictions across the entire data set for category $c$ will be $\bar{Y_c}(X,\theta_c) \in \{-1,1\}^N$. 
+	 
+	 We will try to deduce the enhancement in image classification using the social meta-data.If we only have images and no auxiliary data , we will get only the visual feature  $\theta_c ^ {Visual} \in R^{Visual\ features}$ for an image. We, therefore, first consider some widely used visual features (SIFT Features, GIST Features,  COLOR Space Features, Texture/GLCM Features and HOG-LBP Features) to learn a classification model on these images.
+	 
+	   We, then, test our visual-only classification model, that how accurate it is classifying the images. Now, we consider the  features generated by the social features $\theta_c ^{Social} \in R^{Social\ features}$ for an image to  learn a classification model on these images.  We, then, compare our results of social-only classification model to visual-only classification model. In third step, 
+	   
+	   In third step, we ensemble these visual only and social only classifiers to obtain the final result. We compare all the results to find out the improvement obtained by using some auxiliary social-meta data.
+
+\section{Outline of the Thesis}
+The remaining thesis is structures as follows:
+\begin{itemize}
+\item{{\bf Chapter 2} reviews the related work done in attempt of utilizing the meta-data and other information related to images in order to enhance the image classification.}
+\item{{\bf Chapter 3} gives an overview of the Data-sets, we considered in our thesis. }
+\item{{\bf Chapter 4} describes the part of feature extraction, which is quite important in our experiments.}
+\item{{\bf Chapter 5} presents the experiments we did and the results we got. }
+\item{{\bf Chapter 6} contains conclusions and pointers to extensions and future work. }
+\end{itemize}
+
+%{\bf *** Add a precise statement of the problem and a separate section at
+%the end on the organization of the rest of the thesis. Since you have a 
+%separate chapter on related work remove the mentions of related work here 
+%and put all of it in the chapter on related work.
+%You should use proper cite tags for references and use bibtex with a 
+%suitable style file and not give absolute references as you have done
+%for some citations. Do not use \\ for para separation, instead use
+%a blank line. ***} 
