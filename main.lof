@@ -1,19 +1,20 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Image MIR Examples\relax }}{12}{figure.caption.17}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Image PASCAL Examples\relax }}{12}{figure.caption.18}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Image CLEF Examples\relax }}{13}{figure.caption.19}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Image NUS Examples\relax }}{13}{figure.caption.20}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Image MIR Examples\relax }}{16}{figure.caption.19}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Image PASCAL Examples\relax }}{16}{figure.caption.20}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Image CLEF Examples\relax }}{17}{figure.caption.21}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Image NUS Examples\relax }}{17}{figure.caption.22}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Example of SIFT Descriptors\relax }}{17}{figure.caption.26}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Process Flow of SIFT Descriptor \relax }}{17}{figure.caption.27}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Use of SIFT Descriptor in matching \relax }}{19}{figure.caption.28}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Computation of Spatial Pyramid over an image \relax }}{20}{figure.caption.29}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Example of GIST descriptors\relax }}{21}{figure.caption.31}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Co-occurence Matrix G(0\textdegree ) generation for N=5 levels \relax }}{26}{figure.caption.37}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Construction of HoG descriptors \relax }}{27}{figure.caption.39}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Example of HOG Descriptors\relax }}{28}{figure.caption.40}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Example of LDA in two-dimensional feature vector \cite {Blei}\relax }}{34}{figure.caption.49}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Example of SIFT Descriptors\relax }}{23}{figure.caption.29}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Process Flow of SIFT Descriptor \relax }}{23}{figure.caption.30}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Use of SIFT Descriptor in matching \relax }}{25}{figure.caption.31}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Computation of Spatial Pyramid over an image \relax }}{26}{figure.caption.32}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Example of GIST descriptors\relax }}{28}{figure.caption.34}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Co-occurence Matrix G(0\textdegree ) generation for N=5 levels \relax }}{33}{figure.caption.40}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Construction of HoG descriptors \relax }}{34}{figure.caption.42}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Example of HOG Descriptors\relax }}{35}{figure.caption.43}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Plate Model for LDA \citet *{Blei}\relax }}{41}{figure.caption.52}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces MIR Cloud Examples\relax }}{51}{figure.caption.61}
 \addvspace {10\p@ }

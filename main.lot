@@ -1,15 +1,31 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Labels\relax }}{14}{table.caption.22}
+\contentsline {table}{\numberline {3.1}{\ignorespaces Labels\relax }}{18}{table.caption.24}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces MIR: Precision Comparison\relax }}{43}{table.caption.58}
-\contentsline {table}{\numberline {5.2}{\ignorespaces MIR: Accuracy Comparison\relax }}{44}{table.caption.59}
-\contentsline {table}{\numberline {5.3}{\ignorespaces ImageCLEF: Precision Comparison\relax }}{47}{table.caption.62}
-\contentsline {table}{\numberline {5.4}{\ignorespaces ImageCLEF: Accuracy Comparison\relax }}{48}{table.caption.63}
-\contentsline {table}{\numberline {5.5}{\ignorespaces PASCAL: Precision Comparison\relax }}{51}{table.caption.66}
-\contentsline {table}{\numberline {5.6}{\ignorespaces PASCAL: Accuracy Comparison\relax }}{52}{table.caption.67}
-\contentsline {table}{\numberline {5.7}{\ignorespaces NUS: Precision Comparison\relax }}{54}{table.caption.70}
-\contentsline {table}{\numberline {5.8}{\ignorespaces NUS: Accuracy Comparison\relax }}{55}{table.caption.71}
+\contentsline {table}{\numberline {5.1}{\ignorespaces MIR Precision Comparison: Only Visual Feature\relax }}{52}{table.caption.62}
+\contentsline {table}{\numberline {5.2}{\ignorespaces MIR Precision Comparison: Social Features based on LSI and RP Methods\relax }}{53}{table.caption.63}
+\contentsline {table}{\numberline {5.3}{\ignorespaces MIR Precision Comparison: Comparison of Published Results, results of ensemble and best of social and visual features\relax }}{54}{table.caption.64}
+\contentsline {table}{\numberline {5.4}{\ignorespaces MIR Accuracy Comparison: Only Visual Features\relax }}{55}{table.caption.65}
+\contentsline {table}{\numberline {5.5}{\ignorespaces MIR Accuracy Comparison: Social Features based on LSI and RP Methods\relax }}{55}{table.caption.66}
+\contentsline {table}{\numberline {5.6}{\ignorespaces MIR Accuracy Comparison: Comparison of Published Results, Results of ensemble and Best of social and visual features\relax }}{56}{table.caption.67}
+\contentsline {table}{\numberline {5.7}{\ignorespaces ImageCLEF Precision Comparison: Only Visual Features\relax }}{58}{table.caption.70}
+\contentsline {table}{\numberline {5.8}{\ignorespaces ImageCLEF Precision Comparison: Social Features based on LSI and RP Methods\relax }}{59}{table.caption.71}
+\contentsline {table}{\numberline {5.9}{\ignorespaces ImageCLEF Precision Comparison: Comparison of Published Results, Results of ensemble and Best of social and visual features\relax }}{60}{table.caption.72}
+\contentsline {table}{\numberline {5.10}{\ignorespaces ImageCLEF Accuracy Comparison: Only Visual Features\relax }}{61}{table.caption.73}
+\contentsline {table}{\numberline {5.11}{\ignorespaces ImageCLEF Accuracy Comparison: Social Features based on LSI and RP Methods\relax }}{62}{table.caption.74}
+\contentsline {table}{\numberline {5.12}{\ignorespaces ImageCLEF Accuracy Comparison: Results of ensemble and Best of social and visual features\relax }}{63}{table.caption.75}
+\contentsline {table}{\numberline {5.13}{\ignorespaces PASCAL Precision Comparison: Only Visual Features\relax }}{65}{table.caption.78}
+\contentsline {table}{\numberline {5.14}{\ignorespaces PASCAL Precision Comparison: Social Features based on LSI and RP Methods\relax }}{66}{table.caption.79}
+\contentsline {table}{\numberline {5.15}{\ignorespaces PASCAL Precision Comparison: Comparison of Published Results, Results of ensemble and Best of social and visual features\relax }}{67}{table.caption.80}
+\contentsline {table}{\numberline {5.16}{\ignorespaces PASCAL Accuracy Comparison: Only Visual Features\relax }}{68}{table.caption.81}
+\contentsline {table}{\numberline {5.17}{\ignorespaces PASCAL Accuracy Comparison: Social Features based on LSI and RP Methods\relax }}{69}{table.caption.82}
+\contentsline {table}{\numberline {5.18}{\ignorespaces PASCAL Accuracy Comparison: Comparison of Published Results, Results of ensemble and Best of social and visual features\relax }}{70}{table.caption.83}
+\contentsline {table}{\numberline {5.19}{\ignorespaces NUS Precision Comparison: Only Visual Features\relax }}{72}{table.caption.86}
+\contentsline {table}{\numberline {5.20}{\ignorespaces NUS Precision Comparison: Social Features based on LSI and RP Methods\relax }}{72}{table.caption.87}
+\contentsline {table}{\numberline {5.21}{\ignorespaces NUS Precision Comparison: Comparison of Published Results, Results of ensemble and Best of social and visual features\relax }}{73}{table.caption.88}
+\contentsline {table}{\numberline {5.22}{\ignorespaces NUS Accuracy Comparison: Only Visual Features\relax }}{74}{table.caption.89}
+\contentsline {table}{\numberline {5.23}{\ignorespaces NUS Accuracy Comparison: Social Features based on LSI and RP Methods\relax }}{74}{table.caption.90}
+\contentsline {table}{\numberline {5.24}{\ignorespaces NUS Accuracy Comparison: Comparison of Published Results, Results of ensemble and Best of social and visual features\relax }}{75}{table.caption.91}
 \addvspace {10\p@ }

@@ -17,9 +17,9 @@ digital form. Internet services like Facebook, Flickr,
 Instagram etc also make it very easy for anyone to share 
 their pictures with their (online) social connections.
 
-In present scenario, where we have several robust systems 
+In the present scenario, where we have several robust systems 
 effectively handling billions of photos, images and videos; the 
-renaissance of the 'socialization' of web activity has produced a 
+renaissance of the `socialization' of web activity has produced a 
 massive amount of social interaction information. The social 
 interaction on multimedia supporting websites have also opened a new 
 avenue of managing this ever growing corpora of multimedia data. The 
@@ -42,7 +42,7 @@ an album and were rarely opened to relive old memories. The
 photos were difficult to share and normally did not contain any 
 contextual information. Whereas today people can 
 upload images to the world wide web directly from capture devices 
-(like phone, tablets). They can also encode pertinent contextual 
+(like phones, tablets). They can also encode pertinent contextual 
 information automatically and share it with all their social network 
 contacts. This starts a cycle of interaction and annotation of that 
 image. Over time, the social aspect of the image becomes more 
@@ -60,8 +60,8 @@ information to follow a multimodal approach to classification.
 Image classification has many application ranging from multimedia 
 information delivery to web search. In the past, image 
 classification has faced two major difficulties. First, the labeled 
-images for training are generally hard to extract and short in 
-supply plus labeling new images is costly and requires significant
+images for training are generally hard to extract and in short  
+supply also labeling new images is costly and requires significant
 human input. Second, images can be ambiguous; e.g. an image can have 
 multiple concepts hidden. 
 
@@ -77,47 +77,80 @@ belong to more than one concept (polysemy). In such cases, we need
 some help from extra data to gracefully handle such ambiguous 
 conditions in order to get high classification accuracy.
 
-Text and images are two distinct type of information resource and 
+Text and images are two distinct types of information resource and 
 belong to two different modalities as they present an object in 
 different ways. However, there are some implicit connections and 
-invariant properties shared between images and textual information. In fact, the texts associated with images 
-includes some form of human generated descriptions of images; thus 
-these can be regarded as a supplement to the image content.
+invariant properties shared between images and textual information. 
+In fact, the texts associated with images include some form of human 
+generated description of images; thus these can be regarded as a 
+supplement to the image content.
 
-The combination of textual information with image features can be a way of improving image classification results. With all these cues about heterogeneous learning, we wish
-to take the help of data in different modalities to 
-have better classification of images. The unprecedented evolution of 
-social networking gives us such data with reasonable ease. People talk 
-about images, puts likes, comments, tags and other markers. 
-These markers or rather social meta-data can be 
-instrumental in inferring the content of images.
+The combination of textual information with image features can be a 
+way of improving image classification results. With all these cues 
+about heterogeneous learning, we wish to take the help of data in 
+different modalities to have better classification of images. The 
+unprecedented evolution of social networking gives us such data with 
+reasonable ease. People talk about images, put likes, comments, 
+tags and other markers. These markers or rather social meta-data can 
+be instrumental in inferring the content of images.
 
- In the light of all these motivating facts, we decided to pursue the social meta data as an additional instrumental information for enhancing the image classification.
+ In the light of all these motivating facts, we decided to pursue 
+social meta data as an additional soure of information for 
+enhancing image classification.
 
 \section{Problem Statement}
-In this thesis, we will focus on classification of images, which have some of the social meta-data available with them. The social meta data for an instance can be  tags on images, groups in which image is featured in or comments on image etc. 
+In this thesis, we will focus on classification of images, which 
+have some social meta-data available with them. The social meta data 
+for an instance can be  tags on images, groups in which image is 
+featured or comments on the image etc. 
 
-If we try to break an image classification problem for multi-labeled images , we can talk in terms of labeling an image with different labels. We will be using supervised learning technique to do this, which means we will first develop a classification system by creating classification models using already labeled images and then use these models to automatically label the unknown images with the label.
-Annotating an image  with a labels can be considered as a multi-class classification problem where the classes are represented by labels. For example an image with ship floating in sea, can labeled as "sea", "ship" or "water". So, the problem of annotating an image with its labels is equivalent to classifying that images into one of the  labels. We can define a problem in following manner:
+If we try to break an image classification problem for multi-labeled 
+images, we can talk in terms of labeling an image with different 
+labels. We will be using supervised learning techniques to do this, 
+which means we will first develop a classification system by 
+creating classification models using already labeled images and then 
+use these models to automatically label the unknown images with the 
+label.
+
+Annotating an image  with a labels can be considered as a multi-
+class classification problem where the classes are represented by 
+labels. For example an image with a ship floating in the sea, can be labeled 
+as "sea", "ship" or "water". So, the problem of annotating an image 
+with its labels is equivalent to classifying that image into one of 
+the labels. We can define a problem as follows:
 
 	Suppose we have an image data set consisting of N images $X = \{x_1 ...x_N\}$ and a label space consisting of L categories $L = \{-1, 1\}^L$. 
 	
-	We can denote the ground truth labeling for the image $x_n$ as $y^n\in L$. Then the ground truth for a particular category $c$ can be denoted as $y^n:y^n \in \{-1,1\}$.When we combine the ground truth for the entire data set for category c, we get $Y_c \in \{-1,1\}^N$. 
+	We can denote the ground truth labeling for the image $x_n$ as $y^n\in L$. Then the ground truth for a particular category $c$ can be denoted as $y^n:y^n \in \{-1,1\}$. When we combine the ground truth for the entire data set for category c, we get $Y_c \in \{-1,1\}^N$. 
 	
-	 We try to learn a prediction made for an image $x_n$ and category $c$, which will be $\bar{y_c} (x_n,\theta_c)\in\{-1,1\} $. Predictions across the entire data set for category $c$ will be $\bar{Y_c}(X,\theta_c) \in \{-1,1\}^N$. 
+We try to learn a prediction made for an image $x_n$ and category $c$, 
+which will be $\bar{y_c} (x_n,\theta_c)\in\{-1,1\} $. Predictions 
+across the entire data set for category $c$ will be 
+$\bar{Y_c}(X,\theta_c) \in \{-1,1\}^N$. 
 	 
-	 We will try to deduce the enhancement in image classification using the social meta-data.If we only have images and no auxiliary data , we will get only the visual feature  $\theta_c ^ {Visual} \in R^{Visual\ features}$ for an image. We, therefore, first consider some widely used visual features (SIFT Features, GIST Features,  COLOR Space Features, Texture/GLCM Features and HOG-LBP Features) to learn a classification model on these images.
+	 We propose methods to enhance image classification using 
+social meta-data. If we only have images and no auxiliary data , 
+we will get only the visual features  $\theta_c ^ {Visual} \in R^{Visual\ features}$ for an image. We, therefore, first consider some widely used visual features (SIFT Features, GIST Features,  COLOR Space Features, Texture/GLCM Features and HOG-LBP Features) to learn a classification model on these images.
 	 
-	   We, then, test our visual-only classification model, that how accurate it is classifying the images. Now, we consider the  features generated by the social features $\theta_c ^{Social} \in R^{Social\ features}$ for an image to  learn a classification model on these images.  We, then, compare our results of social-only classification model to visual-only classification model. In third step, 
+	   We, then, test our visual-only classification model, to see how 
+accurate it is in classifying the images. Now, we consider the  
+features generated by the social features 
+$\theta_c ^{Social} \in R^{Social\ features}$ for an image to  learn 
+a classification model on these images.  We, then, compare our 
+results of social-only classification model to visual-only 
+classification model. In the third step, 
 	   
-	   In third step, we ensemble these visual only and social only classifiers to obtain the final result. We compare all the results to find out the improvement obtained by using some auxiliary social-meta data.
+	   In third step, we ensemble these visual only and social only 
+classifiers to obtain the final result. We compare all the results 
+to find the improvement obtained by using some auxiliary social-
+meta data.
 
 \section{Outline of the Thesis}
-The remaining thesis is structures as follows:
+The remaining thesis is structured as follows:
 \begin{itemize}
-\item{{\bf Chapter 2} reviews the related work done in attempt of utilizing the meta-data and other information related to images in order to enhance the image classification.}
-\item{{\bf Chapter 3} gives an overview of the Data-sets, we considered in our thesis. }
-\item{{\bf Chapter 4} describes the part of feature extraction, which is quite important in our experiments.}
+\item{{\bf Chapter 2} reviews the related work done in utilizing the meta-data and other information related to images in order to enhance image classification.}
+\item{{\bf Chapter 3} gives an overview of the data-sets, we considered in our thesis. }
+\item{{\bf Chapter 4} describes the feature extraction, which is quite important in our experiments.}
 \item{{\bf Chapter 5} presents the experiments we did and the results we got. }
 \item{{\bf Chapter 6} contains conclusions and pointers to extensions and future work. }
 \end{itemize}

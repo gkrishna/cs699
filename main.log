@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  30 MAY 2015 08:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  29 JUL 2015 05:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1134,6 +1134,9 @@ Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
 \extratabsurround=\skip65
 \backup@length=\skip66
 )
+(/usr/local/texlive/2014/texmf-dist/tex/latex/multirow/multirow.sty
+\bigstrutjot=\dimen196
+)
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarycalc.code.tex
 File: tikzlibrarycalc.code.tex 2013/07/15 v3.0.0 (rcs-revision 1.9)
@@ -1153,7 +1156,7 @@ File: tikzlibraryarrows.code.tex 2008/01/09 v3.0.0 (rcs-revision 1.1)
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.
 code.tex
 File: pgflibraryarrows.code.tex 2013/09/23 v3.0.0 (rcs-revision 1.16)
-\arrowsize=\dimen196
+\arrowsize=\dimen197
 ))
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarychains.code.tex
@@ -1174,14 +1177,14 @@ s/tikzlibrarydecorations.pathreplacing.code.tex
 s/tikzlibrarydecorations.code.tex
 (/usr/local/texlive/2014/texmf-dist/tex/generic/pgf/modules/pgfmoduledecoration
 s.code.tex
-\pgfdecoratedcompleteddistance=\dimen197
-\pgfdecoratedremainingdistance=\dimen198
-\pgfdecoratedinputsegmentcompleteddistance=\dimen199
-\pgfdecoratedinputsegmentremainingdistance=\dimen200
-\pgf@decorate@distancetomove=\dimen201
+\pgfdecoratedcompleteddistance=\dimen198
+\pgfdecoratedremainingdistance=\dimen199
+\pgfdecoratedinputsegmentcompleteddistance=\dimen200
+\pgfdecoratedinputsegmentremainingdistance=\dimen201
+\pgf@decorate@distancetomove=\dimen202
 \pgf@decorate@repeatstate=\count152
-\pgfdecorationsegmentamplitude=\dimen202
-\pgfdecorationsegmentlength=\dimen203
+\pgfdecorationsegmentamplitude=\dimen203
+\pgfdecorationsegmentlength=\dimen204
 )
 \tikz@lib@dec@box=\box46
 )
@@ -1263,33 +1266,36 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 LaTeX Info: Redefining \cite on input line 694.
 \c@NAT@ctr=\count153
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 74.
- (./main.aux)
+Package hyperref Info: Option `colorlinks' set `true' on input line 76.
+ (./main.aux
+
+LaTeX Warning: Label `fig:Image MIR Examples' multiply defined.
+
+)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 77.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 77.
-
-(/usr/local/texlive/2014/texmf-dist/tex/latex/base/ts1cmr.fd
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 79.
+LaTeX Font Info:    ... okay on input line 79.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 79.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 79.
+ (/usr/local/texlive/2014/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    ... okay on input line 79.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
@@ -1304,20 +1310,20 @@ Package caption Info: End \AtBeginDocument code.
 (/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count154
-\scratchdimen=\dimen204
+\scratchdimen=\dimen205
 \scratchbox=\box67
 \nofMPsegments=\count155
 \nofMParguments=\count156
 \everyMPshowfont=\toks47
 \MPscratchCnt=\count157
-\MPscratchDim=\dimen205
+\MPscratchDim=\dimen206
 \MPnumerator=\count158
 \makeMPintoPDFobject=\count159
 \everyMPtoPDFconversion=\toks48
 )
 \c@lstlisting=\count160
 \AtBeginShipoutBox=\box68
-Package hyperref Info: Link coloring ON on input line 77.
+Package hyperref Info: Link coloring ON on input line 79.
  (/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
@@ -1326,9 +1332,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count161
 )
-LaTeX Info: Redefining \ref on input line 77.
-LaTeX Info: Redefining \pageref on input line 77.
-LaTeX Info: Redefining \nameref on input line 77.
+LaTeX Info: Redefining \ref on input line 79.
+LaTeX Info: Redefining \pageref on input line 79.
+LaTeX Info: Redefining \nameref on input line 79.
 
 (./main.out) (./main.out)
 \@outlinefile=\write4
@@ -1343,7 +1349,7 @@ LaTeX Info: Redefining \nameref on input line 77.
  Certificate
 ------------------------------------------------------------------------------
 
-Overfull \hbox (4.27817pt too wide) in paragraph at lines 163--163
+Overfull \hbox (4.27817pt too wide) in paragraph at lines 165--165
 \OT1/cmr/bx/n/10.95 Data Based Im-age Clas-si-fi-ca-tion\OT1/cmr/m/n/10.95 '', 
 by \OT1/cmr/bx/n/10.95 Mr. Gau-rav Kr-ishna (Roll No. Y9227224)\OT1/cmr/m/n/10.
 95 ,
@@ -1405,692 +1411,907 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 
 
-] (./Chapters/Introduction.tex
+] [8] (./Chapters/Introduction.tex
 Chapter 1.
 ------------------------------------------------------------------------------
  1 Introduction
 ------------------------------------------------------------------------------
-
-Underfull \hbox (badness 10000) in paragraph at lines 5--11
-
- []
-
 [1
 
 
 
 
 
-]) (./Chapters/RelatedWorks.tex
-Underfull \hbox (badness 10000) in paragraph at lines 12--2
-
+] [2] [3]
+Overfull \hbox (17.95117pt too wide) in paragraph at lines 131--134
+\OT1/cmr/m/n/10.95 have im-ages and no aux-il-iary data , we will get only the 
+vi-sual fea-tures $\OML/cmm/m/it/10.95 ^^R[] \OMS/cmsy/m/n/10.95 2 \OML/cmm/m/i
+t/10.95 R[]$
  []
 
-[2] [3]
+[4]) (./Chapters/RelatedWorks.tex [5]
 Chapter 2.
 ------------------------------------------------------------------------------
  2 Background and Related Work
 ------------------------------------------------------------------------------
+[6
 
-Package natbib Warning: Citation `webResources' on page 4 undefined on input li
-ne 16.
+]
 
-) (./Chapters/DataSet.tex [4
+Package natbib Warning: Citation `gupta' on page 7 undefined on input line 47.
 
-] [5] [6] [7] [8]
+[7] [8] [9]
+
+Package natbib Warning: Citation `heterogeneous' on page 10 undefined on input 
+line 128.
+
+
+Overfull \hbox (21.1844pt too wide) in paragraph at lines 142--157
+\OT1/cmr/m/n/10.95 supervised tech-niques from all the un-clas-si-fied im-ages 
+to cre-ate an en-hanced image-classification
+ []
+
+[10] [11]) (./Chapters/DataSet.tex [12]
 Chapter 3.
 ------------------------------------------------------------------------------
  3 Data Set
 ------------------------------------------------------------------------------
 
-Underfull \hbox (badness 10000) in paragraph at lines 8--10
+Package natbib Warning: Citation `PASCAL' on page 13 undefined on input line 25
+.
 
- []
+[13
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 16--17
-
- []
-
-[9
-
-] [10]
-Underfull \hbox (badness 10000) in paragraph at lines 44--45
-
- []
-
-<./Pictures/MIR/1.jpg, id=414, 57.816pt x 57.816pt>
+] [14] <./Pictures/MIR/1.jpg, id=483, 57.816pt x 57.816pt>
 File: ./Pictures/MIR/1.jpg Graphic file (type jpg)
- <use ./Pictures/MIR/1.jpg>
-Package pdftex.def Info: ./Pictures/MIR/1.jpg used on input line 48.
+
+<use ./Pictures/MIR/1.jpg>
+Package pdftex.def Info: ./Pictures/MIR/1.jpg used on input line 89.
 (pdftex.def)             Requested size: 85.36252pt x 85.36252pt.
 
-<./Pictures/MIR/2.jpg, id=415, 144.54pt x 117.43875pt>
+<./Pictures/MIR/2.jpg, id=484, 144.54pt x 117.43875pt>
 File: ./Pictures/MIR/2.jpg Graphic file (type jpg)
 
 <use ./Pictures/MIR/2.jpg>
-Package pdftex.def Info: ./Pictures/MIR/2.jpg used on input line 49.
+Package pdftex.def Info: ./Pictures/MIR/2.jpg used on input line 90.
 (pdftex.def)             Requested size: 85.35724pt x 85.35861pt.
- <./Pictures/MIR/3.jpg, id=416, 240.9pt x 160.6pt>
+ <./Pictures/MIR/3.jpg, id=485, 240.9pt x 160.6pt>
 File: ./Pictures/MIR/3.jpg Graphic file (type jpg)
 
 <use ./Pictures/MIR/3.jpg>
-Package pdftex.def Info: ./Pictures/MIR/3.jpg used on input line 50.
+Package pdftex.def Info: ./Pictures/MIR/3.jpg used on input line 91.
 (pdftex.def)             Requested size: 85.3565pt x 85.36018pt.
- <./Pictures/MIR/4.jpg, id=417, 180.675pt x 240.9pt>
+ <./Pictures/MIR/4.jpg, id=486, 180.675pt x 240.9pt>
 File: ./Pictures/MIR/4.jpg Graphic file (type jpg)
 
 <use ./Pictures/MIR/4.jpg>
-Package pdftex.def Info: ./Pictures/MIR/4.jpg used on input line 51.
+Package pdftex.def Info: ./Pictures/MIR/4.jpg used on input line 92.
 (pdftex.def)             Requested size: 85.35835pt x 85.3565pt.
 
-<./Pictures/MIR/5.jpg, id=418, 57.816pt x 35.8941pt>
+<./Pictures/MIR/5.jpg, id=487, 57.816pt x 35.8941pt>
 File: ./Pictures/MIR/5.jpg Graphic file (type jpg)
 
 <use ./Pictures/MIR/5.jpg>
-Package pdftex.def Info: ./Pictures/MIR/5.jpg used on input line 52.
+Package pdftex.def Info: ./Pictures/MIR/5.jpg used on input line 93.
 (pdftex.def)             Requested size: 85.36252pt x 85.366pt.
 
-<./Pictures/MIR/6.jpg, id=419, 240.9pt x 171.64125pt>
+<./Pictures/MIR/6.jpg, id=488, 240.9pt x 171.64125pt>
 File: ./Pictures/MIR/6.jpg Graphic file (type jpg)
 
 <use ./Pictures/MIR/6.jpg>
-Package pdftex.def Info: ./Pictures/MIR/6.jpg used on input line 53.
+Package pdftex.def Info: ./Pictures/MIR/6.jpg used on input line 94.
 (pdftex.def)             Requested size: 85.3565pt x 85.35683pt.
 
-<./Pictures/PASCAL/1.jpg, id=420, 240.9pt x 180.675pt>
+<./Pictures/PASCAL/1.jpg, id=489, 240.9pt x 180.675pt>
 File: ./Pictures/PASCAL/1.jpg Graphic file (type jpg)
 
 <use ./Pictures/PASCAL/1.jpg>
-Package pdftex.def Info: ./Pictures/PASCAL/1.jpg used on input line 62.
+Package pdftex.def Info: ./Pictures/PASCAL/1.jpg used on input line 103.
 (pdftex.def)             Requested size: 85.3565pt x 85.35835pt.
 
-<./Pictures/PASCAL/2.jpg, id=421, 240.9pt x 162.6075pt>
+<./Pictures/PASCAL/2.jpg, id=490, 240.9pt x 162.6075pt>
 File: ./Pictures/PASCAL/2.jpg Graphic file (type jpg)
 
 <use ./Pictures/PASCAL/2.jpg>
-Package pdftex.def Info: ./Pictures/PASCAL/2.jpg used on input line 63.
+Package pdftex.def Info: ./Pictures/PASCAL/2.jpg used on input line 104.
 (pdftex.def)             Requested size: 85.3565pt x 85.36029pt.
 
-<./Pictures/PASCAL/3.jpg, id=422, 173.448pt x 115.632pt>
+<./Pictures/PASCAL/3.jpg, id=491, 173.448pt x 115.632pt>
 File: ./Pictures/PASCAL/3.jpg Graphic file (type jpg)
 
 <use ./Pictures/PASCAL/3.jpg>
-Package pdftex.def Info: ./Pictures/PASCAL/3.jpg used on input line 64.
+Package pdftex.def Info: ./Pictures/PASCAL/3.jpg used on input line 105.
 (pdftex.def)             Requested size: 85.35814pt x 85.36166pt.
 
-<./Pictures/PASCAL/4.jpg, id=423, 240.9pt x 180.675pt>
+<./Pictures/PASCAL/4.jpg, id=492, 240.9pt x 180.675pt>
 File: ./Pictures/PASCAL/4.jpg Graphic file (type jpg)
 
 <use ./Pictures/PASCAL/4.jpg>
-Package pdftex.def Info: ./Pictures/PASCAL/4.jpg used on input line 65.
+Package pdftex.def Info: ./Pictures/PASCAL/4.jpg used on input line 106.
 (pdftex.def)             Requested size: 85.3565pt x 85.35835pt.
 
-<./Pictures/PASCAL/5.jpg, id=424, 240.9pt x 180.675pt>
+<./Pictures/PASCAL/5.jpg, id=493, 240.9pt x 180.675pt>
 File: ./Pictures/PASCAL/5.jpg Graphic file (type jpg)
 
 <use ./Pictures/PASCAL/5.jpg>
-Package pdftex.def Info: ./Pictures/PASCAL/5.jpg used on input line 66.
+Package pdftex.def Info: ./Pictures/PASCAL/5.jpg used on input line 107.
 (pdftex.def)             Requested size: 85.3565pt x 85.35835pt.
 
-<./Pictures/PASCAL/6.jpg, id=425, 57.816pt x 38.544pt>
+<./Pictures/PASCAL/6.jpg, id=494, 57.816pt x 38.544pt>
 File: ./Pictures/PASCAL/6.jpg Graphic file (type jpg)
 
 <use ./Pictures/PASCAL/6.jpg>
-Package pdftex.def Info: ./Pictures/PASCAL/6.jpg used on input line 67.
+Package pdftex.def Info: ./Pictures/PASCAL/6.jpg used on input line 108.
 (pdftex.def)             Requested size: 85.36252pt x 85.36871pt.
- [11]
-Underfull \hbox (badness 10000) in paragraph at lines 72--74
-
- []
-
-[12 <./Pictures/MIR/1.jpg> <./Pictures/MIR/2.jpg> <./Pictures/MIR/3.jpg> <./Pic
-tures/MIR/4.jpg> <./Pictures/MIR/5.jpg> <./Pictures/MIR/6.jpg> <./Pictures/PASC
-AL/1.jpg> <./Pictures/PASCAL/2.jpg> <./Pictures/PASCAL/3.jpg> <./Pictures/PASCA
-L/4.jpg> <./Pictures/PASCAL/5.jpg> <./Pictures/PASCAL/6.jpg>]
-<./Pictures/CLEF/1.jpg, id=436, 41.42867pt x 55.23822pt>
+ [15]
+<./Pictures/CLEF/1.jpg, id=499, 41.42867pt x 55.23822pt>
 File: ./Pictures/CLEF/1.jpg Graphic file (type jpg)
 
 <use ./Pictures/CLEF/1.jpg>
-Package pdftex.def Info: ./Pictures/CLEF/1.jpg used on input line 77.
+Package pdftex.def Info: ./Pictures/CLEF/1.jpg used on input line 127.
 (pdftex.def)             Requested size: 85.37177pt x 85.36378pt.
 
-<./Pictures/CLEF/2.jpg, id=437, 181.67876pt x 240.9pt>
+<./Pictures/CLEF/2.jpg, id=500, 181.67876pt x 240.9pt>
 File: ./Pictures/CLEF/2.jpg Graphic file (type jpg)
 
 <use ./Pictures/CLEF/2.jpg>
-Package pdftex.def Info: ./Pictures/CLEF/2.jpg used on input line 78.
+Package pdftex.def Info: ./Pictures/CLEF/2.jpg used on input line 128.
 (pdftex.def)             Requested size: 85.35852pt x 85.3565pt.
 
-<./Pictures/CLEF/3.jpg, id=438, 96.36pt x 67.0505pt>
+<./Pictures/CLEF/3.jpg, id=501, 96.36pt x 67.0505pt>
 File: ./Pictures/CLEF/3.jpg Graphic file (type jpg)
 
 <use ./Pictures/CLEF/3.jpg>
-Package pdftex.def Info: ./Pictures/CLEF/3.jpg used on input line 79.
+Package pdftex.def Info: ./Pictures/CLEF/3.jpg used on input line 129.
 (pdftex.def)             Requested size: 85.35724pt x 85.36188pt.
 
-<./Pictures/CLEF/4.jpg, id=439, 240.9pt x 180.675pt>
+<./Pictures/CLEF/4.jpg, id=502, 240.9pt x 180.675pt>
 File: ./Pictures/CLEF/4.jpg Graphic file (type jpg)
 
 <use ./Pictures/CLEF/4.jpg>
-Package pdftex.def Info: ./Pictures/CLEF/4.jpg used on input line 80.
+Package pdftex.def Info: ./Pictures/CLEF/4.jpg used on input line 130.
 (pdftex.def)             Requested size: 85.3565pt x 85.35835pt.
 
-<./Pictures/CLEF/5.jpg, id=440, 161.60374pt x 240.9pt>
+<./Pictures/CLEF/5.jpg, id=503, 161.60374pt x 240.9pt>
 File: ./Pictures/CLEF/5.jpg Graphic file (type jpg)
 
 <use ./Pictures/CLEF/5.jpg>
-Package pdftex.def Info: ./Pictures/CLEF/5.jpg used on input line 81.
+Package pdftex.def Info: ./Pictures/CLEF/5.jpg used on input line 131.
 (pdftex.def)             Requested size: 85.3586pt x 85.3565pt.
 
-<./Pictures/CLEF/6.jpg, id=441, 57.816pt x 38.3031pt>
+<./Pictures/CLEF/6.jpg, id=504, 57.816pt x 38.3031pt>
 File: ./Pictures/CLEF/6.jpg Graphic file (type jpg)
 
 <use ./Pictures/CLEF/6.jpg>
-Package pdftex.def Info: ./Pictures/CLEF/6.jpg used on input line 82.
+Package pdftex.def Info: ./Pictures/CLEF/6.jpg used on input line 132.
 (pdftex.def)             Requested size: 85.36252pt x 85.37167pt.
- <./Pictures/NUS/1.jpg, id=442, 240.9pt x 160.6pt>
+ [16 <./Pictures/MIR/1.jpg> <./Pictures/MIR/2.jpg> <./Pictures/MIR/3.jpg> <./Pi
+ctures/MIR/4.jpg> <./Pictures/MIR/5.jpg> <./Pictures/MIR/6.jpg> <./Pictures/PAS
+CAL/1.jpg> <./Pictures/PASCAL/2.jpg> <./Pictures/PASCAL/3.jpg> <./Pictures/PASC
+AL/4.jpg> <./Pictures/PASCAL/5.jpg> <./Pictures/PASCAL/6.jpg>] <./Pictures/NUS/
+1.jpg, id=510, 240.9pt x 160.6pt>
 File: ./Pictures/NUS/1.jpg Graphic file (type jpg)
 
 <use ./Pictures/NUS/1.jpg>
-Package pdftex.def Info: ./Pictures/NUS/1.jpg used on input line 91.
+Package pdftex.def Info: ./Pictures/NUS/1.jpg used on input line 141.
 (pdftex.def)             Requested size: 85.3565pt x 85.36018pt.
 
-<./Pictures/NUS/2.jpg, id=443, 183.68625pt x 240.9pt>
+<./Pictures/NUS/2.jpg, id=511, 183.68625pt x 240.9pt>
 File: ./Pictures/NUS/2.jpg Graphic file (type jpg)
 
 <use ./Pictures/NUS/2.jpg>
-Package pdftex.def Info: ./Pictures/NUS/2.jpg used on input line 92.
+Package pdftex.def Info: ./Pictures/NUS/2.jpg used on input line 142.
 (pdftex.def)             Requested size: 85.35995pt x 85.3565pt.
 
-<./Pictures/NUS/3.jpg, id=444, 57.816pt x 41.1939pt>
+<./Pictures/NUS/3.jpg, id=512, 57.816pt x 41.1939pt>
 File: ./Pictures/NUS/3.jpg Graphic file (type jpg)
 
 <use ./Pictures/NUS/3.jpg>
-Package pdftex.def Info: ./Pictures/NUS/3.jpg used on input line 93.
+Package pdftex.def Info: ./Pictures/NUS/3.jpg used on input line 143.
 (pdftex.def)             Requested size: 85.36252pt x 85.37071pt.
 
-<./Pictures/NUS/4.jpg, id=445, 28.908pt x 20.7174pt>
+<./Pictures/NUS/4.jpg, id=513, 28.908pt x 20.7174pt>
 File: ./Pictures/NUS/4.jpg Graphic file (type jpg)
 
 <use ./Pictures/NUS/4.jpg>
-Package pdftex.def Info: ./Pictures/NUS/4.jpg used on input line 94.
+Package pdftex.def Info: ./Pictures/NUS/4.jpg used on input line 144.
 (pdftex.def)             Requested size: 85.36295pt x 85.38445pt.
 
-<./Pictures/NUS/5.jpg, id=446, 57.816pt x 37.5804pt>
+<./Pictures/NUS/5.jpg, id=514, 57.816pt x 37.5804pt>
 File: ./Pictures/NUS/5.jpg Graphic file (type jpg)
 
 <use ./Pictures/NUS/5.jpg>
-Package pdftex.def Info: ./Pictures/NUS/5.jpg used on input line 95.
+Package pdftex.def Info: ./Pictures/NUS/5.jpg used on input line 145.
 (pdftex.def)             Requested size: 85.36252pt x 85.36304pt.
- <./Pictures/NUS/6.jpg, id=447, 38.544pt x 57.816pt>
+ <./Pictures/NUS/6.jpg, id=515, 38.544pt x 57.816pt>
 File: ./Pictures/NUS/6.jpg Graphic file (type jpg)
 
 <use ./Pictures/NUS/6.jpg>
-Package pdftex.def Info: ./Pictures/NUS/6.jpg used on input line 96.
+Package pdftex.def Info: ./Pictures/NUS/6.jpg used on input line 146.
 (pdftex.def)             Requested size: 85.36871pt x 85.36252pt.
-
-Underfull \hbox (badness 3158) in paragraph at lines 111--111
-[]|\OT1/cmr/m/n/10.95 Number of
+ [17 <./Pictures/CLEF/1.jpg> <./Pictures/CLEF/2.jpg> <./Pictures/CLEF/3.jpg> <.
+/Pictures/CLEF/4.jpg> <./Pictures/CLEF/5.jpg> <./Pictures/CLEF/6.jpg> <./Pictur
+es/NUS/1.jpg> <./Pictures/NUS/2.jpg> <./Pictures/NUS/3.jpg> <./Pictures/NUS/4.j
+pg> <./Pictures/NUS/5.jpg> <./Pictures/NUS/6.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 166--166
+[]|\OT1/cmr/m/n/10.95 Count of
  []
 
 
-Underfull \hbox (badness 7558) in paragraph at lines 111--111
-\OT1/cmr/m/n/10.95 La-bels Se-
- []
-
-
-Underfull \hbox (badness 1168) in paragraph at lines 115--115
+Underfull \hbox (badness 1168) in paragraph at lines 170--170
 \OT1/cmr/m/n/10.95 horse, mo-tor-bike, per-son, pot-ted-plant,
  []
 
-) (./Chapters/FeatureExtraction.tex [13 <./Pictures/CLEF/1.jpg> <./Pictures/CLE
-F/2.jpg> <./Pictures/CLEF/3.jpg> <./Pictures/CLEF/4.jpg> <./Pictures/CLEF/5.jpg
-> <./Pictures/CLEF/6.jpg> <./Pictures/NUS/1.jpg> <./Pictures/NUS/2.jpg> <./Pict
-ures/NUS/3.jpg> <./Pictures/NUS/4.jpg> <./Pictures/NUS/5.jpg> <./Pictures/NUS/6
-.jpg>] [14]
+
+Underfull \hbox (badness 1509) in paragraph at lines 172--172
+[]|\OT1/cmr/m/n/10.95 Adult, Aes-thetic Im-pres-sion, An-i-mals,
+ []
+
+[18]
+
+Package natbib Warning: Citation `PASCAL' on page 19 undefined on input line 20
+0.
+
+[19]) (./Chapters/FeatureExtraction.tex [20]
 Chapter 4.
 ------------------------------------------------------------------------------
  4 Feature Extraction
 ------------------------------------------------------------------------------
-[15
+[21
 
-] [16]
-<./Pictures/SIFT/siftDescriptorExample.jpg, id=466, 321.2pt x 248.93pt>
+] [22]
+<./Pictures/SIFT/siftDescriptorExample.jpg, id=552, 321.2pt x 248.93pt>
 File: ./Pictures/SIFT/siftDescriptorExample.jpg Graphic file (type jpg)
 
 <use ./Pictures/SIFT/siftDescriptorExample.jpg>
 Package pdftex.def Info: ./Pictures/SIFT/siftDescriptorExample.jpg used on inpu
-t line 34.
+t line 38.
 (pdftex.def)             Requested size: 128.04152pt x 128.03894pt.
 
-<./Pictures/SIFT/siftExample.jpg, id=467, 321.2pt x 256.96pt>
+<./Pictures/SIFT/siftExample.jpg, id=553, 321.2pt x 256.96pt>
 File: ./Pictures/SIFT/siftExample.jpg Graphic file (type jpg)
 
 <use ./Pictures/SIFT/siftExample.jpg>
-Package pdftex.def Info: ./Pictures/SIFT/siftExample.jpg used on input line 35.
+Package pdftex.def Info: ./Pictures/SIFT/siftExample.jpg used on input line 39.
 
 (pdftex.def)             Requested size: 128.04152pt x 128.03662pt.
 
-<./Pictures/SIFT/siftSteps.jpg, id=470, 819.06pt x 209.78375pt>
+<./Pictures/SIFT/siftSteps.jpg, id=556, 819.06pt x 209.78375pt>
 File: ./Pictures/SIFT/siftSteps.jpg Graphic file (type jpg)
 
 <use ./Pictures/SIFT/siftSteps.jpg>
-Package pdftex.def Info: ./Pictures/SIFT/siftSteps.jpg used on input line 46.
+Package pdftex.def Info: ./Pictures/SIFT/siftSteps.jpg used on input line 50.
 (pdftex.def)             Requested size: 427.43153pt x 109.47868pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 52--56
-
- []
-
-[17 <./Pictures/SIFT/siftDescriptorExample.jpg> <./Pictures/SIFT/siftExample.jp
-g> <./Pictures/SIFT/siftSteps.jpg>]
-<./Pictures/SIFT/siftMatching.jpg, id=484, 642.4pt x 240.9pt>
+ [23 <./Pictures/SIFT/siftDescriptorExample.jpg> <./Pictures/SIFT/siftExample.j
+pg> <./Pictures/SIFT/siftSteps.jpg>]
+<./Pictures/SIFT/siftMatching.jpg, id=572, 642.4pt x 240.9pt>
 File: ./Pictures/SIFT/siftMatching.jpg Graphic file (type jpg)
 
 <use ./Pictures/SIFT/siftMatching.jpg>
-Package pdftex.def Info: ./Pictures/SIFT/siftMatching.jpg used on input line 59
+Package pdftex.def Info: ./Pictures/SIFT/siftMatching.jpg used on input line 72
 .
 (pdftex.def)             Requested size: 427.43153pt x 160.29205pt.
 
-<./Pictures/SIFT/siftMatchingDescriptor.jpg, id=485, 642.4pt x 240.9pt>
+<./Pictures/SIFT/siftMatchingDescriptor.jpg, id=573, 642.4pt x 240.9pt>
 File: ./Pictures/SIFT/siftMatchingDescriptor.jpg Graphic file (type jpg)
 
 <use ./Pictures/SIFT/siftMatchingDescriptor.jpg>
 Package pdftex.def Info: ./Pictures/SIFT/siftMatchingDescriptor.jpg used on inp
-ut line 60.
+ut line 73.
 (pdftex.def)             Requested size: 427.43153pt x 160.29205pt.
- [18]
-<./Pictures/SIFT/pyramidCompute.jpg, id=500, 649.42625pt x 341.275pt>
+ [24] [25 <./Pictures/SIFT/siftMatching.jpg> <./Pictures/SIFT/siftMatchingDescr
+iptor.jpg>]
+<./Pictures/SIFT/pyramidCompute.jpg, id=589, 649.42625pt x 341.275pt>
 File: ./Pictures/SIFT/pyramidCompute.jpg Graphic file (type jpg)
 
 <use ./Pictures/SIFT/pyramidCompute.jpg>
 Package pdftex.def Info: ./Pictures/SIFT/pyramidCompute.jpg used on input line 
-73.
+89.
 (pdftex.def)             Requested size: 427.43153pt x 224.6225pt.
+ [26 <./Pictures/SIFT/pyramidCompute.jpg>]
 
+Package natbib Warning: Citation `gistWebSite' on page 27 undefined on input li
+ne 108.
 
-Package natbib Warning: Citation `gistWebSite' on page 19 undefined on input li
-ne 87.
-
-[19 <./Pictures/SIFT/siftMatching.jpg> <./Pictures/SIFT/siftMatchingDescriptor.
-jpg>] [20 <./Pictures/SIFT/pyramidCompute.jpg>]
-<./Pictures/GIST/gistImage.jpg, id=521, 803.0pt x 602.25pt>
+[27] <./Pictures/GIST/gistImage.jpg, id=620, 803.0pt x 602.25pt>
 File: ./Pictures/GIST/gistImage.jpg Graphic file (type jpg)
 
 <use ./Pictures/GIST/gistImage.jpg>
-Package pdftex.def Info: ./Pictures/GIST/gistImage.jpg used on input line 94.
+Package pdftex.def Info: ./Pictures/GIST/gistImage.jpg used on input line 116.
 (pdftex.def)             Requested size: 128.02927pt x 128.03845pt.
 
-<./Pictures/GIST/gistExample.jpg, id=522, 785.93625pt x 582.175pt>
+<./Pictures/GIST/gistExample.jpg, id=621, 785.93625pt x 582.175pt>
 File: ./Pictures/GIST/gistExample.jpg Graphic file (type jpg)
 
 <use ./Pictures/GIST/gistExample.jpg>
-Package pdftex.def Info: ./Pictures/GIST/gistExample.jpg used on input line 95.
-
+Package pdftex.def Info: ./Pictures/GIST/gistExample.jpg used on input line 117
+.
 (pdftex.def)             Requested size: 128.03091pt x 128.03447pt.
- [21 <./Pictures/GIST/gistImage.jpg> <./Pictures/GIST/gistExample.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 109--111
-
- []
-
-[22] [23]
-Underfull \hbox (badness 10000) in paragraph at lines 145--153
-
- []
-
-[24] <./Pictures/GLCM/process.jpg, id=555, 693.59125pt x 557.08125pt>
+ [28 <./Pictures/GIST/gistImage.jpg> <./Pictures/GIST/gistExample.jpg>] [29] [3
+0] [31]
+<./Pictures/GLCM/process.jpg, id=652, 693.59125pt x 557.08125pt>
 File: ./Pictures/GLCM/process.jpg Graphic file (type jpg)
 
 <use ./Pictures/GLCM/process.jpg>
-Package pdftex.def Info: ./Pictures/GLCM/process.jpg used on input line 156.
+Package pdftex.def Info: ./Pictures/GLCM/process.jpg used on input line 203.
 (pdftex.def)             Requested size: 427.43153pt x 343.31271pt.
- [25] [26 <./Pictures/GLCM/process.jpg (PNG copy)>] <./Pictures/HOG/hogProcess.
-jpg, id=572, 653.44125pt x 241.90375pt>
+ [32]
+<./Pictures/HOG/hogProcess.jpg, id=668, 653.44125pt x 241.90375pt>
 File: ./Pictures/HOG/hogProcess.jpg Graphic file (type jpg)
 
 <use ./Pictures/HOG/hogProcess.jpg>
-Package pdftex.def Info: ./Pictures/HOG/hogProcess.jpg used on input line 169.
+Package pdftex.def Info: ./Pictures/HOG/hogProcess.jpg used on input line 233.
 (pdftex.def)             Requested size: 427.43153pt x 158.23218pt.
- [27 <./Pictures/HOG/hogProcess.jpg>]
-<./Pictures/HOG/hogFeatures.jpg, id=589, 507.8975pt x 382.42876pt>
+ [33 <./Pictures/GLCM/process.jpg (PNG copy)>]
+
+Package natbib Warning: Citation `WangHOG' on page 34 undefined on input line 2
+46.
+
+[34 <./Pictures/HOG/hogProcess.jpg>]
+<./Pictures/HOG/hogFeatures.jpg, id=697, 507.8975pt x 382.42876pt>
 File: ./Pictures/HOG/hogFeatures.jpg Graphic file (type jpg)
 
 <use ./Pictures/HOG/hogFeatures.jpg>
-Package pdftex.def Info: ./Pictures/HOG/hogFeatures.jpg used on input line 184.
+Package pdftex.def Info: ./Pictures/HOG/hogFeatures.jpg used on input line 285.
 
 (pdftex.def)             Requested size: 128.0358pt x 128.03418pt.
- [28 <./Pictures/HOG/hogFeatures.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 195--197
+ [35 <./Pictures/HOG/hogFeatures.jpg>]
+[36] [37] [38] [39]
+<./Pictures/Latent_Dirichlet_allocation.png, id=752, 250.9375pt x 131.49126pt>
+File: ./Pictures/Latent_Dirichlet_allocation.png Graphic file (type png)
+
+<use ./Pictures/Latent_Dirichlet_allocation.png>
+Package pdftex.def Info: ./Pictures/Latent_Dirichlet_allocation.png used on inp
+ut line 452.
+(pdftex.def)             Requested size: 427.43153pt x 223.99963pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 462--463
 
  []
 
-[29]
-Underfull \hbox (badness 10000) in paragraph at lines 213--215
+[40]
+Underfull \hbox (badness 10000) in paragraph at lines 463--464
 
  []
 
-[30] [31] [32] <./Pictures/lda_binary.jpg, id=632, 351.9549pt x 265.2309pt>
-File: ./Pictures/lda_binary.jpg Graphic file (type jpg)
 
-<use ./Pictures/lda_binary.jpg>
-Package pdftex.def Info: ./Pictures/lda_binary.jpg used on input line 247.
-(pdftex.def)             Requested size: 427.43153pt x 322.12425pt.
- [33] [34 <./Pictures/lda_binary.jpg>] [35]
-Underfull \hbox (badness 10000) in paragraph at lines 287--290
+Underfull \hbox (badness 10000) in paragraph at lines 464--465
 
  []
 
-) (./Chapters/ExperimentalResults.tex [36]
+
+Underfull \hbox (badness 10000) in paragraph at lines 465--466
+
+ []
+
+[41 <./Pictures/Latent_Dirichlet_allocation.png>] [42] [43])
+(./Chapters/ExperimentalResults.tex [44]
 Chapter 5.
 ------------------------------------------------------------------------------
  5 Experimental Results
 ------------------------------------------------------------------------------
-[37
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 25--26
+LaTeX Warning: Reference `FeatureExtraction' on page 45 undefined on input line
+ 14.
 
+[45
+
+] [46] [47] [48] [49]
+<./Pictures/MIR/cloud_0.jpg, id=841, 240.9pt x 161.60374pt>
+File: ./Pictures/MIR/cloud_0.jpg Graphic file (type jpg)
+
+<use ./Pictures/MIR/cloud_0.jpg>
+Package pdftex.def Info: ./Pictures/MIR/cloud_0.jpg used on input line 163.
+(pdftex.def)             Requested size: 85.3565pt x 85.3586pt.
+
+<./Pictures/MIR/cloud_1.jpg, id=842, 240.9pt x 160.6pt>
+File: ./Pictures/MIR/cloud_1.jpg Graphic file (type jpg)
+
+<use ./Pictures/MIR/cloud_1.jpg>
+Package pdftex.def Info: ./Pictures/MIR/cloud_1.jpg used on input line 164.
+(pdftex.def)             Requested size: 85.3565pt x 85.36018pt.
+ [50]
+Overfull \hbox (2.48105pt too wide) in paragraph at lines 276--276
+[]|[]| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 27--28
-
+Underfull \hbox (badness 3343) in paragraph at lines 278--278
+[]|\OT1/cmr/m/n/10.95 Flickr tags$+$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 29--32
-
- []
-
-[38]
-Underfull \hbox (badness 10000) in paragraph at lines 47--50
-
+Underfull \hbox (badness 10000) in paragraph at lines 278--278
+\OT1/cmr/m/n/10.95 Im-age De-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 51--53
-
+Underfull \hbox (badness 10000) in paragraph at lines 278--278
+[]|\OT1/cmr/m/n/10.95 Image De-
  []
 
-[39] [40] [41]
-Underfull \hbox (badness 10000) in paragraph at lines 92--92
+
+Underfull \hbox (badness 10000) in paragraph at lines 278--278
+\OT1/cmr/m/n/10.95 scrip-tors
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 278--278
+[]|\OT1/cmr/m/n/10.95 Flickr tags
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 278--278
+\OT1/cmr/m/n/10.95 +$ Im-age
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 278--278
+[]|\OT1/cmr/m/n/10.95 Image De-
+ []
+
+
+Overfull \hbox (3.66727pt too wide) in paragraph at lines 279--279
+[]|\OT1/cmr/m/n/10.95 Flower| 
+ []
+
+
+Overfull \hbox (4.45813pt too wide) in paragraph at lines 284--284
+[]|\OT1/cmr/m/n/10.95 Clouds| 
+ []
+
+
+Overfull \hbox (9.78105pt too wide) in paragraph at lines 285--285
+[]|\OT1/cmr/m/n/10.95 Portrait| 
+ []
+
+
+Overfull \hbox (5.1577pt too wide) in paragraph at lines 286--286
+[]|\OT1/cmr/m/n/10.95 Female| 
+ []
+
+
+Overfull \hbox (3.02852pt too wide) in paragraph at lines 288--288
+[]|\OT1/cmr/m/n/10.95 People| 
+ []
+
+
+Overfull \hbox (10.20688pt too wide) in paragraph at lines 292--292
+[]|\OT1/cmr/m/n/10.95 Average| 
+ []
+
+[51 <./Pictures/MIR/cloud_0.jpg> <./Pictures/MIR/cloud_1.jpg>]
+Overfull \hbox (2.85466pt too wide) in paragraph at lines 375--375
 []|\OT1/cmr/m/n/10.95 Ensemble
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 94--94
-[]|\OT1/cmr/m/n/10.95 Flicker
+Underfull \hbox (badness 10000) in paragraph at lines 375--375
+[]|\OT1/cmr/m/n/10.95 Social
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 94--94
-\OT1/cmr/m/n/10.95 tags $+$
+Underfull \hbox (badness 10000) in paragraph at lines 375--375
+[]|\OT1/cmr/m/n/10.95 Visual
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 94--94
-\OT1/cmr/m/n/10.95 Im-age
+Overfull \hbox (42.89114pt too wide) in paragraph at lines 400--401
+[]\OT1/cmr/m/it/10.95 'Adult','Aesthetic[] Im-pres-sion','Animals','Autumn','Ci
+ty life','cute','Day','Flowers','Food','Graffiti'
+ []
+
+[52] [53] [54] [55] [56]
+Underfull \hbox (badness 10000) in paragraph at lines 492--492
+[]|\OT1/cmr/m/n/10.95 Aesthetic
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 94--94
-\OT1/cmr/m/n/10.95 De-scrip-
+Underfull \hbox (badness 10000) in paragraph at lines 492--492
+\OT1/cmr/m/n/10.95 Im-pres-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 94--94
-\OT1/cmr/m/n/10.95 scip-tors
+Overfull \hbox (2.0309pt too wide) in paragraph at lines 513--513
+[]|\OT1/cmr/m/n/10.95 Landscape
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 94--94
-[]|\OT1/cmr/m/n/10.95 Flicker
+Underfull \hbox (badness 10000) in paragraph at lines 516--516
+[]|\OT1/cmr/m/n/10.95 Single
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 94--94
-\OT1/cmr/m/n/10.95 tags $+$
+Underfull \hbox (badness 10000) in paragraph at lines 526--526
+[]|\OT1/cmr/m/n/10.95 Sunset
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 94--94
-\OT1/cmr/m/n/10.95 Im-age
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 94--94
-\OT1/cmr/m/n/10.95 De-scrip-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 94--94
-[]|\OT1/cmr/m/n/10.95 Image
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 94--94
-\OT1/cmr/m/n/10.95 De-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 94--94
-\OT1/cmr/m/n/10.95 scip-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 94--94
-\OT1/cmr/m/n/10.95 tors
- []
-
-
-Overfull \hbox (0.51918pt too wide) in paragraph at lines 94--94
-[]|\OT1/cmr/m/n/10.95 HOG-
- []
-
-
-Overfull \hbox (8.32422pt too wide) in paragraph at lines 91--112
-[][]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 146--150
-
- []
-
-[42] [43] [44] [45]
-Underfull \hbox (badness 10000) in paragraph at lines 182--182
+Overfull \hbox (2.85466pt too wide) in paragraph at lines 542--542
 []|\OT1/cmr/m/n/10.95 Ensemble
  []
 
 
-Underfull \hbox (badness 6063) in paragraph at lines 183--183
-[]|\OT1/cmr/m/n/10.95 Latent Se-
+Underfull \hbox (badness 10000) in paragraph at lines 542--542
+[]|\OT1/cmr/m/n/10.95 CLEF
  []
 
 
-Underfull \hbox (badness 5681) in paragraph at lines 183--183
-\OT1/cmr/m/n/10.95 man-tic In-
+Underfull \hbox (badness 10000) in paragraph at lines 542--542
+\OT1/cmr/m/n/10.95 Best
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 183--183
-[]|\OT1/cmr/m/n/10.95 Random
+Underfull \hbox (badness 10000) in paragraph at lines 542--542
+\OT1/cmr/m/n/10.95 Re-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 216--216
+Underfull \hbox (badness 10000) in paragraph at lines 542--542
+[]|\OT1/cmr/m/n/10.95 Social
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 542--542
+[]|\OT1/cmr/m/n/10.95 Visual
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 544--544
+[]|\OT1/cmr/m/n/10.95 Aesthetic
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 544--544
+\OT1/cmr/m/n/10.95 Im-pres-
+ []
+
+
+Overfull \hbox (2.0309pt too wide) in paragraph at lines 553--553
+[]|\OT1/cmr/m/n/10.95 Landscape
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 556--556
+[]|\OT1/cmr/m/n/10.95 Single
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 560--560
+[]|\OT1/cmr/m/n/10.95 Sunset
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 619--619
+[]|\OT1/cmr/m/n/10.95 Aesthetic
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 619--619
+\OT1/cmr/m/n/10.95 Im-pres-
+ []
+
+
+Overfull \hbox (2.0309pt too wide) in paragraph at lines 640--640
+[]|\OT1/cmr/m/n/10.95 Landscape
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 643--643
+[]|\OT1/cmr/m/n/10.95 Single
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 653--653
+[]|\OT1/cmr/m/n/10.95 Sunset
+ []
+
+
+Overfull \hbox (2.85466pt too wide) in paragraph at lines 669--669
 []|\OT1/cmr/m/n/10.95 Ensemble
  []
 
 
-Overfull \hbox (1.34248pt too wide) in paragraph at lines 216--216
-[]|\OT1/cmr/m/n/10.95 ImageCLEF
+Underfull \hbox (badness 10000) in paragraph at lines 669--669
+[]|\OT1/cmr/m/n/10.95 CLEF
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 216--216
-\OT1/cmr/m/n/10.95 Com-pete-
+Underfull \hbox (badness 10000) in paragraph at lines 669--669
+\OT1/cmr/m/n/10.95 Best
  []
 
 
-Underfull \hbox (badness 6063) in paragraph at lines 217--217
-[]|\OT1/cmr/m/n/10.95 Latent Se-
+Underfull \hbox (badness 10000) in paragraph at lines 669--669
+\OT1/cmr/m/n/10.95 Re-
  []
 
 
-Underfull \hbox (badness 5681) in paragraph at lines 217--217
-\OT1/cmr/m/n/10.95 man-tic In-
+Underfull \hbox (badness 10000) in paragraph at lines 669--669
+[]|\OT1/cmr/m/n/10.95 Social
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 217--217
-[]|\OT1/cmr/m/n/10.95 Random
+Underfull \hbox (badness 10000) in paragraph at lines 669--669
+[]|\OT1/cmr/m/n/10.95 Visual
  []
 
-[46] [47] [48] [49]
-Underfull \hbox (badness 10000) in paragraph at lines 291--291
+
+Underfull \hbox (badness 10000) in paragraph at lines 671--671
+[]|\OT1/cmr/m/n/10.95 Aesthetic
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 671--671
+\OT1/cmr/m/n/10.95 Im-pres-
+ []
+
+
+Overfull \hbox (2.0309pt too wide) in paragraph at lines 680--680
+[]|\OT1/cmr/m/n/10.95 Landscape
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 683--683
+[]|\OT1/cmr/m/n/10.95 Single
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 687--687
+[]|\OT1/cmr/m/n/10.95 Sunset
+ []
+
+[57] [58]
+
+LaTeX Warning: Reference `PASCALPrecisionSocialFeatures' on page 59 undefined o
+n input line 718.
+
+[59] [60] [61] [62] [63]
+Overfull \hbox (5.16383pt too wide) in paragraph at lines 850--850
+[]|\OT1/cmr/m/n/10.95 diningtable| 
+ []
+
+
+Overfull \hbox (7.59717pt too wide) in paragraph at lines 854--854
+[]|\OT1/cmr/m/n/10.95 pottedplant| 
+ []
+
+
+Overfull \hbox (2.85466pt too wide) in paragraph at lines 872--872
+[]|\OT1/cmr/m/n/10.95 Ensemble
+ []
+
+
+Overfull \hbox (9.65681pt too wide) in paragraph at lines 872--872
 []|\OT1/cmr/m/n/10.95 PASCAL
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 291--291
-\OT1/cmr/m/n/10.95 VOC Re-
+Underfull \hbox (badness 10000) in paragraph at lines 872--872
+\OT1/cmr/m/n/10.95 Best
  []
 
 
-Underfull \hbox (badness 6063) in paragraph at lines 292--292
-[]|\OT1/cmr/m/n/10.95 Latent Se-
+Underfull \hbox (badness 10000) in paragraph at lines 872--872
+\OT1/cmr/m/n/10.95 Re-
  []
 
 
-Underfull \hbox (badness 5681) in paragraph at lines 292--292
-\OT1/cmr/m/n/10.95 man-tic In-
+Underfull \hbox (badness 10000) in paragraph at lines 872--872
+[]|\OT1/cmr/m/n/10.95 Social
  []
 
 
-Overfull \hbox (6.18044pt too wide) in paragraph at lines 290--318
-[][]
+Underfull \hbox (badness 10000) in paragraph at lines 872--872
+[]|\OT1/cmr/m/n/10.95 Visual
  []
 
 
-Overfull \hbox (3.61333pt too wide) in paragraph at lines 326--352
-[][]
- []
-
-[50] [51] [52] [53]
-Underfull \hbox (badness 1688) in paragraph at lines 388--388
-[]|\OT1/cmr/m/n/10.95 NUS Base-
+Overfull \hbox (5.16383pt too wide) in paragraph at lines 883--883
+[]|\OT1/cmr/m/n/10.95 diningtable| 
  []
 
 
-Underfull \hbox (badness 6063) in paragraph at lines 389--389
-[]|\OT1/cmr/m/n/10.95 Latent Se-
+Overfull \hbox (7.59717pt too wide) in paragraph at lines 887--887
+[]|\OT1/cmr/m/n/10.95 pottedplant| 
  []
 
 
-Underfull \hbox (badness 5681) in paragraph at lines 389--389
-\OT1/cmr/m/n/10.95 man-tic In-
+Overfull \hbox (2.85466pt too wide) in paragraph at lines 998--998
+[]|\OT1/cmr/m/n/10.95 Ensemble
  []
 
 
-Overfull \hbox (4.88768pt too wide) in paragraph at lines 387--406
-[][]
+Underfull \hbox (badness 10000) in paragraph at lines 998--998
+[]|\OT1/cmr/m/n/10.95 Social
  []
 
-) (./Chapters/Conclusion.tex [54] [55]
+
+Underfull \hbox (badness 10000) in paragraph at lines 998--998
+[]|\OT1/cmr/m/n/10.95 Visual
+ []
+
+
+Overfull \hbox (5.16383pt too wide) in paragraph at lines 1009--1009
+[]|\OT1/cmr/m/n/10.95 diningtable| 
+ []
+
+
+Overfull \hbox (7.59717pt too wide) in paragraph at lines 1014--1014
+[]|\OT1/cmr/m/n/10.95 pottedplant| 
+ []
+
+[64] [65] [66]
+Overfull \hbox (5.88483pt too wide) in paragraph at lines 1041--1042
+[]\OT1/cmr/m/n/10.95 Wavelet tex-ture trans-form pro-vided a multi-resolution a
+p-proach for tex-ture anal-y-sis.Wavelet
+ []
+
+[67] [68] [69] [70]
+Overfull \hbox (6.30441pt too wide) in paragraph at lines 1145--1145
+[]|\OT1/cmr/m/n/10.95 AVERAGE| 
+ []
+
+
+Overfull \hbox (2.85466pt too wide) in paragraph at lines 1159--1159
+[]|\OT1/cmr/m/n/10.95 Ensemble
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1159--1159
+[]|\OT1/cmr/m/n/10.95 NUS
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1159--1159
+\OT1/cmr/m/n/10.95 Best
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1159--1159
+\OT1/cmr/m/n/10.95 Re-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1159--1159
+[]|\OT1/cmr/m/n/10.95 Social
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1159--1159
+[]|\OT1/cmr/m/n/10.95 Visual
+ []
+
+
+Overfull \hbox (2.85466pt too wide) in paragraph at lines 1170--1170
+[]|\OT1/cmr/m/n/10.95 Ensemble
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1170--1170
+[]|\OT1/cmr/m/n/10.95 NUS
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1170--1170
+\OT1/cmr/m/n/10.95 Best
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1170--1170
+\OT1/cmr/m/n/10.95 Re-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1170--1170
+[]|\OT1/cmr/m/n/10.95 Social
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1170--1170
+[]|\OT1/cmr/m/n/10.95 Visual
+ []
+
+
+Overfull \hbox (6.30441pt too wide) in paragraph at lines 1176--1176
+[]|\OT1/cmr/m/n/10.95 AVERAGE| 
+ []
+
+
+Overfull \hbox (2.85466pt too wide) in paragraph at lines 1255--1255
+[]|\OT1/cmr/m/n/10.95 Ensemble
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1255--1255
+[]|\OT1/cmr/m/n/10.95 Social
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1255--1255
+[]|\OT1/cmr/m/n/10.95 Visual
+ []
+
+) (./Chapters/Conclusion.tex [71] [72] [73] [74] [75]
 Chapter 6.
 ------------------------------------------------------------------------------
  6 Conclusion and Future Work
 ------------------------------------------------------------------------------
-[56
+[76
 
 ]
 
-Package natbib Warning: Citation `dbn' on page 57 undefined on input line 14.
+Package natbib Warning: Citation `dbn' on page 77 undefined on input line 61.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 12--17
-
- []
-
-[57]) [58]
+[77]) [78]
 ------------------------------------------------------------------------------
  Bibliography
 ------------------------------------------------------------------------------
 (./main.bbl
-Underfull \hbox (badness 1924) in paragraph at lines 50--54
-[]\OT1/cmr/m/n/10.95 Kraisak Ke-sorn.  Multi-modal multi-semantic im-age re-tri
-eval, 2010.  URL
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 50--54
-[][]$\OT1/cmtt/m/n/10.95 https : / / qmro . qmul . ac . uk / xmlui / bitstream 
-/ handle / 123456789 / 438 /
+\OT1/cmtt/m/n/10.95 qmul . ac . uk / xmlui / bitstream / handle / 123456789 / 4
+38 / KESORNMulti-[]modal2010 .
  []
 
-[59
+[79
 
 
-]
-Underfull \hbox (badness 2253) in paragraph at lines 97--106
-\OT1/cmr/m/n/10.95 NY, USA, 2008. ACM.  ISBN 978-1-59593-985-2.  doi: $10 . 114
-5 / 1379092 .
- []
-
-[60] [61] [62] [63]
-Underfull \hbox (badness 5592) in paragraph at lines 324--334
-[]\OT1/cmr/m/n/10.95 Modesto Cas-trill^^Son-Santana, Javier Lorenzo-Navarro, an
-d En-rique Ram^^Son-
- []
-
-[64] [65] [66])
+] [80] [81] [82] [83] [84] [85] [86])
 
 Package natbib Warning: There were undefined citations.
 
-[67]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 339.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 339.
+[87]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 341.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 341.
  (./main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 339.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 339.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 341.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 341.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: DA551B5DABFDE46CC54B998EBA889DC1;7634.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 339.
+(rerunfilecheck)             Checksum: F431366D84BB6A5E7921AF4A9282503A;8006.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 341.
  ) 
 Here is how much of TeX's memory you used:
- 26969 strings out of 493117
- 503589 string characters out of 6135433
- 589338 words of memory out of 5000000
- 29683 multiletter control sequences out of 15000+600000
+ 27049 strings out of 493117
+ 505161 string characters out of 6135433
+ 613736 words of memory out of 5000000
+ 29714 multiletter control sequences out of 15000+600000
  15694 words of font info for 58 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,13n,71p,1153b,556s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
-}</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb>
-</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
-/usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><
-/usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></
-usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></u
-sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr
-/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/l
-ocal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loc
-al/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local
-/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/te
-xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texli
-ve/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/
-2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2
-014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/201
-4/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2014
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2014/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2014/t
-exmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2014/tex
-mf-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
-Output written on main.pdf (75 pages, 1648041 bytes).
+ 55i,13n,71p,912b,566s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{cite.*} has been referenced but does not exist, r
+eplaced by a fixed one
+
+{/usr/local/texlive/2014/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<
+/usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></
+usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></u
+sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></u
+sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
+r/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr
+/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/l
+ocal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/loc
+al/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local
+/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/t
+exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texl
+ive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive
+/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/20
+14/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/201
+4/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2014/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2014/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2014/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2014/tex
+mf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2014/texmf
+-dist/fonts/type1/public/cm-super/sfrm1095.pfb>
+Output written on main.pdf (96 pages, 1734438 bytes).
 PDF statistics:
- 994 PDF objects out of 1000 (max. 8388607)
- 851 compressed objects within 9 object streams
- 216 named destinations out of 1000 (max. 500000)
- 521 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1228 PDF objects out of 1440 (max. 8388607)
+ 1059 compressed objects within 11 object streams
+ 258 named destinations out of 1000 (max. 500000)
+ 547 words of extra memory for PDF output out of 10000 (max. 10000000)
 

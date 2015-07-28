@@ -5,17 +5,76 @@
 \label{conclusion} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
 
 \lhead{Chapter 6 . \emph{Conclusion and Future Work}} 
-In this work, we have demonstrated that if we use the social networking meta data related to images present on social networks like flicker, instagram, facebook, google plus etc. We achieve much better image classification results. We started with the five different visual features like SIFT, GIST, HoG, Color Histogram and GLCM. First, we classified our data set based on these individual features and then we took an ensemble model developed by weighted combination of these feature models. This analysis shows for image classification problem individual features are less effective. We need to combine these features for better classification.\\
-\hspace*{1cm}  We have further presented a simple and efficient approach of converting the social meta data of image in feature vectors. We used the text processing methods to contain the semantic structure of these social feature vectors in lower dimension. These  social feature vectors gave better classification in most of the labels as compared to visual features. This phenomena can be explained by the fact that the social feature vector is actually constructed from social meta-data, which is very much similar to textual information about the image. The comments, the tags, the groups and the galleries of an image has the direct textual information of that image class. Therefore, correlating this textual information with the class of image is not so complex. Where as in case of visual features, we have do a lot of image processing to get features, which indicates some visual property like texture, objects, color pattern and spatial envelope. But none of these property directly tell the exact label of the image, but in social meta data we might have the label as a tag or as a word in a comment.\\
- Several machine learning technique were explored for analysis and classification including Spatial Pyramid, Bag of Words Model, Latent Semantic Indexing and LibSVM. The results of these techniques came out to be much better then the best results of the competitions held on these four datasets. We, therefore, can conclude that the social-meta data gives that extra information, which proves to be very instrumental in image classification. The fusion of social features and visual features enhances the accuracy of image classification.
- \section{Future Work}
- Some of the labels in our data-set does not had enough images like fox, lake, mountain, protest, earthquake etc. In such cases, when number of images available were less then 50, we discarded that label for classification because we did not have the enough positive instances. In such cases we can try the web-information retrieval methods to get more images for such labels.\\
-  We used the strategy of extracting the features, using dimensionality reduction techniques like Spatial Pyramid, Latent Semantic Indexing, Bag of Words etc  and then using the classifying techniques like LibSVM on these low dimensional features.
-  This problem can also be explored using Deep Belief Networks \cite{dbn} with different number of hidden states, stacks of Restricted Boltzmann Machines and layers to get prominent reduced features; which can further be classified using supervised classification technique.\\
-   We have currently used MATLAB and python for implementation purpose. This implementation was done on signle thread with local system. We can change our implementation to faster executing language like C++ , with parallel processing for computationally difficult portion of feature extraction. This can increase the time efficiency of creating the model. We used the approach of weighted features, we could used some better fusion techniques to ensemble all the features.\\
-   Our social feature vector will be efficient only, if the social meta data of image already has enriched textual information in it. To overcome this constraint, we can explore the dimension of using the network structure of social meta data and co-relating images on the basis of the network. This technique can also be supervised to retrieve images from social networking sites on the basis of linkages and also we can do automated tag recommendations.\\ 
 
+In this work, we have demonstrated that if we use social 
+networking meta data related to images present on social networks 
+like Flickr, Instagram, Facebook, Google Plus etc. We achieve much 
+better image classification results. We started with five 
+different visual features like SIFT, GIST, HoG, Color Histogram and 
+GLCM. First, we classified our data set based on these individual 
+features and then we took an ensemble model developed by a weighted 
+combination of these feature models. This analysis shows that for image 
+classification problems individual features are less effective. We 
+need to combine these features for better classification.
 
+We have further presented a simple and efficient approach of 
+converting the social meta data of images to feature vectors. We used 
+text processing methods to extract the semantic structure of 
+these social feature vectors in low dimensional spaces. These  social 
+feature vectors gave better classification for most labels 
+compared to visual features. This phenomena can be explained by the 
+fact that the social feature vector is actually constructed from 
+social meta-data, which is very similar to textual information 
+about the image. The comments, the tags, the groups and the 
+galleries of an image has direct textual information of that 
+image class. Therefore, correlating this textual information with 
+the class of the image is not so complex. Where as in case of visual 
+features, we have to do a lot of processing to get features, 
+which embody some visual property like texture, objects, color 
+pattern and spatial envelope. But none of these properties directly 
+tell the exact label of the image. In contrast in social meta data we 
+might have the label as a tag or as a word in a comment.
 
+Several machine learning techniques were explored for analysis and 
+classification including Spatial Pyramid, Bag of Words Model, Latent 
+Semantic Indexing and LibSVM. The results from these techniques came 
+out to be much better then the best results of the competitions held 
+on these four datasets. We, therefore, can conclude that social-
+meta data gives that extra information, which proves to be  
+instrumental in image classification. The fusion of social features 
+and visual features enhances the accuracy of image classification in
+all cases that we examined and sometimes the difference is very 
+significant.
+\section{Future Work}
+Some of the labels in our data-set did not have enough images like 
+fox, lake, mountain, protest, earthquake etc. In such cases, when the 
+number of images available were less then 50, we discarded that 
+label for classification because we did not have enough positive 
+instances. In such cases we can try web-information retrieval 
+methods to get more images for such labels.
 
+We used the strategy of extracting the features, using 
+dimensionality reduction techniques like Spatial Pyramid, Latent 
+Semantic Indexing, Bag of Words etc  and then used classifiers 
+like LibSVM on these low dimensional features.
+This problem can also be explored using Deep Belief Networks 
+\citep{dbn} with different number of hidden states, stacks of 
+Restricted Boltzmann Machines and layers to get prominent reduced 
+features which can further be classified using supervised 
+classification techniques.
 
+We have currently used MATLAB and Python in our implementation.
+This implementation was done on single thread on a local system. We 
+can change our implementation to faster platforms C++, 
+with parallel processing for computationally difficult parts of 
+feature extraction. This can considerably speed up model creation. 
+We used the approach of weighted features, we 
+could use better fusion techniques to ensemble all the features.
+
+Our social feature vector will be efficient only if the social meta 
+data of an image already has enriched textual information in it. To 
+overcome this constraint we can explore the dimension of using the 
+network structure of social meta data and co-relating images based
+on the network. This technique can also be used to 
+retrieve images from social networking sites on the basis of 
+linkages. The system can be extended to do automated tag recommendations. 
