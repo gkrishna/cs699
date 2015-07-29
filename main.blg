@@ -1,220 +1,67 @@
 This is BibTeX, Version 0.99d (TeX Live 2014)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: main.aux
+Multiple inclusions of entire database
+---line 224 of file main.aux
+ : \citation{*
+ :            }
+I'm skipping whatever remains of this command
 The style file: unsrtnat.bst
 Database file #1: Bibliography.bib
-Repeated entry---line 523 of file Bibliography.bib
- : @misc{tang
- :           ,
-I'm skipping whatever remains of this entry
-A bad cross reference---entry "McAuley"
-refers to entry "conf/eccv/2012-4", which doesn't exist
-A bad cross reference---entry "Gupta"
-refers to entry "conf/pkdd/2008-1", which doesn't exist
-Warning--I didn't find a database entry for "textAided"
-Warning--I didn't find a database entry for "webResources"
-Too many commas in name 1 of "Blei, David M.; Ng, Andrew Y.; Jordan, Michael I" for entry Blei
-while executing---line 1233 of file unsrtnat.bst
-Too many commas in name 1 of "Everingham, M., Van Gool, L., Williams, C., Winn, J., Zisserman, A." for entry pascal
-while executing---line 1233 of file unsrtnat.bst
-Too many commas in name 1 of "Everingham, M., Van Gool, L., Williams, C., Winn, J., Zisserman, A." for entry pascal
-while executing---line 1233 of file unsrtnat.bst
-Too many commas in name 1 of "Everingham, M., Van Gool, L., Williams, C., Winn, J., Zisserman, A." for entry pascal
-while executing---line 1233 of file unsrtnat.bst
-Too many commas in name 1 of "Everingham, M., Van Gool, L., Williams, C., Winn, J., Zisserman, A." for entry pascal
-while executing---line 1233 of file unsrtnat.bst
-Too many commas in name 1 of "Everingham, M., Van Gool, L., Williams, C., Winn, J., Zisserman, A." for entry pascal
-while executing---line 1233 of file unsrtnat.bst
-Too many commas in name 1 of "Everingham, M., Van Gool, L., Williams, C., Winn, J., Zisserman, A." for entry pascal
-while executing---line 1233 of file unsrtnat.bst
-Too many commas in name 1 of "Everingham, M., Van Gool, L., Williams, C., Winn, J., Zisserman, A." for entry pascal
-while executing---line 1233 of file unsrtnat.bst
-Name 1 in "Huiskes, M., Lew," has a comma at the end for entry MIR
-while executing---line 1233 of file unsrtnat.bst
-Too many commas in name 1 of "Nowak, S., Huiskes, M.:" for entry CLEF
-while executing---line 1233 of file unsrtnat.bst
-Too many commas in name 1 of "Chua, T.S., Tang, J., Hong, R., Li, H., Luo, Z., Zheng,Y.T." for entry NUS
-while executing---line 1233 of file unsrtnat.bst
-Too many commas in name 1 of "Chua, T.S., Tang, J., Hong, R., Li, H., Luo, Z., Zheng,Y.T." for entry NUS
-while executing---line 1233 of file unsrtnat.bst
-Too many commas in name 1 of "Chua, T.S., Tang, J., Hong, R., Li, H., Luo, Z., Zheng,Y.T." for entry NUS
-while executing---line 1233 of file unsrtnat.bst
-Too many commas in name 1 of "Chua, T.S., Tang, J., Hong, R., Li, H., Luo, Z., Zheng,Y.T." for entry NUS
-while executing---line 1233 of file unsrtnat.bst
-Too many commas in name 1 of "Chua, T.S., Tang, J., Hong, R., Li, H., Luo, Z., Zheng,Y.T." for entry NUS
-while executing---line 1233 of file unsrtnat.bst
-Too many commas in name 1 of "Chua, T.S., Tang, J., Hong, R., Li, H., Luo, Z., Zheng,Y.T." for entry NUS
-while executing---line 1233 of file unsrtnat.bst
-Too many commas in name 1 of "Chua, T.S., Tang, J., Hong, R., Li, H., Luo, Z., Zheng,Y.T." for entry NUS
-while executing---line 1233 of file unsrtnat.bst
-Too many commas in name 1 of "Chua, T.S., Tang, J., Hong, R., Li, H., Luo, Z., Zheng,Y.T." for entry NUS
-while executing---line 1233 of file unsrtnat.bst
-Too many commas in name 1 of "Chua, T.S., Tang, J., Hong, R., Li, H., Luo, Z., Zheng,Y.T." for entry NUS
-while executing---line 1233 of file unsrtnat.bst
-Name 1 in "Svetlana Lazebnik, Cordelia Schmid, and Jean Ponce" has a comma at the end for entry bagOfWords
-while executing---line 1233 of file unsrtnat.bst
-Name 1 in "Deerwester, S., et al," has a comma at the end for entry Deerwester
-while executing---line 1233 of file unsrtnat.bst
-Name 1 in "Deerwester, S., et al," has a comma at the end for entry e-discovery
-while executing---line 1233 of file unsrtnat.bst
-Too many commas in name 1 of "Huiskes, M., Thomee, B., Lew, M." for entry MIRresults
-while executing---line 1233 of file unsrtnat.bst
-Too many commas in name 1 of "Huiskes, M., Thomee, B., Lew, M." for entry MIRresults
-while executing---line 1233 of file unsrtnat.bst
-Too many commas in name 1 of "Huiskes, M., Thomee, B., Lew, M." for entry MIRresults
-while executing---line 1233 of file unsrtnat.bst
-Too many commas in name 1 of "Blei, David M.; Ng, Andrew Y.; Jordan, Michael I" for entry Blei
-while executing---line 1315 of file unsrtnat.bst
-Too many commas in name 1 of "Blei, David M.; Ng, Andrew Y.; Jordan, Michael I" for entry Blei
-while executing---line 1315 of file unsrtnat.bst
 Warning--empty booktitle in dhruv
-Warning--empty booktitle in silva
-Too many commas in name 1 of "Everingham, M., Van Gool, L., Williams, C., Winn, J., Zisserman, A." for entry pascal
-while executing---line 1315 of file unsrtnat.bst
-Too many commas in name 1 of "Everingham, M., Van Gool, L., Williams, C., Winn, J., Zisserman, A." for entry pascal
-while executing---line 1315 of file unsrtnat.bst
-Too many commas in name 1 of "Everingham, M., Van Gool, L., Williams, C., Winn, J., Zisserman, A." for entry pascal
-while executing---line 1315 of file unsrtnat.bst
-Too many commas in name 1 of "Everingham, M., Van Gool, L., Williams, C., Winn, J., Zisserman, A." for entry pascal
-while executing---line 1315 of file unsrtnat.bst
-Too many commas in name 1 of "Everingham, M., Van Gool, L., Williams, C., Winn, J., Zisserman, A." for entry pascal
-while executing---line 1315 of file unsrtnat.bst
-Too many commas in name 1 of "Everingham, M., Van Gool, L., Williams, C., Winn, J., Zisserman, A." for entry pascal
-while executing---line 1315 of file unsrtnat.bst
-Too many commas in name 1 of "Everingham, M., Van Gool, L., Williams, C., Winn, J., Zisserman, A." for entry pascal
-while executing---line 1315 of file unsrtnat.bst
-Too many commas in name 1 of "Everingham, M., Van Gool, L., Williams, C., Winn, J., Zisserman, A." for entry pascal
-while executing---line 1315 of file unsrtnat.bst
-Too many commas in name 1 of "Everingham, M., Van Gool, L., Williams, C., Winn, J., Zisserman, A." for entry pascal
-while executing---line 1315 of file unsrtnat.bst
-Too many commas in name 1 of "Everingham, M., Van Gool, L., Williams, C., Winn, J., Zisserman, A." for entry pascal
-while executing---line 1315 of file unsrtnat.bst
-Too many commas in name 1 of "Everingham, M., Van Gool, L., Williams, C., Winn, J., Zisserman, A." for entry pascal
-while executing---line 1315 of file unsrtnat.bst
-Too many commas in name 1 of "Everingham, M., Van Gool, L., Williams, C., Winn, J., Zisserman, A." for entry pascal
-while executing---line 1315 of file unsrtnat.bst
-Too many commas in name 1 of "Everingham, M., Van Gool, L., Williams, C., Winn, J., Zisserman, A." for entry pascal
-while executing---line 1315 of file unsrtnat.bst
-Too many commas in name 1 of "Everingham, M., Van Gool, L., Williams, C., Winn, J., Zisserman, A." for entry pascal
-while executing---line 1315 of file unsrtnat.bst
-Name 1 in "Huiskes, M., Lew," has a comma at the end for entry MIR
-while executing---line 1315 of file unsrtnat.bst
-Name 1 in "Huiskes, M., Lew," has a comma at the end for entry MIR
-while executing---line 1315 of file unsrtnat.bst
-Too many commas in name 1 of "Nowak, S., Huiskes, M.:" for entry CLEF
-while executing---line 1315 of file unsrtnat.bst
-Too many commas in name 1 of "Nowak, S., Huiskes, M.:" for entry CLEF
-while executing---line 1315 of file unsrtnat.bst
-Too many commas in name 1 of "Chua, T.S., Tang, J., Hong, R., Li, H., Luo, Z., Zheng,Y.T." for entry NUS
-while executing---line 1315 of file unsrtnat.bst
-Too many commas in name 1 of "Chua, T.S., Tang, J., Hong, R., Li, H., Luo, Z., Zheng,Y.T." for entry NUS
-while executing---line 1315 of file unsrtnat.bst
-Too many commas in name 1 of "Chua, T.S., Tang, J., Hong, R., Li, H., Luo, Z., Zheng,Y.T." for entry NUS
-while executing---line 1315 of file unsrtnat.bst
-Too many commas in name 1 of "Chua, T.S., Tang, J., Hong, R., Li, H., Luo, Z., Zheng,Y.T." for entry NUS
-while executing---line 1315 of file unsrtnat.bst
-Too many commas in name 1 of "Chua, T.S., Tang, J., Hong, R., Li, H., Luo, Z., Zheng,Y.T." for entry NUS
-while executing---line 1315 of file unsrtnat.bst
-Too many commas in name 1 of "Chua, T.S., Tang, J., Hong, R., Li, H., Luo, Z., Zheng,Y.T." for entry NUS
-while executing---line 1315 of file unsrtnat.bst
-Too many commas in name 1 of "Chua, T.S., Tang, J., Hong, R., Li, H., Luo, Z., Zheng,Y.T." for entry NUS
-while executing---line 1315 of file unsrtnat.bst
-Too many commas in name 1 of "Chua, T.S., Tang, J., Hong, R., Li, H., Luo, Z., Zheng,Y.T." for entry NUS
-while executing---line 1315 of file unsrtnat.bst
-Too many commas in name 1 of "Chua, T.S., Tang, J., Hong, R., Li, H., Luo, Z., Zheng,Y.T." for entry NUS
-while executing---line 1315 of file unsrtnat.bst
-Too many commas in name 1 of "Chua, T.S., Tang, J., Hong, R., Li, H., Luo, Z., Zheng,Y.T." for entry NUS
-while executing---line 1315 of file unsrtnat.bst
-Too many commas in name 1 of "Chua, T.S., Tang, J., Hong, R., Li, H., Luo, Z., Zheng,Y.T." for entry NUS
-while executing---line 1315 of file unsrtnat.bst
-Too many commas in name 1 of "Chua, T.S., Tang, J., Hong, R., Li, H., Luo, Z., Zheng,Y.T." for entry NUS
-while executing---line 1315 of file unsrtnat.bst
-Too many commas in name 1 of "Chua, T.S., Tang, J., Hong, R., Li, H., Luo, Z., Zheng,Y.T." for entry NUS
-while executing---line 1315 of file unsrtnat.bst
-Too many commas in name 1 of "Chua, T.S., Tang, J., Hong, R., Li, H., Luo, Z., Zheng,Y.T." for entry NUS
-while executing---line 1315 of file unsrtnat.bst
-Too many commas in name 1 of "Chua, T.S., Tang, J., Hong, R., Li, H., Luo, Z., Zheng,Y.T." for entry NUS
-while executing---line 1315 of file unsrtnat.bst
-Too many commas in name 1 of "Chua, T.S., Tang, J., Hong, R., Li, H., Luo, Z., Zheng,Y.T." for entry NUS
-while executing---line 1315 of file unsrtnat.bst
-Too many commas in name 1 of "Chua, T.S., Tang, J., Hong, R., Li, H., Luo, Z., Zheng,Y.T." for entry NUS
-while executing---line 1315 of file unsrtnat.bst
-Too many commas in name 1 of "Chua, T.S., Tang, J., Hong, R., Li, H., Luo, Z., Zheng,Y.T." for entry NUS
-while executing---line 1315 of file unsrtnat.bst
+Warning--empty journal in randproj
+Warning--empty year in randproj
+Warning--empty year in randproj
 Warning--empty year in lowe
 Warning--empty year in lowe
-Name 1 in "Svetlana Lazebnik, Cordelia Schmid, and Jean Ponce" has a comma at the end for entry bagOfWords
-while executing---line 1315 of file unsrtnat.bst
-Name 1 in "Svetlana Lazebnik, Cordelia Schmid, and Jean Ponce" has a comma at the end for entry bagOfWords
-while executing---line 1315 of file unsrtnat.bst
 Warning--empty booktitle in bagOfWords
 Warning--empty year in bagOfWords
 Warning--empty year in bagOfWords
 Warning--empty year in gistWebSite
 Warning--empty note in hog2
-Name 1 in "Deerwester, S., et al," has a comma at the end for entry Deerwester
-while executing---line 1315 of file unsrtnat.bst
-Name 1 in "Deerwester, S., et al," has a comma at the end for entry Deerwester
-while executing---line 1315 of file unsrtnat.bst
-Name 1 in "Deerwester, S., et al," has a comma at the end for entry e-discovery
-while executing---line 1315 of file unsrtnat.bst
-Name 1 in "Deerwester, S., et al," has a comma at the end for entry e-discovery
-while executing---line 1315 of file unsrtnat.bst
-Warning--empty journal in randproj
-Warning--empty year in randproj
-Warning--empty year in randproj
-Too many commas in name 1 of "Huiskes, M., Thomee, B., Lew, M." for entry MIRresults
-while executing---line 1315 of file unsrtnat.bst
-Too many commas in name 1 of "Huiskes, M., Thomee, B., Lew, M." for entry MIRresults
-while executing---line 1315 of file unsrtnat.bst
-Too many commas in name 1 of "Huiskes, M., Thomee, B., Lew, M." for entry MIRresults
-while executing---line 1315 of file unsrtnat.bst
-Too many commas in name 1 of "Huiskes, M., Thomee, B., Lew, M." for entry MIRresults
-while executing---line 1315 of file unsrtnat.bst
-Too many commas in name 1 of "Huiskes, M., Thomee, B., Lew, M." for entry MIRresults
-while executing---line 1315 of file unsrtnat.bst
-Too many commas in name 1 of "Huiskes, M., Thomee, B., Lew, M." for entry MIRresults
-while executing---line 1315 of file unsrtnat.bst
 Warning--empty year in dbn
-You've used 67 entries,
+Warning--empty booktitle in silva
+Warning--empty journal in frankel1996webseer
+Warning--there's a number but no volume in smith1997visually
+You've used 74 entries,
             2481 wiz_defined-function locations,
-            1018 strings with 18653 characters,
-and the built_in function-call counts, 26724 in all, are:
-= -- 2484
-> -- 1031
+            1051 strings with 19962 characters,
+and the built_in function-call counts, 30264 in all, are:
+= -- 2776
+> -- 1280
 < -- 70
-+ -- 429
-- -- 294
-* -- 1805
-:= -- 4047
-add.period$ -- 282
-call.type$ -- 67
-change.case$ -- 132
-chr.to.int$ -- 66
-cite$ -- 82
-duplicate$ -- 1487
-empty$ -- 2527
-format.name$ -- 393
-if$ -- 5974
++ -- 515
+- -- 366
+* -- 2125
+:= -- 4600
+add.period$ -- 305
+call.type$ -- 74
+change.case$ -- 146
+chr.to.int$ -- 73
+cite$ -- 91
+duplicate$ -- 1645
+empty$ -- 2810
+format.name$ -- 480
+if$ -- 6731
 int.to.chr$ -- 2
-int.to.str$ -- 68
-missing$ -- 57
-newline$ -- 407
-num.names$ -- 201
-pop$ -- 592
+int.to.str$ -- 75
+missing$ -- 64
+newline$ -- 442
+num.names$ -- 222
+pop$ -- 656
 preamble$ -- 1
-purify$ -- 67
+purify$ -- 74
 quote$ -- 0
-skip$ -- 994
+skip$ -- 1089
 stack$ -- 0
-substring$ -- 1083
-swap$ -- 361
-text.length$ -- 27
+substring$ -- 1263
+swap$ -- 396
+text.length$ -- 29
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 469
-warning$ -- 13
-while$ -- 204
+type$ -- 518
+warning$ -- 15
+while$ -- 232
 width$ -- 0
-write$ -- 1008
-(There were 78 error messages)
+write$ -- 1099
+(There was 1 error message)

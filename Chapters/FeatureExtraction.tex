@@ -294,148 +294,67 @@ the HoG descriptor for the image.
 
 \section{Social Content Based Feature Extraction}
 Social meta-data obtained from images had similar properties like a text data-set, because we had tags, comments, groups all in normal 
-language text. So, It makes sense to just use text processing methods here. But, this text data also had inherited 
-structure of a social network. We, therefore, tried to utilize this extra 
-aspect, first constructed node features over the social-metadata for 
-each image as shown by \citet*{Jure}. These node/social feature 
-vectors had high dimensionality. We, therefore, used the topic 
-modeling/text processing methods over these social features to 
-construct a better and reduced representation. \Citet*{tang} have shown that such topic-level modeling of social-
-networking data leads to good results in finding patterns and making 
-inferences. These final low-dimensional features projected the 
-semantically close node features (like mountain, hill etc.) near to 
-each other. We tried Latent Semantic Indexing(LSI), Latent Dirichlet 
-allocation (LDA) and Random Projection (RP) methods for the purpose 
-of dimesionality reduction and topic modeling. 
-The process of constructing useful feature vectors from the social 
-meta-data obtained can be divided into the following steps:
+language text. So, It makes sense to just use text processing methods here. But, this text data also had inherited structure of a social network. We, therefore, tried to utilize this extra aspect, first constructed node features over the social-metadata for 
+each image as shown by \citet*{Jure}. These node/social feature vectors had high dimensionality. We, therefore, used the topic modeling/text processing methods over these social features to construct a better and reduced representation. \Citet*{tang} have shown that such topic-level modeling of social-networking data leads to good results in finding patterns and making inferences. These final low-dimensional features projected the semantically close node features (like mountain, hill etc.) near to each other. We tried Latent Semantic Indexing(LSI), Latent Dirichlet allocation (LDA) and Random Projection (RP) methods for the purpose of dimesionality reduction and topic modeling. The process of constructing useful feature vectors from the social meta-data obtained can be divided into the following steps:
 \begin{itemize}
 \item Pre-analysis of Social Data
 \item Constructing Node Features
 \item Applying Topic Modeling/Text Processing Methods on Binary Social Features
 \end{itemize} 
-In what folows we will discuss each of these steps.
+ We will discuss each of these steps in the remaining part of this section.
 \subsection{Pre-analysis of Social Data}
-Preliminary  observations of the data suggest that 
-tags are less structured, are provided by any number of annotators 
-and can include the information that is not easily detectable from 
-content alone, such as location for example sea-side or mountain ranges. 
-Groups are similar to tags, with the difference that the groups in which 
-an image is featured, are chosen entirely by the image's author.
-
+Preliminary observations of the data suggest that tags were less structured, were provided by any number of annotators and can include the information that was not easily detectable from content alone, such as location for example sea-side or mountain ranges. Groups are similar to tags, with the difference that the groups in which an image was featured, are chosen entirely by the image's author.
 \subsection{Constructing Node Features}
-There are some properties, which can be defined for a single image 
-instance, e.g. tags, groups etc. We call such features as node 
-features, because these properties can be separately defined for 
-each image/node. 
+There were some properties, which could be defined for a single image instance, e.g. tags, groups etc. We call such features as node 
+features, because these properties can be separately defined for each image/node. 
+We first constructed an indicator vector via encoding those words, groups and tags that appear in an image. For this, we first consider the 1000 most popular words, groups and tags across the entire data-set . As described in \Citet*{Jure}, this data set of only 1000 most popular words did not sufficiently represent the whole data. We, therefore, also considered any words, groups and tags that are at least twice as frequent in images having the label in question compared to the overall rate. This way we got similar node features as described in \citet*{Jure}. 
 
-We first constructed an indicator vector via encoding those words, groups and 
-tags that appear in an image. For this, we first consider the 1000 
-most popular words, groups and tags across the entire data-set . As 
-described in \Citet*{Jure}, this data set of only 1000 most popular 
-words did not sufficiently represent the whole data. We, therefore, 
-also considered any words, groups and tags that are at least twice as 
-frequent in images having the label in question compared to the 
-overall rate. This way we got similar node features as described in \citet*{Jure}. 
-
-For developing this word feature, we utilized text from the image's 
-title, it's comment thread and description after eliminating stop-words.
-This will give us more than 40000+ points. The node-feature vector 
-was in binary form and had high dimensionality. We had 0 and 1 as the 
-value for each field in this vector corresponding to the presence of the 
-word in the image data or not. We further converted this raw binary 0 
-and 1 form, to usable social features with the use of text 
-processing methods like Latent Semantic Indexing and Random 
+For developing this word feature, we utilized text from the image's title, it's comment thread and description after eliminating stop-words.
+This will give us more than 40000+ points. The node-feature vector was in binary form and had high dimensionality. We had 0 and 1 as the value for each field in this vector corresponding to the presence of the word in the image data or not. We further converted this raw binary 0 and 1 form, to usable social features with the use of text processing methods like Latent Semantic Indexing and Random 
 Projections.
+\subsection{Applying Text Processing/Topic Modeling Methods on Binary Social Features}
+We, then, used dimensionality reduction cum text processing methods on these feature vectors. For text processing, we can consider 
+each image as a document and the current node feature vector as a representation of the dictionary. This vector represents the presence of a word in the document. Now, we have a corpora of word features and in the next step, we just need to use some topic modeling/text processing methods to get a feature vector with reduced dimension.
 
-\subsection{Applying Text Processing/Topic Modeling Methods on 
-Binary Social Features}
-We, now, use dimensionality reduction cum text processing methods 
-on these feature vectors. For text processing, we can consider 
-each image as a document and the current node feature vector as a 
-representation of the dictionary. This vector represents the presence of 
-a word in the document. Now, we have a corpora of word features and in 
-the next step, we just need to use some topic modeling/text processing 
-methods to get a feature vector with reduced dimension.
-
-We experimented with Latent Semantic Indexing, Random Projection and 
-Latent Dirich-let Allocation as some possible methods to do such 
+We experimented with Latent Semantic Indexing, Random Projection and Latent Dirichlet Allocation as some possible methods to do such 
 dimensionality reduction for sparse binary data.
 \subsubsection{Latent Semantic Indexing}
-Latent Semantic Indexing is actually a singular value decomposition 
-method to identify patterns in the relationship among the semantic 
-concepts in an unstructured collection of text. It is normally used 
-for extraction of conceptual content of a body of text by 
-establishing associations between those words which show a 
-similar contextual presence.In \citet*{Deerwester}, 
-LSI is used in a variety of information retrieval and text 
-processing applications which are increasingly used for electronic 
-document discovery, publishing, government/intelligence community. 
-\citet*{e-discovery}.
+Latent Semantic Indexing is actually a singular value decomposition method to identify patterns in the relationship among the semantic 
+concepts in an unstructured collection of text. It is normally used for extraction of conceptual content of a body of text by establishing associations between those words which show a similar contextual presence.In \citet*{Deerwester}, LSI is used in a variety of information retrieval and text processing applications which are increasingly used for electronic document discovery, publishing, government, intelligence community. \citet*{e-discovery}.
 
-In typical information retrieval methods information is retrieved 
-by literally matching terms in in the search space with those of the 
-search query. However, this method, which depends purely on lexical 
-matching, can be inaccurate. Since, there are many ways to express a given 
-concept literal matching may not provide us the 
-relevant information. A better approach will be to create a basis for 
-conceptual topic in the search space. Latent Semantic Indexing 
-tries to overcome the problems of lexical matching by using 
-statistically derived conceptual indices instead of raw data. Latent 
-Semantic Indexing  assumes that there is a hidden latent conceptual 
-structure in raw features which is not visible because of 
-variability of word choices. A truncated SVD (Singular Value 
-Decomposition ) is used to estimate this latent semantic structure. 
-These statistically derived vectors prove to be more robust 
+In typical information retrieval methods information is retrieved by literally matching terms in in the search space with those of the 
+search query. However, this method, which depends purely on lexical matching, can be inaccurate. Since, there are many ways to express a given concept literal matching may not provide us the relevant information. A better approach will be to create a basis for 
+conceptual topic in the search space. Latent Semantic Indexing tries to overcome the problems of lexical matching by using 
+statistically derived conceptual indices instead of raw data. Latent Semantic Indexing  assumes that there is a hidden latent conceptual 
+structure in raw features which is not visible because of variability of word choices. A truncated SVD (Singular Value 
+Decomposition ) is used to estimate this latent semantic structure. These statistically derived vectors prove to be more robust 
 indicators of information than individual terms. 
 
 \subsubsection*{Basic Concept}
-Latent Semantic Indexing is a technique that projects the feature 
-vectors into a space with "latent" semantic dimensions. In latent 
-semantic space,  two feature vectors can have high cosine similarity 
-even if they do not share any terms - as long as their terms are 
-semantically similar in a sense to be described later. We can look 
-at LSI as a similarity metric that is an alternative to word overlap 
+Latent Semantic Indexing is a technique that projects the feature vectors into a space with "latent" semantic dimensions. In latent 
+semantic space,  two feature vectors can have high cosine similarity even if they do not share any terms - as long as their terms are 
+semantically similar in a sense to be described later. We can look at LSI as a similarity metric that is an alternative to word overlap 
 measures like tf.idf. 
-In terms of topic modeling and text processing, latent semantic 
-indexing is the application of Singular Value Decomposition or SVD, 
-to a "word-by-document" matrix. The projection into the latent 
-semantic space is chosen such that the representations in the 
-original space are changed as little as possible when measured by 
-the sum of the squares of the differences. 
 
-SVD represents a matrix $A$ as $\hat{A}$ in a lower dimensional 
-space such that the "distance" between the two matrices (Which is 
+In terms of topic modeling and text processing, latent semantic indexing is the application of Singular Value Decomposition or SVD, 
+to a "word-by-document" matrix. The projection into the latent semantic space is chosen such that the representations in the 
+original space are changed as little as possible when measured by the sum of the squares of the differences. 
+
+SVD represents a matrix $A$ as $\hat{A}$ in a lower dimensional space such that the "distance" between the two matrices (Which is 
 measured by the 2-norm is minimized): 
 \footnote{ The 2-norm for matrices is the equivalent of Euclidean distance for vectors.}
 		$$ \delta = \| A - \hat{A} \| _{2}$$
-SVD projects an n-dimensional space onto a k-dimensional space where 
-$n \ll k$. Thus, the projection transforms a feature vector in 
-n-dimensional word space into a vector in the k-dimensional reduced 
-space. 
-We used the GENSIM library (\citet*{gensim}) in Python for Latent Semantic 
-Indexing of our data. It was developed by \citet*{radimrehurek} for topic modeling with large corpora.
+SVD projects an n-dimensional space onto a k-dimensional space where $n \ll k$. Thus, the projection transforms a feature vector in  n-dimensional word space into a vector in the k-dimensional reduced 
+space.
+
+We used the GENSIM library (\citet*{gensim}) in Python for Latent Semantic Indexing of our data. It was developed by \citet*{radimrehurek} for topic modeling with large corpora.
 		 
 \subsubsection{Latent Dirichlet allocation}
-Latent Dirichlet allocation (LDA) is another frequently used 
-process in natural language processing. It is a generative model 
-that allows a set of observations to be depicted by unobserved groups 
-explaining why some parts of the data are quite similar. For example 
-in a general natural language processing scenario, when the 
-observations are words associated with a document, it 
-assumes a document is a mixture of a small number of topics and that 
-each word's presence is dedicated to one of the document's concepts. 
-LDA was actually a graphical model presented in \citet*{Blei} for 
-topic discovery.  LDA has connection with image classification 
-because in \citet*{Li} a variation on LDA was used to automatically 
-split the natural images into categories, such as  forest and 
-mountain, by assuming the images as words. 
-Latent Dirichlet allocation uses a generative probabilistic 
-model of a corpus. The basic idea is that documents are represented 
-as random mixtures over latent topics, where each topic is 
-characterized by a distribution over words. There are many variants 
-of LDA. In \citet*{Blei}, LDA assumes the following generative process 
-for each document $w$ in a corpus $D$:
+Latent Dirichlet allocation (LDA) is another frequently used process in natural language processing. It is a generative model 
+that allows a set of observations to be depicted by unobserved groups explaining why some parts of the data are quite similar. For example in a general natural language processing scenario, when the observations are words associated with a document, it assumes document is a mixture of a small number of topics and that each word's presence is dedicated to one of the document's concepts. LDA was actually a graphical model presented in \citet*{Blei} for topic discovery.  LDA has connection with image classification because in \citet*{Li} a variation on LDA was used to automatically split the natural images into categories, such as  forest and 
+mountain, by assuming the images as words. Latent Dirichlet allocation uses a generative probabilistic 
+model of a corpus. The basic idea is that documents are represented as random mixtures over latent topics, where each topic is 
+characterized by a distribution over words. There are many variants of LDA. In \citet*{Blei}, LDA assumes the following generative process for each document $w$ in a corpus $D$:
 	\begin{itemize}
 	\item Choose $N \sim Poisson(\xi)$.
 	\item Choose $\theta \sim Dir(\alpha)$.
@@ -455,9 +374,7 @@ for each document $w$ in a corpus $D$:
 \end{figure}
 \end{center}
 %%%%%%%%%%%%%%%%
-In figure \ref{fig:ldaExample}, we have shown plate model of Linear 
-Discriminant Analysis. With plate notation, the dependencies among the many variables can be captured concisely. The boxes are plates representing replicates. The outer plate represents the documents, while the inner plate represents the repeated choice of topics and words within a documents. M denotes the number of documents. N the number of words in a document. $\alpha$ is the parameter of the Dircihlet prior on the per-document topic distributions, $\beta$ is the parameter of the dirichlet prior on the per-topic: word distribution, $\theta_i$ is the topic distribution for document i, $\phi_k$ is the is the word distribution for topic k,$z_{ij}$ is the topic for the jth word in document $i$, and $w_{ij}$ is the specific word.The $w_{ij}$ are the only observable variables, We can then mathematically describe the random variables as follows:
-
+In figure \ref{fig:ldaExample}, we have shown plate model of Linear Discriminant Analysis. With plate notation, the dependencies among the many variables can be captured concisely. The boxes are plates representing replicates. The outer plate represents the documents, while the inner plate represents the repeated choice of topics and words within a documents. M denotes the number of documents. N the number of words in a document. $\alpha$ is the parameter of the Dirichlet prior on the per-document topic distributions, $\beta$ is the parameter of the Dirichlet prior on the per-topic: word distribution, $\theta_i$ is the topic distribution for document i, $\phi_k$ is the is the word distribution for topic k,$z_{ij}$ is the topic for the jth word in document $i$, and $w_{ij}$ is the specific word.The $w_{ij}$ are the only observable variables, We can then mathematically describe the random variables as follows:
 \begin{itemize}
 \item $\phi_{k=1.......K} \sim Dirichlet_V(\beta)$\\
 \item $theta_{d=1 \dots M} \sim Dirichlet_K(\alpha)$ \\
@@ -465,59 +382,37 @@ Discriminant Analysis. With plate notation, the dependencies among the many vari
 \item $w_{d=1 ....... M,w=1....... N_d} \sim Categorical_V(\phi_{z_{dw}})$ \\
 \end{itemize}
 
-
 %{\bf *** You seem to be confusing Latent Dirichlet Allocation with the
 %other LDA - Linear Discriminant Analysis. Which LDA are you talking
  %about? The figure is for Linear Discriminant Analysis and not
 %Latent Dirichlet Allocation. ***}
 %Yes sir, this was  a mistake.
-In our case the LDA did not provide good results because we 
-already have textual data which is oriented to solve a binary 
-classification problem. This binary nature of a topic leads to too 
-sparse feature generation from Latent Dirichlet allocation (LDA). 
-This sparseness of features around images lead to low quality 
-classification. LDA also fails if discriminatory information is
-not in the mean but in the variance of the data  \citet*{Blei}. We, 
-therefore, discard this method for our computations.
+In our case the LDA did not provide good results because we already have textual data which is oriented to solve a binary 
+classification problem. This binary nature of a topic leads to too sparse feature generation from Latent Dirichlet allocation (LDA). 
+This sparseness of features around images lead to low quality classification. LDA also fails if discriminatory information is
+not in the mean but in the variance of the data  \citet*{Blei}. We, therefore, discard this method for our computations.
 
 \subsubsection{Random Projections}
-Random Projections is a powerful methods for dimensionality 
-reductions in image and text data (\citet*{randproj}).  
-In \citet*{rpCite}, Bingham introduced random projections as a 
-simpler and less erroneous dimensionality reduction tool for 
-information retrieval from text and processing of images. It is 
-very useful in cases where reduction of high 
-dimensional data to low dimensions is essential. Which if not done
-leads to heavy computation penalty without significant gain. 
-Using random projection is significantly less expensive compared to 
-techniques like principal component analysis. In random projection, 
-the original high dimensional data is projected onto a lower 
-dimensional subspace using a random matrix $R$. 
-In random projection, the original d-dimensional data is projected 
-to a k-dimensional $(k << d)$ subspace through the origin, using a 
-random $k \times d$ matrix $R$ whose columns have unit lengths. 
-Using matrix notation where $X_{d\times N} $ is the original set of 
+Random Projections is a powerful methods for dimensionality reductions in image and text data (\citet*{randproj}).  
+In \citet*{rpCite}, Bingham introduced random projections as a simpler and less erroneous dimensionality reduction tool for 
+information retrieval from text and processing of images. It is very useful in cases where reduction of high 
+dimensional data to low dimensions is essential. Which if not done leads to heavy computation penalty without significant gain. 
+Using random projection is significantly less expensive compared to techniques like principal component analysis. In random projection, 
+the original high dimensional data is projected onto a lower dimensional subspace using a random matrix $R$. 
+In random projection, the original d-dimensional data is projected to a k-dimensional $(k << d)$ subspace through the origin, using a 
+random $k \times d$ matrix $R$ whose columns have unit lengths. Using matrix notation where $X_{d\times N} $ is the original set of 
 N d-dimensional observations,
 $$ X^{RP}_{k\times N} = R_{k\times d} X_{d\times N} $$
-is the projection of the data onto a lower k-dimensional subspace. 
-The key idea of random mapping arises from the Johnson-Lindenstrauss 
-lemma \citep{lemma}: if points in a vector space are projected onto a 
-randomly selected subspace of suitably high dimension, then the 
-distances between the points are approximately preserved.   
-We write the Euclidean distance between two data vectors $x_1$ and 
-$x_2$ in the original large-dimensional space as 
-$\lVert x_1 - x_2 \rVert$. After the random projection, this 
-distance is approximated by the scaled Euclidean distance of these 
-vectors in the reduced space:
+is the projection of the data onto a lower k-dimensional subspace. The key idea of random mapping arises from the Johnson-Lindenstrauss 
+lemma \citep{lemma}: if points in a vector space are projected onto a randomly selected subspace of suitably high dimension, then the 
+distances between the points are approximately preserved.  The Euclidean distance between two data vectors $x_1$ and 
+$x_2$ in the original large-dimensional space can be written as $\lVert x_1 - x_2 \rVert$. After the random projection, this 
+distance is approximated by the scaled Euclidean distance of these vectors in the reduced space:
 $$\sqrt{ d/k} \norm{R_{x_1} - R_{x_2}}$$
-where d is the original and k the reduced dimensionality of the data 
-set. The scaling term $\sqrt{d/k}$ takes into account the decrease 
-in the dimensionality of the data: according to the 
-Johnson-Lindenstrauss lemma \citep{lemma} the expected norm of a projection 
-of a unit vector onto a random subspace through the origin is $\sqrt{k/d}$
-The choice of the random matrix R is one of the key points of 
-interest. The elements $r_{ij}$ of R are often Gaussian distributed,
-but the Gaussian distribution can be replaced by a much simpler 
+where d is the original and k the reduced dimensionality of the data set. The scaling term $\sqrt{d/k}$ takes into account the decrease 
+in the dimensionality of the data: according to the Johnson-Lindenstrauss lemma \citep{lemma} the expected norm of a projection 
+of a unit vector onto a random subspace through the origin is $\sqrt{k/d}$ The choice of the random matrix R is one of the key points of 
+interest. The elements $r_{ij}$ of R are often Gaussian distributed, but the Gaussian distribution can be replaced by a much simpler 
 distribution such as
 \[
 	r_{ij} = \sqrt{3}*\begin{cases} 
@@ -526,38 +421,17 @@ distribution such as
 	-1 & \textrm{with proabibility $\frac{1}{6}$} \\
 		\end{cases}
 \]
-In fact, practically all zero mean, unit variance distributions of 
-$r_ij$ would give a mapping that still satisfies the Johnson-Lindenstrauss
-lemma. This means further computational savings in feature 
-computation, as the computations can be performed using integer 
-arithmetic. Again for computing the random projections, we used the 
-GENSIM library \citep{gensim} in Python.  
-It has been found that even though it is computationally light, 
-Random projections is a sufficiently accurate method for 
-dimensionality reduction of high dimensional data \citet*{Dasgupta}.
+In fact, practically all zero mean, unit variance distributions of $r_ij$ would give a mapping that still satisfies the Johnson-Lindenstrauss
+lemma. This means further computational savings in feature computation, as the computations can be performed using integer arithmetic. 
+Again for computing the random projections, we used the GENSIM library \citep{gensim} in Python. It has been found that even though it is computationally light, Random projections is a sufficiently accurate method for dimensionality reduction of high dimensional data \citet*{Dasgupta}.
 
 \subsection{Implementation of Dimensionality reduction}
+Considering that we are using a large database and we need to do dimensionality reduction for such data. We use an online version 
+of aforementioned techniques. So that we don't have to bother about loading the whole data into memory. 
 
-Considering that we are using a large database and we need to do 
-dimensionality reduction for such data. We use an online version 
-of aforementioned techniques. So that we don't have to bother about 
-loading the whole data into memory. 
+Both LSI and RP rely on TF-IDF (term frequency - inverse document frequency) as a fast pre-processing step.  \citet*{radimrehurek} gives a framework \citet*{gensim} for doing all this text processing on large corpora in memory independent fashion. 
+We use this as a tool for doing LSI and RP Computation. On varying the number of dimensions in dimensionality reduction we found that 
+using 300 features in LSI and 400 features in RP gives us the best results.
 
-Both LSI and RP rely on TF-IDF (term frequency - inverse document 
-frequency) as a fast pre-processing step.  
-\citet*{radimrehurek} gives a framework \citet*{gensim} for doing all 
-this text processing on large corpora in memory independent fashion. 
-We use this as a tool for doing LSI and RP Computation. On varying the 
-number of dimensions in dimensionality reduction we found that 
-using 300 features in LSI and 400 features in RP gives us the best 
-results.
-
-In selecting the dimension the whole point is to reduce 
-dimensionality in such a way that we can use kernel methods which would 
-be too costly and too susceptible to over-fitting with thousands of 
-binary features.
-We directly converted the node features of dimension 40000+ in social 
-features to dimension 300 (LSI) and dimension 400 (RP).  This 
-conversion was done in Python using GENSIM and the converted 
-files are in the LIBSVM format. 
-
+In selecting the dimension the whole point is to reduce dimensionality in such a way that we can use kernel methods which would 
+be too costly and too susceptible to over-fitting with thousands of binary features. We directly converted the node features of dimension 40000+ in social features to dimension 300 (LSI) and dimension 400 (RP).  This conversion was done in Python using GENSIM and the converted files are in the LIBSVM format. 

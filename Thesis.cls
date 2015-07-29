@@ -192,7 +192,7 @@
 %	defined as \examname above so you cite it as \examname
 %----------------------------------------------------------------------------------------
 
-\thesistitle{Social Networking Meta Data Based Image Classification} % Your thesis title - this is used in the title and abstract
+\thesistitle{Enhancing Image Classification by Using Social Network Based meta data} % Your thesis title - this is used in the title and abstract
 %-------------------------------------------------  
 \supervisor{Dr. Harish Karnick} % You supervisor's name - this is used in the title page
 %-------------------------------------------------   

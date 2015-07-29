@@ -4,60 +4,60 @@
 
 \label{relatedWork} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
 
-\lhead{Chapter 2. \emph{Background and Related Work}} 
+\lhead{Chapter 2. \emph{Background and Related Work}}
 
-The world wide web has huge amounts of image data, mostly unlabelled, and separately a lot of meta data on images in terms of comments, tags,  data on individuals etc. from social media. The obvious question is whether and how the meta data can be used to give meaningful labels to the images. Note that this is not a simple classification problem in the usual sense. It is clearly a multi-class and a multi-label problem at the same time but more importantly there is no apriori fixed set of labels. The label set can grow and shrink based on the corpus of images that we are considering. Also, images in the corpus may have no labels or can be partially labelled and there is the added problem of deciding whether the labelling process for a particular image with respect to the current set of labels is complete or not.
- 
-The important concept, we want to coin here is heterogeneous learning. 
-\citet*{kesorn} has shown that although, text and visual are 
-distinct types of representations and modalities there are some 
-strong implicit connections between images and any accompanying text 
-information. They used multimodal cues (visual features and text 
-captions) for retrieving images, which depict semantically similar 
-concepts. For example, given a large corpora of images and 
-associated texts, finding the images which have been taken in a 
-sports event.  Sincei, in such cases discovering the semantics of an 
-image is an extremely challenging problem, they have used any 
-associated textual information that accompanied the image as a cue 
-to predict the meaning of an image. By transforming this textual 
-information into a structured annotation to enhance visual content 
-it can be used by image retrieval systems to retrieve selected 
-images more precisely. This is one form of heterogeneous learning. 
+The world wide web has a huge amount of image data, mostly unlabelled, and separately a lot of meta data on images in terms of comments, tags,  data on individuals etc. from social media. The obvious question is whether and how the meta data can be used to give meaningful labels to the images. Note that this is not a simple classification problem in the usual sense. It is clearly a multi-class and a multi-label problem at the same time but more importantly there is no apriori fixed set of labels. The label set can grow and shrink based on the corpus of images that we are considering. Also, images in the corpus may have no labels or can be partially labelled and there is the added problem of deciding whether the labelling process for a particular image with respect to the current set of labels is complete or not.
+
+The important concept, we want to coin here is heterogeneous learning.
+\citet*{kesorn} has shown that although, text and visual are
+distinct types of representations and modalities there are some
+strong implicit connections between images and any accompanying text
+information. They used multimodal cues (visual features and text
+captions) for retrieving images, which depict semantically similar
+concepts. For example, given a large corpora of images and
+associated texts, finding the images which have been taken in a
+sports event.  Since, in such cases discovering the semantics of an
+image is an extremely challenging problem, they have used any
+associated textual information that accompanied the image as a cue
+to predict the meaning of an image. By transforming this textual
+information into a structured annotation to enhance visual content
+it can be used by image retrieval systems to retrieve selected
+images more precisely. This is one form of heterogeneous learning.
 
 %{\bf *** What is a semantic model? Need more details otherwise it is not clear what is happening. ***}
 
 Second, they used Latent Semantic Indexing to create a domain-
-specific ontology-based knowledge model. The ontologies describe 
-visual content using well-structured concepts and relationships that 
-are also human readable and meaningful. The ontology of a certain 
-domain is about its terminology (domain vocabulary), all essential 
-concepts in the domain, their classification, their taxonomy, their 
-relations (including all important hierarchies and constraints) and 
-domain axioms. The use of the ontology-based knowledge model allows 
-the system to find indirectly relevant concepts in image captions 
-and thus leverage these to represent the semantics of images at a 
-higher level. This also enabled the framework to tolerate 
-ambiguities and variations (incompleteness) of meta data. They 
-designed ontologies for some specific domains like e.g. sports. They 
-collected data from different sports organization websites and then 
+specific ontology-based knowledge model. The ontologies describe
+visual content using well-structured concepts and relationships that
+are also human readable and meaningful. The ontology of a certain
+domain is about its terminology (domain vocabulary), all essential
+concepts in the domain, their classification, their taxonomy, their
+relations (including all important hierarchies and constraints) and
+domain axioms. The use of the ontology-based knowledge model allows
+the system to find indirectly relevant concepts in image captions
+and thus leverage these to represent the semantics of images at a
+higher level. This also enabled the framework to tolerate
+ambiguities and variations (incompleteness) of meta data. They
+designed ontologies for some specific domains like e.g. sports. They
+collected data from different sports organization websites and then
 used a designed sport taxonomy to convert the data to an ontology model.
 
 %{\bf *** Above is also vague. Give more details of what is the domain-specific ontology-based knowledge model. Was some other kinds of data already present that was used or only captions were used? If latter then how did bootstrapping happen? Ontologies are typically hierarchical. Was this the case here and how was it created? ***}%
 
-\citet*{gupta} has solved the problem of learning robust models out 
-of scenes and actions from partially labeled collections. They 
-proposed that visual cues are generally too ambiguous to recognize 
-the visual scenes or activities. Obtaining manually labeled 
-examples from which a robust model can be learned is also impractical.  
-They proposed leveraging the text accompanying visual data to 
-cope with these constraints. To classify images, their method learns 
-from captioned images of natural scenes. For actions, they used 
-videos of athletic events with commentary. They concluded that 
-exploiting the multi-modal representation and unlabeled data 
-provides more accurate image and video classification compared to 
-base-line algorithms. They also asserted that this extra data and 
-multi-modal representation can be the basis of a solution to the 
-problem of managing the world's ever growing multi-media data of 
+\citet*{gupta} has solved the problem of learning robust models out
+of scenes and actions from partially labeled collections. They
+proposed that visual cues are generally too ambiguous to recognize
+the visual scenes or activities. Obtaining manually labeled
+examples from which a robust model can be learned is also impractical.
+They proposed leveraging the text accompanying visual data to
+cope with these constraints. To classify images, their method learns
+from captioned images of natural scenes. For actions, they used
+videos of athletic events with commentary. They concluded that
+exploiting the multi-modal representation and unlabeled data
+provides more accurate image and video classification compared to
+base-line algorithms. They also asserted that this extra data and
+multi-modal representation can be the basis of a solution to the
+problem of managing the world's ever growing multi-media data of
 digital images and videos.
 
 %{\bf *** More details. What kind of actions? How were the partial
@@ -65,32 +65,32 @@ digital images and videos.
 %relevant to the task at hand? What exactly was their technique? ***}
 %Image + Social metadata for image classification
 
-\citet*{McAuley} proposed that  we can use the inter-dependencies of images sharing common properties in multi-modal classification settings for image labeling in social networks. They used the same Large Scale Image Retrieval benchmarks (MIR, PASCAL, CLEF and NUS), which we use in the thesis. They modeled their task as a binary labeling problem on a network and used 
+\citet*{McAuley} proposed that  we can use the inter-dependencies of images sharing common properties in multi-modal classification settings for image labeling in social networks. They used the same Large Scale Image Retrieval benchmarks (MIR, PASCAL, CLEF and NUS), which we use in the thesis. They modeled their task as a binary labeling problem on a network and used
 max-margin SVM training for simultaneous binary predictions over the entire data-set.
- %{\bf *** Which 
+ %{\bf *** Which
 %%%techniques? Mention them. ***}
-They studied the use of social meta data for three binary 
-classification problems: predicting image labels, tags, and groups. 
-They analyzed the relative importance of social features (e.g. 
-shared membership in a gallery, relational features based on shared 
-location, shared group etc.) in image labeling. They first learned 
-flat models using single indicators like tags only, groups only or 
-gallery only to learn the labels. In the second step, they created a 
-graphical model of shared properties, in this graphical model two 
-images contained in the same gallery have a high probability of 
-similar label. In terms of graphical models, this means that they 
+They studied the use of social meta data for three binary
+classification problems: predicting image labels, tags, and groups.
+They analyzed the relative importance of social features (e.g.
+shared membership in a gallery, relational features based on shared
+location, shared group etc.) in image labeling. They first learned
+flat models using single indicators like tags only, groups only or
+gallery only to learn the labels. In the second step, they created a
+graphical model of shared properties, in this graphical model two
+images contained in the same gallery have a high probability of
+similar label. In terms of graphical models, this means that they
 formed a clique from photos sharing common meta data.
 %{\bf *** What is the binary labelling task? Give some
 %more details of what they did with the social features. ***}
 
-It has been asserted that collaborative tagging, social classification, social tagging, which is also called "Folksonomy" 
-\citet*{wikiFolksonomy}, holds the key to developing a semantic web, in 
-which every web page contains machine readable meta-data that 
-describes its content. A folksonomy is a system of classification derived from the practice and method of collaboratively creating and translating tags to annotate and categorize content.  I\citet*{webResource} showed the impact of meta-data for retrieving information 
+It has been asserted that collaborative tagging, social classification, social tagging, which is also called "Folksonomy"
+\citet*{wikiFolksonomy}, holds the key to developing a semantic web, in
+which every web page contains machine readable meta-data that
+describes its content. A folksonomy is a system of classification derived from the practice and method of collaboratively creating and translating tags to annotate and categorize content.  I\citet*{webResource} showed the impact of meta-data for retrieving information
 from websites.This study focuses on indexing web pages using metadata and its impact on search engine's rankings.
 %%
 
-\Citet*{kern} has experimented with Folksonomy. They used some collaboratively created sets of meta-data, to organize multimedia information available on the Web. They addressed the question of how to extend a classical folksonomy with additional metadata. They have also shown that it can be applied for tag recommendation. 
+\Citet*{kern} has experimented with Folksonomy. They used some collaboratively created sets of meta-data, to organize multimedia information available on the Web. They addressed the question of how to extend a classical folksonomy with additional metadata. They have also shown that it can be applied for tag recommendation.
  A Folksonomy is called plain, if it contains only one kind of information, for example it can only be collaboratively given photo tags or it can only be favorite photos selected by users. In extended folksonomy, you find connection between two type of folksonomies. In their paper, \citet*{kern} has used a similarity graph built from the graph created from selected data. For this they used 12 different type of folksonomical data about photos including groups, photo tags, photo favorites, testimonials, comments etc. Their study was on Flickr images related to Group "Fruit \& Veg".
 
 %{\bf *** Give more details. What kind of meta-data? How was it used for tag recommendation? What precisely is a Folksonomy? ***}
@@ -98,144 +98,144 @@ from websites.This study focuses on indexing web pages using metadata and its im
 
 \citet*{chi2008understanding} have systematically analyzed the efficiency of social tagging systems using information theory. They tried to find an answer to the efficacy of a naturally evolved user generated vocabulary in identifying objects (images, videos, documents etc.). They have shown that information theory provides an interesting way to understand the descriptive power of tags. Their results show that information theory gives evidence that social tags can be used to identify
 objects. Their experiment was to find the efficacy of a user generated vocabulary in identifying documents. They collected bookmarking data from Delicious (formerly del.icio.us). Delicious is a social bookmarking web service for storing, sharing, and discovering web bookmarks. They started at the del.icio.us homepage and harvested a set of users. For each user, they collected their bookmarks, as well as links to other users that bookmarked the same document. In their
-data set, the ratio of unique documents to unique tags was almost 84. Given this multiplicity of tags to documents, they tried to answer the question: How effective are tags at isolating a single document? 
+data set, the ratio of unique documents to unique tags was almost 84. Given this multiplicity of tags to documents, they tried to answer the question: How effective are tags at isolating a single document?
 %{\bf *** More details. What kind of information? How is it used? ***}
 %This paper is cited only to show the importance of meta data, I am not explaining how it is used because it has infomation therotical approach.
 
-\citet*{liu} have given a survey  of the recent technical 
-achievements in order to improve the retrieval accuracy of content-based 
-image retrieval systems.  Their survey shows that in recent times 
-research focus has shifted from designing sophisticated low-level 
-feature extraction algorithms to reducing the `semantic gap' between 
-the visual features and the richness of human semantics.  They have 
-discussed fusing the data from HTML text and visual content of 
-images for World-Wide-Web retrieval. They suggest that this  
-technique can be used to narrow down the `semantic gap'. They 
-observe that the Web page containing an image generally has some 
-additional information available, which can facilitate 
+\citet*{liu} have given a survey  of the recent technical
+achievements in order to improve the retrieval accuracy of content-based
+image retrieval systems.  Their survey shows that in recent times
+research focus has shifted from designing sophisticated low-level
+feature extraction algorithms to reducing the `semantic gap' between
+the visual features and the richness of human semantics.  They have
+discussed fusing the data from HTML text and visual content of
+images for World-Wide-Web retrieval. They suggest that this
+technique can be used to narrow down the `semantic gap'. They
+observe that the Web page containing an image generally has some
+additional information available, which can facilitate
 semantic-based image retrieval. For example, the URL of the
-image file often has a clear hierarchical structure including some 
-information about the image such as image category. In addition, the 
-HTML document also contains some useful information in image title, 
-tags, the descriptive text surrounding the image, hyperlinks, etc. 
-They have used the evidence from both the HTML text and visual 
-features of images and developed two independent classifiers based 
-on text and visual image features, respectively. The experimental 
-results using a pre-defined set of 15 concepts demonstrates a 
+image file often has a clear hierarchical structure including some
+information about the image such as image category. In addition, the
+HTML document also contains some useful information in image title,
+tags, the descriptive text surrounding the image, hyperlinks, etc.
+They have used the evidence from both the HTML text and visual
+features of images and developed two independent classifiers based
+on text and visual image features, respectively. The experimental
+results using a pre-defined set of 15 concepts demonstrates a
 substantial performance improvement.
 %{\bf *** Give more details. How exactly is HTML text used to improve retrieval? ***}
 
-\citet*{heterogeneous} have shown  how labeled text from the web  
-helps image classification. In this paper, they have investigated 
-the interplay between multimedia data mining and text data mining. 
-They address the problem of image classification with limited amount 
-of labeled images and large amount of auxiliary labeled text data. 
-They have considered the bag of words model and Naive Bayes 
-Classification models. They have proposed that for a targeted domain 
-classification problem, some  extra annotated images can be found on 
-many social Web sites, which can serve as a bridge to transfer 
-knowledge from the abundant text documents available on the Web.  
-By using latent semantic features generated by the auxiliary data, 
-they were able to build a better integrated image classifier. 
+\citet*{heterogeneous} have shown  how labeled text from the web
+helps image classification. In this paper, they have investigated
+the interplay between multimedia data mining and text data mining.
+They address the problem of image classification with limited amount
+of labeled images and large amount of auxiliary labeled text data.
+They have considered the bag of words model and Naive Bayes
+Classification models. They have proposed that for a targeted domain
+classification problem, some  extra annotated images can be found on
+many social Web sites, which can serve as a bridge to transfer
+knowledge from the abundant text documents available on the Web.
+By using latent semantic features generated by the auxiliary data,
+they were able to build a better integrated image classifier.
 %{\bf *** Last line is completely confusing. What exactly did they do?***}
 
-\citet*{dhruv} combined the information  from social graphs with some 
-semi-supervised techniques from all the unclassified images to 
-create an enhanced image-classification model for multimedia data. 
-They have shown that fusing image, text and social-graph features 
-give a large improvement over content features alone in an 
-experiment where they tried to classify the 
-images of adults among all the images. They have exploited the link 
+\citet*{dhruv} combined the information  from social graphs with some
+semi-supervised techniques from all the unclassified images to
+create an enhanced image-classification model for multimedia data.
+They have shown that fusing image, text and social-graph features
+give a large improvement over content features alone in an
+experiment where they tried to classify the
+images of adults among all the images. They have exploited the link
 structure of the web graph. A web page related to a given category
-is normally linked to other pages describing related objects. They  
-combine information from the webgraph structure with semi-supervised learning from all the unlabeled images to create a superior image-classification 
+is normally linked to other pages describing related objects. They
+combine information from the webgraph structure with semi-supervised learning from all the unlabeled images to create a superior image-classification
 model for multimedia data. They show that fusing image, text and web-
-graph features gives a 12$\%$ improvement (in the area under the ROC 
-curve) over content features alone in an adult image-classification 
+graph features gives a 12$\%$ improvement (in the area under the ROC
+curve) over content features alone in an adult image-classification
 experiment.
 %{\bf *** More details needed. ***}
 
-\citet**{mmodel} have considered a scenario where keywords are 
-associated with the training images, e.g. as found on photo sharing 
-websites. They demonstrated a semi-supervised multi-modal learning 
-algorithm for image classification. They have shown how the other 
-source of information can aid the learning process when we have 
-limited number of labeled images. They used PASCAL 2007 dataset and 
-MIR Flickr data-set for their experiments. They utilized Flickr 
-tags as the aiding information in the process. 
+\citet*{mmodel} have considered a scenario where keywords are
+associated with the training images, e.g. as found on photo sharing
+websites. They demonstrated a semi-supervised multi-modal learning
+algorithm for image classification. They have shown how the other
+source of information can aid the learning process when we have
+limited number of labeled images. They used PASCAL 2007 dataset and
+MIR Flickr data-set for their experiments. They utilized Flickr
+tags as the aiding information in the process.
 
-They used images, which were annotated for 24 concepts, including 
-object categories but also more general scene elements such as sky, 
-water or indoor.  They choose tags for these images which were 
-appearing in at least some percentage of  images, resulting in a 
-vocabulary of  tags. They used a binary vector  to encode the 
-absence or presence of each of the different tags in this fixed 
-vocabulary in a linear kernel, which counts the number of tags 
-shared between two images. They also extracted several different 
-visual descriptors. After that they averaged the distances between 
-images based on these different descriptors, and used it to compute 
-an RBF kernel. They first used visual features and then used the 
-textual one for image classification. They observed  that for many 
-classes in both data sets the visual classifier is stronger than the 
+They used images, which were annotated for 24 concepts, including
+object categories but also more general scene elements such as sky,
+water or indoor.  They choose tags for these images which were
+appearing in at least some percentage of  images, resulting in a
+vocabulary of  tags. They used a binary vector  to encode the
+absence or presence of each of the different tags in this fixed
+vocabulary in a linear kernel, which counts the number of tags
+shared between two images. They also extracted several different
+visual descriptors. After that they averaged the distances between
+images based on these different descriptors, and used it to compute
+an RBF kernel. They first used visual features and then used the
+textual one for image classification. They observed  that for many
+classes in both data sets the visual classifier is stronger than the
 textual one, yielding a 10
-     $\%$ higher MAP(mean average precision) score, where as the combined  classifier significantly improved the classification results, the MAP score increased by more than 13 $\%$.     
+     $\%$ higher MAP(mean average precision) score, where as the combined  classifier significantly improved the classification results, the MAP score increased by more than 13 $\%$.
  %MIR Flickr data set, they kept the tags that appear at least 50 times (i.e. among at least 0.2% of the images), resulting in a vocabulary of 457 tags.  For PASCAL, they  kept the tags that appear at least 8 times (a minimum of 4 times in the training and test sets), a vocabulary of 804 tags was used.
 %{\bf *** Give more details. What were their results? ***}
 
 
 
-\citet*{vanZwol} handled the problem of predicting users' 
-favorite photos in Flickr. They used a multi-modal machine learning 
-approach, which fuses social, visual and textual signals into a  
-single prediction system. They proposed that the  visual, textual 
-and social modalities effectively infer the needs of most users. For 
-the social signals, they used attributes of the users like his 
-current favorite list, his friends, the galleries he/she followed etc. 
+\citet*{vanZwol} handled the problem of predicting users'
+favorite photos in Flickr. They used a multi-modal machine learning
+approach, which fuses social, visual and textual signals into a
+single prediction system. They proposed that the  visual, textual
+and social modalities effectively infer the needs of most users. For
+the social signals, they used attributes of the users like his
+current favorite list, his friends, the galleries he/she followed etc.
 For textual signals, they used tags and comments on the image.
-They used gradient-boosted decision trees (GBDT) for the 
-classification of a user's favorite photos. For the evaluation of  
-performance they classified the data with 
-respect to the individual modalities and various combinations. By 
-using heterogeneous modalities, the GBDT becomes a highly effective 
-classifier. The addition of textual  and social features helps to  
-significantly boost the recall, with a small decrease in precision. 
+They used gradient-boosted decision trees (GBDT) for the
+classification of a user's favorite photos. For the evaluation of
+performance they classified the data with
+respect to the individual modalities and various combinations. By
+using heterogeneous modalities, the GBDT becomes a highly effective
+classifier. The addition of textual  and social features helps to
+significantly boost the recall, with a small decrease in precision.
 
 %{\bf *** Give more details. ***}
 
 
-\citet*{Boutell2005935} has shown, how we can leverage the camera 
-meta data to provide evidence independent of the captured scene 
-content. They used this meta data to improve classification 
-performance. They proposed that the EXIF specification for camera 
-metadata (used for JPEG images) includes hundreds of tags. Among 
-these, some relate to picture taking conditions (e.g., FlashUsed, 
-FocalLength, ExposureTime, Aperture, FNumber, ShutterSpeed, and 
-Subject Distance). They said that some of these cues can help 
-distinguish various classes of scenes. For example, flash tends to 
-be used more frequently on indoor images than on outdoor images. 
-They broke this meta-data in families of meta data tags: Scene 
-Brightness, Flash, Subject Distance. and Focal Length. They 
-introduced  Bayesian networks based  probabilistic scheme to fuse low-level 
-image content cues and camera meta data cues for improved scene 
-classification. Their results demonstrate that  this integration of 
-camera meta data increases the efficacy of classification. 
+\citet*{Boutell2005935} has shown, how we can leverage the camera
+meta data to provide evidence independent of the captured scene
+content. They used this meta data to improve classification
+performance. They proposed that the EXIF specification for camera
+metadata (used for JPEG images) includes hundreds of tags. Among
+these, some relate to picture taking conditions (e.g., FlashUsed,
+FocalLength, ExposureTime, Aperture, FNumber, ShutterSpeed, and
+Subject Distance). They said that some of these cues can help
+distinguish various classes of scenes. For example, flash tends to
+be used more frequently on indoor images than on outdoor images.
+They broke this meta-data in families of meta data tags: Scene
+Brightness, Flash, Subject Distance. and Focal Length. They
+introduced  Bayesian networks based  probabilistic scheme to fuse low-level
+image content cues and camera meta data cues for improved scene
+classification. Their results demonstrate that  this integration of
+camera meta data increases the efficacy of classification.
 They used this technique for some very specific problems  Indoor-
-Outdoor Classification, Sunset Scene Detection and man-made-Natural 
+Outdoor Classification, Sunset Scene Detection and man-made-Natural
 Scene Classification.
 % {\bf *** Vague. Give details. What kind of meta-datais used? And exactly how is it used to improve classification? ***}
 
 
-\Citet*{socialLDA} have shown a variety of methods for scalable 
-topic modeling in social networks.  They have talked about using 
+\Citet*{socialLDA} have shown a variety of methods for scalable
+topic modeling in social networks.  They have talked about using
 Latent Dirichlet allocation (LDA), Latent Semantic Indexing (LSI) etc.
-unsupervised topic modeling techniques to harness social linkages 
-to decipher user interests for target recommendation. They called it 
-SocialLDA. They propose a LDA model by taking into account the 
-social connections among users in the network. This model was used 
-to categorize a user's incoming document stream as well as finding 
-user interest based on the user’s authored document. This is 
-primarily text classification but it has novel use of LDA and 
-social meta data for classification, which is quite 
+unsupervised topic modeling techniques to harness social linkages
+to decipher user interests for target recommendation. They called it
+SocialLDA. They propose a LDA model by taking into account the
+social connections among users in the network. This model was used
+to categorize a user's incoming document stream as well as finding
+user interest based on the user’s authored document. This is
+primarily text classification but it has novel use of LDA and
+social meta data for classification, which is quite
 similar to our method of using social meta-data.
 
 %{\bf *** Where are images coming in here? It seems purely textual. Give more details of what exactly is being done. ***}

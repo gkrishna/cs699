@@ -5,59 +5,43 @@
 \lhead{Chapter 5. \emph{Experimental Result}} % This is for the header on each page - perhaps a shortened title
 
 %----------------------------------------------------------------------------------------
-In this chapter, we first give an overview of the visual and social 
-feature vectors constructed and then we discuss the classifiers 
-tested. In end, we describe the results on four benchmark data-sets.
+In this chapter, we first give an overview of the visual and social feature vectors constructed and after that we discuss the classifiers tested. In remaining part of chapter, we describe the results on four benchmark data-sets.
 
 \section{Feature Vectors}
-We extracted the five image features SIFT, GIST, HOG-LBP, CIELAB 
-color space vector and GLCM as described in the previous chapter \ref{FeatureExtraction}
-Apart from these visual features, we constructed two feature vectors on the basis of social meta data. These feature vectors are 
-constructed after doing analysis of social data and obtaining a binary feature vector, indicating the presence or absence of a 
-social/textual element for the image.This high dimensional binary vector lead to two different feature 
-vectors. First, where dimensionality reduction was done by Latent Semantic Indexing and the second,  where dimensionality reduction was  by Random Projections.
+We extracted the five image features SIFT, GIST, HOG-LBP, CIELAB color space vector and GLCM as described in the previous chapters. Apart from these visual features, we constructed two feature vectors on the basis of social meta data. These feature vectors are constructed after doing analysis of social data and obtaining a binary feature vector, indicating the presence or absence of a social/textual element for the image.
+
+This high dimensional binary vector leads to two different feature vectors. One which is made of dimensionality reduction by Latent Semantic Indexing and second by which is the resultant of Random Projections.
 %----------------------------------------------------------------------------------------
 
 \section{Classifiers Used}
-After experimenting with various classifiers like Random Forest, MLP 
-(Multi Layer Perceptron), libSVM (with various kernels linear, RBF, 
-$\chi^2$, histogram intersection), we found that in case of 
-image features libSVM with $\chi^2$ kernel worked best and in case of 
-social features libSVM with the linear kernel gave us the best 
-results. We,therefore, used libSVM with $\chi^2$ kernel as the classifier 
-for visual feature vectors and libSVM with Linear Kernel as the
-classifier for social feature vectors.
-
+After experimenting with various classifiers like Random Forest, MLP (Multi Layer Perceptron), libSVM (with various kernels linear, RBF, $\chi^2$, histogram intersection), we found out that in case of image features libSVM with $\chi^2$ kernel works best and in case of social features libSVM with the linear kernel gave us the best results. We,therefore, use libSVM with $\chi^2$ kernel as classifier for visual feature vectors and libSVM with Linear Kernel as classifier for social feature vectors.
 
 \section{Classification Results}
-
-In the following part of this chapter, we have shown classification results on various labels of four data sets as mentioned in \ref{Chapter3} .
+In the following part of this chapter, we have shown classification results on various labels of four data sets as mentioned in Chapter\ref{Chapter3} .
 
 The results are divided in four subsections according to the four data-sets. First, we have shown  the classification results from all the features  extracted. We first experimented with the classifiers based on individual features, means separate classifier from SIFT, HoG, 
-GIST , GLCM, COLOR, social Features generated through LSI and social Features generated through LSI. In next step, we did ensemble of classifiers obtained by different image and social meta data classifiers to learn the linear combination of weighted classifier.
+GIST , GLCM, COLOR and social features generated through LSI and RP. In next step, we did ensemble of classifiers obtained by different image and social meta data classifiers to learn the linear combination of weighted classifier.
 %{\bf *** Above not clear. What do you mean by ensembling features? Normally, one ensembles classifiers. Rewrite the above. ***}
 
-We have also given qualitative and quantitative conclusions/observations  of our results. We have shown a comparison with published results  on each of these four benchmarks or with results in associated competitions. 
+In next step, we compared our results with the published results. We considered the results of ensemble, best among two social meta data based classifier and best among all visual classifier. Then, we compared these results with the published results. We considered  published results on each of these four benchmarks or in some case directly the results of associated competitions. We also gave qualitative and quantitative conclusions/observations  of our results. 
 
-The goal of all these comparisons is to assess the improvement that can be obtained by using social meta-data for images. We reported the mean average precision (MAP) for the sake of comparison with published materials and competition results. We also gave the accuracy for the binary prediction/classification of labels.
+The goal of all these comparisons was to assess the improvement that can be obtained by using social meta-data of images. We reported the mean average precision (MAP) and accuracy for comparison with published materials and competition results. 
 
 All these results are for tenfold cross validation. For ensemble methods, we divided the data in three parts: training, testing and validation. We randomly chose 10\% instances for validation set and learned weights for the linear combination of the classifiers, which provided best results. After learning these weights, we used the optimized combination of the classifiers to do testing on test set.
 
 For better visualization, we have broken our result in three tables, for each data set.
 \begin{itemize}
-\item In first table, we have shown results using only the image descriptors. In this table, we have only considered the visual features and shown the classification result for each of extracted visual feature.
-\item In second table, we have shown results using only the social meta-data descriptors. In this table, we have only considered the social meta-data features . We have shown the classification result for each of the method LSI and Random Projections.
-\item In third table, we have compared result with the published paper. In this comparison, we have taken the result of the ensemble of social and visual classifiers, and best of visual and best of social descriptor 
+\item In first table, we have shown results using only the visual descriptors. We have given results for each of the visual features SIFT, HoG, GIST , GLCM and COLOR histogram.
+\item In second table, we have only considered the social meta-data features . We have shown the classification result for each of classifier social meta data created of LSI and Random Projections.
+\item In third table, we have compared result with the published paper. In this comparison, we have taken the result of the ensemble of social and visual classifiers, and best of visual and best of social descriptor.
 \end{itemize}
 
 We have created such tables for comparing mean average precision and accuracy for each of the data-set.
-
 \subsection{MIR Flickr collection }
 %----------------------------------------------------------------------------------------
-MIR has high quality photographic images. It has rich meta data attached with it. This provides a wide variety of image retrieval bench-marking scenarios.
+MIR has high quality photographic images, which also has rich meta data attached with it. MIR Flickr data, therefore,  provides a wide variety of image retrieval bench-marking scenarios.
 
-In \citep{MIRresults}, a combination of social data and low-level content-based descriptors improve the accuracy of visual concept 
-classifiers. We use the results of this paper as a comparison metric for our results.
+In \citep{MIRresults}, a combination of social data and low-level content-based descriptors were used to improve the accuracy of visual classifiers. We use the results of this paper as a comparison metric for our results.
 
 In \citep{MIRresults}, they have used the following four sets of image features:
 \begin{itemize}
@@ -67,35 +51,25 @@ In \citep{MIRresults}, they have used the following four sets of image features:
 \item MPEG-7 Homogeneous Texture descriptor
 \end{itemize}
 
-Apart for these low-level content based descriptors, they also used flickr tags of visual concepts.  A set consisting of 293 binary features was developed using these tags. These tags were chosen such that every tag corresponds with at least 50 images in the MIR Flickr collection.
+Apart for these low-level content based descriptors, they also used Flickr tags.  A set consisting of 293 binary features was developed using these tags. These tags were chosen such that every tag corresponds with at least 50 images in the MIR Flickr collection.
 
-They have used two classifiers one is Linear Discriminant Analysis  and other is support vector machines. For each of these classifier, they have first tested with classifier using only the image descriptors and then they tested using the image desciptors $+$ Flickr tags as features. The classifiers were trained on the 24 potential labels, and 14 regular (subjective) annotations. We chose the results of the labels, we have considered. We could not cover all the labels because for other labels, we could not get much data on flickr. That data might be available at that time but now those image URLs are either denying access or do not exist. So, we refrain our self to a subset of those 38 labels.
+They have used two classifiers one is Linear Discriminant Analysis and other is support vector machines. For each of these classifier, they have first tested with only the image descriptors and then they tested using the image desciptors $+$ Flickr tags as features. The classifiers were trained on the 24 potential labels, and 14 regular (subjective) annotations. They have compared the mean average precision between classifiers based on low-level features only and classifiers that additionally use the Flickr tags as features. 
 
-We have compared the classification accuracy and mean average precision between  classifiers based on low-level features only and classifiers that additionally use the Flickr tags as features.
-We have shown our result in following tables. 
-
+We chose the results of the labels, we have considered. We could not cover all the labels because for other labels, we could not get much data on Flickr. That data might be available at that time but now those image URLs are either denying access or do not exist. We, therefore, refrain our self to a subset of those 38 labels.
 
 \begin{itemize}
-\item In table \ref{MIRPrecisionVisual}, we have shown accuracy using only the image descriptors. In this table, we have only considered the visual features and shown the classification result for each of extracted visual feature.
-\item In table \ref{MIRPrecisionSocialFeatures}, we have shown accuracy using only the social meta-data descriptors. In this table, we have only considered the social meta-data features . We have shown the classification result for each of the method visual feature, LSI and Random Projections.
-\item In table \ref{MIRPrecisionOverAll}, we have compared our accuracy with the published paper. In this comparison, we have taken the result of the ensemble of social and visual classifiers, and best of visual and best of social descriptor. We have divided the result of \citep{MIRresults} in two parts. One is for SVM Classifier and second is for LDA Classifier. Each of this has two sub parts, one is for only the image descriptors and second sub part is for combined descriptor of image and flicker tags.
-
-\item In table \ref{MIRAccuracyVisual}, we have shown mean average precision using only the image descriptors. In this table, we have only considered the visual features and shown the classification result for each of extracted visual feature.
-\item In table \ref{MIRAccuracySocialFeatures}, we have shown mean average precision using only the social meta-data descriptors. In this table, we have only considered the social meta-data features . We have shown the classification result for each of the method visual feature, LSI and Random Projections.
-\item In table \ref{MIRAccuracyOverAll}, we have compared our mean average precision with the published paper. In this comparison, we have taken the result of the ensemble of social and visual classifiers, and best of visual and best of social descriptor. 
+\item In table \ref{MIRPrecisionVisual}, we have shown precision of visual classifiers. In this table, We have given results for each of the visual classifers SIFT, HoG, GIST , GLCM and COLOR histogram.
+\item In table \ref{MIRPrecisionSocialFeatures}, we have shown precision of classifiers based on the social meta-data descriptors. For this, we have considered the social meta-data features obtained with each of the method LSI and Random Projections.
+\item In table \ref{MIRPrecisionOverAll}, we have compared our precision with the published paper. In this comparison, we have taken the result of the ensemble of social and visual classifiers,  best of visual classifiers and best of social meta data based classifiers. We have divided the result of \citep{MIRresults} in two parts. One is for SVM Classifier and second is for LDA Classifier. Each of this has two sub parts, one is for only the image descriptors and second sub part is for combined descriptor of image and Flickrer tags.
+\item In table \ref{MIRAccuracyVisual}, we have shown mean average accuracy of visual classifiers. In this table, We have given results for each of the visual classifers SIFT, HoG, GIST , GLCM and COLOR histogram.
+\item In table \ref{MIRAccuracySocialFeatures}, we have shown mean average accuracy classifiers based on the social meta-data descriptors. For this, we have considered the social meta-data features obtained with each of the method LSI and Random Projections.
+\item In table \ref{MIRAccuracyOverAll}, we have compared our mean average accuracy with the published paper. In this comparison, we have taken the result of the ensemble of social and visual classifiers,  best of visual classifiers and best of social meta data based classifiers. 
 \end{itemize}
 
 \subsubsection*{Observations}
 \begin{itemize}
-\item The classifications based on visual only features gave an 
-average precision of 76.15\%, which outperformed the low level image 
-descriptor based classification with 40.43\% in case of LDA and 
-44.38\% in case of SVM. The result was also better than 
-classification based on the combination of low level image 
-descriptors and Flickr tags. Here we saw a precision increment of 
-28\% as compared to SVM results in paper and 26.40\% as compared to 
-LDA results in paper. This result is an indication that our choice of image descriptors gives a better semantic analysis of image then the low level image descriptors used in image.
-
+\item The classifications based on visual only features gave an average precision of 76.15\%, which outperformed the low level image 
+descriptor based classification with 40.43\% in case of LDA and 44.38\% in case of SVM. The result was also better than classification based on the combination of low level image descriptors and Flickr tags. Here, we saw a enhancement of 28\% in precision as compared to SVM results in paper and 26.40\% enhancement as compared to LDA results in paper. This result is an indication that our choice of image descriptors gives a better semantic analysis of image then the low level image descriptors used in image.
 %{\bf *** The table of results is confusing. You must clarify the following:
 %- What image descriptors are in use in cols 4 and 6? Do you mean the 4
 %descriptors you enumerated earlier?\\
@@ -134,29 +108,15 @@ LDA results in paper. This result is an indication that our choice of image desc
 %and have a single classifier) and via ensembling where you have separate
 % classifiers for visual and social features. ***}
 %-Done That
-
-\item When we do classification on the basis of social features 
-computed using LSI, we got an average precision of 87.59\%. This was 
-39.71\% more compared to SVM classification of combined features of 
-Flickr tags and low level image descriptors and  37.83\% more 
+\item When we do classification on the basis of social features computed using LSI, we got an average precision of 87.59\%. This was 
+39.71\% more compared to SVM classification of combined features of Flickr tags $+$ low level image descriptors and  37.83\% more 
 compared to LDA classification of this combined feature set. This might be because we covered more tags and sources of meta-data then the taken by the paper.
-
-\item LSI based social feature classification outperformsed our visual 
-only classification with 11.43\% precision increment.  It shows a 
-precision gain of 51.86\% and 55.81\% on the low level image 
-descriptor based SVM classification and LDA classification respectively.
-
-\item Ensemble of the social features and visual features provides 
-average precision of 90.58\% which is 40.83\% more compared 
-published result and 2.99\% more compared to LSI method.
-
-\item This 42.70\% precision gain compared to published result is 
-consistent with the results shown in \citet{Jure}. They obtained a 
+\item LSI based social feature classification outperformed our visual only classification with 11.43\% precision increment.  It shows a 
+precision gain of 51.86\% and 55.81\% on the low level image descriptor based SVM classification and LDA classification respectively.
+\item Ensemble of the social features and visual features provides average precision of 90.58\%, which is 40.83\% more compared to the published result and 2.99\% more compared to LSI method.
+\item This 42.70\% precision gain compared to published result is consistent with the results shown in \citet{Jure}. They obtained a 
 precision gain of 42\% using the social features.
-
-\item Our LSI based method works better for all labels except 
-\textit{Clouds}. The images in this label shows better result with HOG\_ LBP features. This is due to low volume of social information attached with the data related to these images. For example, we can see that in \ref{fig:Image MIR Examples}, first image is a non-cloud image and second image is image labeled as cloud. The second image has most of the comments saying nice view, beautiful place etc. Very less textual cues actually indicate the cloud part. Apart from this, these images contains various visual descriptors , which is more emphasized intensity gradients or distributed edge directions. Therefore, HOG-LBP and GLCM features works quite better for this label.
-
+\item Our LSI based method works better for all labels except \textit{Clouds}. The images in this label shows better result with HOG\_ LBP features. This is due to low volume of classification information available the meta data of these images. For example, we can see that in \ref{fig:Image MIR Examples}, first image is a non-cloud image and second image is image labeled as cloud. The second image has most of the comments saying nice view, beautiful place etc. Very less textual cues actually indicate the cloud part, these similar comments are available with images of 'landscape', 'sea' etc. Apart from this, these images contains various visual descriptors , which is more emphasized by intensity gradients or distributed edge directions. Therefore, HOG-LBP and GLCM features works quite good for this label.
 \begin{center}
 \begin{figure}
 \centering
@@ -166,35 +126,18 @@ precision gain of 42\% using the social features.
 \label{fig:Image MIR Examples}
 \end{figure}
 \end{center}
-
 %------{\bf *** What is meant by 'high visual concepts entailed'? ***}
 %------Answered
-
-\item The results of social features and image features are quite 
-close for \textit{night, tree, sea} and \textit{river}. This is the 
-result of a great degree of visual information present with these 
-images in contrast to social information in comments (or other social 
-entities), as they are natural outdoor photographs.
-
-\item The classifications based on visual only features give an 
-average accuracy of 76.03\%.
+\item The results of social features and image features are quite close for \textit{night, tree, sea} and \textit{river}. This is the result of a great degree of visual information present with these images in contrast to social information in comments (or other social entities), as they are natural outdoor photographs, just like the 'clouds'.
+\item The classifications based on visual only features give an  average accuracy of 76.03\%.
 {\bf *** You have not ensembled visual only features. See what you
 get when you ensemble visual only features and compare. ***}
-
-\item The classifications based on social only features with LSI pre-
-computation give average accuracy of 86.25 outperforming the visual 
+\item The classifications based on social only features with LSI pre-computation give average accuracy of 86.25 outperforming the visual 
 features only method with 10.22\%.
-
-\item The ensemble of all the features provide an average accuracy of 
-88.80\% outperforming the social feature only accuracy with 2.55\%.
-
+\item The ensemble of all the features provide an average accuracy of 88.80\% outperforming the social feature only accuracy with 2.55\%.
 \item GLCM plays an important role in the case of \textit{Bird , male , baby}  labels.
-
 \item GIST plays a pivotal role in case of labels \textit{female, male} and \textit{tree}.
 \end{itemize}
-
-
-
 %------------------
 \begin{table}
 \centering
@@ -394,54 +337,37 @@ Average & 79.93 & 89.17 & 79.38 \\  [1ex] \hline
 
 
 
+
 \subsection{ImageCLEF}
-ImageCLEF has 99 labels. For some labels we have less than 20  instances. Learning a visual bag of words for so few instances is not practical. Such small set of images would not be able to deliver a bag words, exhaustive enough to bag all the characteristics of that label. We, therefore, discard such labels. After analysing the availability instances of images per label and their respective meta data, we restricted ourselves to following labels. 
+ImageCLEF has 99 labels. For some labels, we have less than 20 instances. Learning a visual bag of words for so few instances is not practical. Such small set of images would not be able to deliver a bag words, exhaustive enough to bag all the characteristics of that label. We, therefore, discard such labels. After analysing the availabile images per label and their respective meta data, we restricted ourselves to following labels. 
 
 \textit{'Adult','Aesthetic\_ Impression','Animals','Autumn','City life','cute','Day','Flowers','Food','Graffiti' ,'Landscape\_ Nature', 'Painting', 'Portrait', 'Single\_ Person', 'Sky', 'Street', 'Summer', 'Sunset/Sunrise', 'Vehicle', 'Winter'} 
 
- \citet*{CLEF} has the best comparative published results for judging our hypothesis as it already has 
-results based on Flickr user tags and multi-modal approaches that consider visual information and/or Flickr user tags and/or Exif 
-Information.In their classification, textual information is represented as a binary presence/absence vector of the most common 698 Flickr user tags. An approach applied to visual words, a visual words baseline with SIFT descriptors, colour and texture
-features, which was similar as bag of words model on these features. They further combined these features with flickr User Tag system using tf-idf, which is very much similar to our LSI method. But they used small set of user tags compared to us and other data like comments, gallery etc. was not included in their test data. In following section, we describe what are the results of this additional information.
+ \citet*{CLEF} has the best comparative published results for judging our hypothesis as it already has results based on Flickr user tags and multi-modal approaches. It considers visual information and meta-data (Flickr user tags, EXIF Information). In their classification, textual information obtained through meta-data is represented as a binary presence/absence vector of the most common 698 Flickr user tags. They used an approach of visual words based on SIFT descriptors, color and texture features, which was similar as bag of words model on these features, we used. They further combined these features with Flickr Tags using tf-idf, which is very much similar to our LSI method. But they used small set of user tags compared to us and other data like comments, gallery etc. was not included in their data. In following section, we describe what are the outcome of this additional information.
 
 \begin{itemize}
-\item In Table \ref{ImageCLEFAccuracyVisual}, we have shown mean average precision using only the image descriptors. In this table, we have only considered the visual features and shown the classification result for each of extracted visual feature.
-\item In \ref{ImageCLEFAccuracySocialFeatures}, we have shown mean average precision using only the social meta-data descriptors. In this table, we have only considered the social meta-data features . We have shown the classification result for each of the method visual feature, LSI and Random Projections.
-\item In Table \ref{ImageCLEFAccuracyOverAll}, we have compared our mean average precision with the published paper. In this comparison, we have taken the result of the ensemble of social and visual classifiers, and best of visual and best of social descriptor.
-From the  \citet*{CLEF}, we took the best results for that label and compared our results with that.
-\item In Table \ref{ImageCLEFPrecisionVisual}, we have shown accuracy using only the image descriptors. In this table, we have only considered the visual features and shown the classification result for each of extracted visual feature.
-\item In \ref{ImageCLEFPrecisionSocialFeatures}, we have shown accuracy using only the social meta-data descriptors. In this table, we have only considered the social meta-data features . We have shown the classification result for each of the method visual feature, LSI and Random Projections.
-\item In \ref{ImageCLEFPrecisionOverAll}, we have compared our accuracy with the published paper. In this comparison, we have taken the result of the ensemble of social and visual classifiers, and best of visual and best of social descriptor. From the  \citet*{CLEF}, we took the best results for that label and compared our results with that.
+\item In table \ref{ImageCLEFPrecisionVisual}, we have given mean average precision of visual classifiers. We have shown results for each of the visual classifers SIFT, HoG, GIST , GLCM and COLOR histogram.
+\item In table \ref{ImageCLEFPrecisionSocialFeatures}, we have shown mean average precision of classifiers based on the social meta-data descriptors. For this, we have considered the social meta-data features obtained with each of the method LSI and Random Projections.
+\item In table \ref{ImageCLEFPrecisionOverAll}, we have compared our mean average precision with the published paper. In this comparison, we have taken the result of the ensemble of social and visual classifiers,  best of visual classifiers and best of social meta data based classifiers. From the  \citet*{CLEF}, we took the best results for that label and compared our results with that.
+\item In table \ref{ImageCLEFPrecisionVisual}, we have given accuracy of visual classifiers. We have shown results for each of the visual classifers SIFT, HoG, GIST , GLCM and COLOR histogram.
+\item In \ref{ImageCLEFPrecisionSocialFeatures}, we have shown accuracy of classifiers based on the social meta-data descriptors. For this, we have considered the social meta-data features obtained with each of the method LSI and Random Projections.
+\item In table \ref{ImageCLEFPrecisionOverAll}, we have compared our accuracy of different methods. In this comparison, we have taken the result of the ensemble of social and visual classifiers,  best of visual classifiers and best of social meta data based classifiers. From the  \citet*{CLEF}, we took the best results for that label and compared our results with that.
 \end{itemize}
-. 
- 
+.
 \subsubsection*{Observations}
 
 \begin{itemize}
-
-\item While comparing MAP for the labels we find that when we use 
-social features with LSI, even then we can  achieve an average 
-improvement of 4.09\% compared to best results (visual, multimodal, textual) used in CLEF competitions \ref{ImageCLEFPrecisionOverAll}. The reason of this is that we used more exhaustive set of social meta-data. We used tags, galleries, group, comments etc., whereas the \citet*{CLEF} used only handful of tags. This enriched social meta-data improved our result.
-
-\item Ensembling of all the features outperforms the published results in precision with average of 6.93\%.\ref{ImageCLEFPrecisionOverAll}
-
-
-\item Ensembling of all the features outperforms the published 
-results in accuracy with average of 1.26\%.\ref{ImageCLEFAccuracyOverAll}
-
-\item For the three labels \textit{Landscape\_ Nature, Sky} and \textit{Sunset\_ sunrise} our method provides lesser accuracy and 
+\item While comparing MAP for the labels, we find that when we use social features with LSI, even then we can achieve an average 
+improvement of 4.09\% compared to best results (visual, multi-modal, textual) of CLEF competitions \ref{ImageCLEFPrecisionOverAll}. The reason of this is that we used more exhaustive set of social meta-data. We used tags, galleries, group, comments etc., whereas the \citet*{CLEF} used only handful of tags. This enriched social meta-data improved our result.
+\item Ensemble of all the features outperforms the published results in precision with average of 6.93\%.\ref{ImageCLEFPrecisionOverAll}
+\item Ensemble of all the features outperforms the published results in accuracy with average of 1.26\%. \ref{ImageCLEFAccuracyOverAll}
+\item For the three labels \textit{Landscape Nature, Sky} and \textit{Sunset/Sunrise},our method provided lesser accuracy and 
 precision because these labels were more connected to visual data and social data on them was sparse.
-
-\item For the labels like Autumn, Landscape,  CityLife, Paintings, Sky, Street and Sunset Sunrise we see that visual 
-feature based computation works quite well because these images 
-are more visual concept centric and social data has lesser role to 
-play there. The comments and tags on these images are more generic like "beautiful view", 'serene' etc. These textual information are not centric to the label or class of images like Autumn , Landscape etc. An image of 'sea', 'waterfall' etc can also have similar tags and comments. This weakness the distinguishing power of meta-data.
-
-\item HOG-LBP feature works best among all the features for all the labels except painting and single\_ person. In these two cases GLCM 
-works better because GLCM reads the texture of the image and texture of a 'Painting' or 'Single\_ Person' based image plays an important role because it is quite different from the normal natural photos.
-
+\item For the labels like Autumn, Landscape,  City Life, Paintings, Sky, Street and Sunset Sunrise we see that visual feature based computation works quite well because these images are more visual concept centric and social data has lesser role to play there.\\
+The comments and tags on these images are more generic like "beautiful view", 'serene' etc. These textual information are not centric to the label or class of images like Autumn , Landscape etc. An image of 'sea', 'waterfall' etc can also have similar tags and comments. This weakness the distinguishing power of meta-data.
+\item HOG-LBP feature works best among all the features for all the labels except painting and single person. In these two cases GLCM
+works better because GLCM reads the texture of the image. In images, which lie in the category of labels, 'Painting' etc. texture plays an important role because it is quite different from the normal natural photos.
 \end{itemize}
-
 %------------------
 \begin{table}
 \centering
@@ -538,7 +464,7 @@ Average & 82.53 & 69.7 \\  [1ex] \hline
 \centering
 \caption{ ImageCLEF Precision Comparison: Comparison of Published Results, Results of ensemble and Best of social and visual features} % title of Table % used for centering table
 \vspace*{0.2 cm}
-\begin{tabular}{| p{1.7cm}| p{1.5cm}|p{1.2cm}|p{1.2cm}|p{1.2cm}|} \hline
+\begin{tabular}{| p{2.1cm}| p{1.5cm}|p{1.2cm}|p{1.2cm}|p{1.2cm}|} \hline
  Labels & Ensemble Method & CLEF Best Results & Social Only & Visual Only  \\  [1ex] \hline
 Adult & 91.76 & 77.21 & 89.56 & 60.94  \\  [1ex] \hline
 Aesthetic Impression & 67.74 & 60.66 & 63.91 & 59.58  \\  [1ex] \hline
@@ -695,76 +621,50 @@ Average & 83.1 & 81.84 & 81.33 & 67.66 \\ [1ex] \hline
 %-----------------
 
 
+
+
 \subsection{PASCAL}
 
-PASCAL is actually a competition which is based on the 
-challenge of recognizing visual object classes in realistic scenes. 
-Therefore, the data-set provided by PASCAL is  very much visual content 
-specific and has image instances having information specifically 
-related to some objects. We can actually subclass the 19 labels, we 
-used in our computations, in following 3 sub classes based on the type of objects
+PASCAL is actually a competition challenge of recognizing visual object classes in realistic scenes. Therefore, the data-set provided by PASCAL is  very much visual content specific and has image instances having information specifically related to some objects. We can actually subclass the 19 labels, we used in our computations, in following 3 sub classes based on the type of objects
 
 \begin{itemize}
 \item Animal: Bird, Cat, Cow, Dog, Horse, Sheep. 
 \item Vehicle: Aeroplane, Bicycle, Boat, Bus, Car, Motorbike, Train
 \item Indoor: Bottle, Chair, Dining Table, Potted plant, Sofa, TV/Monitor
-
 \end{itemize}
 
-
+In \citet*{PASCAL}, they, first, detected sparse local features using the SIFT Descriptors. In next steps, they calculated the other local features like colour histogram, pairs of adjacent segments (PAS) and Sobel edge histograms. Then., these vectors were quantized into a visual vocabulary by using k-means. An image was represented by a histogram of bag-of-visual-words. This representation is just an analogy with the bag-of-words (BOW) text representation, where the frequency, but not the position, of words is used to represent text documents. They trained each of these features independently, just like our method. Then, they used the method of late fusion, where a classifier was learned using a different weight for each feature from the validation data. This was also identical to our methodology.
 
 \begin{itemize}
-\item In \ref{PASCALPrecisionVisual},  we have shown mean average precision using only the image descriptors. In this table, we have only considered the visual features and shown the classification result for each of extracted visual feature.
-\item In \ref{PASCALPrecisionSocialFeatures}, we have shown mean average precision using only the social meta-data descriptors. In this table, we have only considered the social meta-data features . We have shown the classification result for each of the method visual feature, LSI and Random Projections.
-\item In \ref{PASCALPrecisionOverAll}, , we have compared our mean average precision with the  VOC Competition results. In this comparison, we have taken the result of the ensemble of social and visual classifiers, and best of visual and best of social descriptor 
-
-\item In Table \ref{PASCALAccuracyVisual},  we have shown accuracy using only the image descriptors. In this table, we have only considered the visual features and shown the classification result for each of extracted visual feature.
-\item In \ref{PASCALAccuracySocialFeatures}, we have shown accuracy using only the social meta-data descriptors. In this table, we have only considered the social meta-data features . We have shown the classification result for each of the method visual feature, LSI and Random Projections.
-\item In \ref{PASCALAccuracyOverAll} we have shown the result of the ensemble of social and visual classifiers, and best of visual and best of social descriptor. These results shows the accuracy of classifying various labels in binary prediction environment.
+\item In table \ref{PASCALPrecisionVisual}, we have shown mean average precision of visual classifiers. We have shown results for each of the visual classifers SIFT, HoG, GIST , GLCM and COLOR histogram.
+\item In table \ref{PASCALPrecisionSocialFeatures}, we have shown mean average precision of classifiers based on the social meta-data descriptors. For this, we have considered the social meta-data features obtained with each of the method LSI and Random Projections.
+\item In table \ref{PASCALPrecisionOverAll}, we have compared our mean average precision with the  VOC Competition results. In this comparison, we have taken the result of the ensemble of social and visual classifiers, and best of visual and best of social descriptor 
+\item In table \ref{PASCALAccuracyVisual},  we have shown accuracy of visual classifiers. We have shown results for each of the visual classifers SIFT, HoG, GIST , GLCM and COLOR histogram.
+\item In table \ref{PASCALAccuracySocialFeatures}, we have shown accuracy  of classifiers based on the social meta-data descriptors. For this, we have considered the social meta-data features obtained with each of the method LSI and Random Projections.
+\item In table \ref{PASCALAccuracyOverAll}, we have compared our accuracy of different methods. In this comparison, we have taken the result of the ensemble of social and visual classifiers,  best of visual classifiers and best of social meta data 
 \end{itemize}
-
 
 \subsubsection*{Observations}
 
-
 \begin{itemize}
-\item Observations:
-
-\item The classification based on only visual features gives an 
-average precision of 67.50\% with maximum for 'aeroplane' of 78.79\% 
+\item The classification based on only visual features gives an average precision of 67.50\% with maximum for 'aeroplane' of 78.79\% 
 and minimum for 'potted plant' of 59.72\%.
-
-\item The classification based on only LSI computed social features 
-outperforms the competition's results with an average of 16.74\% 
-better MAP and only visual features result with 6.17\%. The average 
-precision obtained is 73.67\%.
-
-\item Th ensemble of social and visual classifiers provides a better 
-precision of 76.86\% which is 3.19\% more than only social features 
+\item The classification based on only LSI computed social features outperforms the competition's results with an average of 16.74\% 
+better MAP and only visual features result with 6.17\%. The average precision obtained is 73.67\%.
+\item The ensemble of social and visual classifiers provides a better precision of 76.86\% which is 3.19\% more than only social features 
 and 9.36\% more than usual visual classification.
-
 \item Our ensemble method and social feature based method gives better precision for 17 labels out of 19 labels considered compared 
 to published results.
-
 \item The accuracy obtained with using only visual features is average of 66.68\%. With minimum 60.67\% for `cat' and maximum of 
-73.50\% for `bottle'.
-
+73.50\% for 'bottle'.
 \item While comparing the accuracy of our classification, we find that accuracy obtained using LSI based social features is 70.22\%, 
 which is greater than 3.54\% compared to the visual only features.
-
-\item The ensemble of social and visual features gives an accuracy of 
-72.49 \% which is 2.71\% more than only social features based 
-classification and 5.81\% more than only visual features based 
-classification.
-
-\item The accuracy for visual only features for most labels are comparable with social features and do not have a difference more than 3\%. This difference is much higher for the other three data sets. This low difference shows that the social data available for the PASCAL 
-data set is not as enriched as other data sets. The images are not contextually interesting as compared to other data sets and do not 
-lead to much human interaction leading to less social data. We verified that PASCAL has the least number tags and comments per image compared to all other data-sets used in our thesis.
-
+\item The ensemble of social and visual features gives an accuracy of 72.49\% which is 2.71\% more than only social features based 
+classification and 5.81\% more than only visual features based classification.
+\item The accuracy for visual only features for most labels are comparable with the results of social features and do not have a difference more than 3\%. This difference is much higher for the other three data sets. This low difference shows that the social data available for the PASCAL data set is not as enriched as other data sets. The images are not contextually interesting as compared to other data sets and do not lead to much human interaction leading to less social data. We verified that PASCAL has the least number tags and comments per image compared to all other data-sets used in our thesis.
 \end{itemize}
 
-
-  %------------------
+ %------------------
 \begin{table}[!ht]
 \centering
 \caption{ PASCAL Precision Comparison: Only Visual Features} % title of Table % used for centering table
@@ -1025,28 +925,28 @@ Average & 72.16 & 69.53 & 65.69 \\  [1ex] \hline
 
 
 
+
 \subsection{NUS}
 
-In \citet*{NUS}, the authors have used six types of low-level features. These six type of image features include 64-D color 
+In \citet*{NUS}, the authors  used six types of low-level features. These six type of image features include 64-D color 
 histogram, 144-D color auto-correlogram, 73-D edge direction histogram, 128-D wavelet texture, 225-D block-wise color moments and 500-D bag of words based on SIFT descriptions. 
 
-Color histogram serves as an effective representation of the color content of an image. It is defined as the distribution of the
+\textbf{Color histogram} served as an effective representation of the color content of an image. It is defined as the distribution of the
 number of pixels for each quantized bin.
 
-Color auto-correlogram (HSV) was proposed to characterize the colordistributions and the spatial correlation of pairs of colors
+\textbf{Color auto-correlogram (HSV)} was proposed to characterize the colordistributions and the spatial correlation of pairs of colors
 together. 
 
-Edge direction histogram encoded the distribution of the directions of edges. It was comprises a total of 73 bins, in which the first 72 bins were the number of edges with directions quantized at five degrees interval, and the last bin was the count of number of pixels that do not contribute to an edge.
+\textbf{Edge direction histogram} encoded the distribution of the directions of edges. It was comprises a total of 73 bins, in which the first 72 bins were the number of edges with directions quantized at five degrees interval, and the last bin was the count of number of pixels that do not contribute to an edge.
 
-Wavelet texture  transform provided a multi-resolution approach for texture analysis.Wavelet transform performed on image involved recursive filtering and sub-sampling
+\textbf{Wavelet texture} transform provided a multi-resolution approach for texture analysis.Wavelet transform performed on image involved recursive filtering and sub-sampling
 
-Block-wise color moments, were, the first (mean), the second (variance) and the third order (skewness)
+\textbf{Block-wise color moments} were, the first (mean), the second (variance) and the third order (skewness)
 color moments in the image. These have been found to be efficient and effective in representing the color distributions of images.Thus for the data set, they extracted the block-wise color moments over $5\times5$ fixed grid partitions, giving rise to a block-wise color moments with a dimension of 225.
 
-
-For creating bag of visual words they followed following steps:
+For creating \textbf{bag of visual words} they followed following steps:
 \begin{itemize}
-\item At first, they had applied the difference of Gaussian filter on the gray scale images to detect a set of key-points and scales respectively. 
+\item In first step, they applied the difference of Gaussian filter on the gray scale images to detect a set of key-points and scales respectively. 
 \item In second step, they computed the Scale Invariant Feature Transform (SIFT) over the local region defined by the key-point and scale.
 \item In third step, they created the visual vocabulary by exploiting the k-means clustering. Here they generated 500 clusters, and
 thus the dimension of the bag of visual words is 500.
@@ -1054,35 +954,29 @@ thus the dimension of the bag of visual words is 500.
 
 Further they have used traditional k-NN algorithm  on these features to provide the baseline results for web image annotation. We use the results of this paper as a comparison base. 
 
+\begin{itemize}
+\item In table \ref{NUSPrecisionVisual}, we have given mean average precision of visual classifiers. We have shown results for each of the visual classifers SIFT, HoG, GIST , GLCM and COLOR histogram.
+\item In table \ref{NUSPrecisionSocialFeatures}, we have shown mean average precision of classifiers based on the social meta-data descriptors. For this, we have considered the social meta-data features obtained with each of the method LSI and Random Projections.
+\item In table \ref{NUSPrecisionOverAll}, we have compared our mean average precision with the published paper. In this comparison, we have taken the result of the ensemble of social and visual classifiers,  best of visual classifiers and best of social meta data based classifiers. From the  \citet*{CLEF}, we took the best results for that label and compared our results with that.
+\item In table \ref{NUSAccuracyVisual}, we have given accuracy of visual classifiers. We have shown results for each of the visual classifers SIFT, HoG, GIST , GLCM and COLOR histogram.
+\item In \ref{NUSAccuracySocialFeatures}, we have shown accuracy of classifiers based on the social meta-data descriptors. For this, we have considered the social meta-data features obtained with each of the method LSI and Random Projections.
+\item In table \ref{NUSAccuracyOverAll}, we have compared our accuracy of different methods. In this comparison, we have taken the result of the ensemble of social and visual classifiers,  best of visual classifiers and best of social meta data based classifiers. From the  \citet*{NUS}, we took the best results for that label and compared our results with that.
+\end{itemize}
 
 \subsubsection*{Observations}
-
 \begin{itemize}
 \item The classification based on visual only features gives an  average precision of 74.63\% which is better by the large margin 
 of 10.13\% from the published results in \citet*{NUS}.
-
 \item The classifications based on social only features (with LSI pre-computation) gives an average precision of 90.56\% outperforming 
 the results obtained from the visual only features by a  margin of 15.93\%. This improvement over only visual features is beacuse of rich social meta-data. The NUS data set favors the highly popular images and we see that it has the highest tag vs image ratio of 19.4. This ample amount of auxiliary data apart from visual features improvises the enhancement over visual only descriptors.
-
-\item ensemble of all the features and ensemble classification leads to an average precision of 93.61\%, which  is better than the precision 
-of social only features with a 3.05\% margin. This result is way better than the baseline results mentioned in \citet*{NUS} and exceeds
-them by a margin of 29.11\% in precision.
-
+\item The ensemble of all the features and ensemble classification leads to an average precision of 93.61\%, which  is better than the precision of social only features with a 3.05\% margin. This result is way better than the baseline results mentioned in \citet*{NUS} and exceeds them by a margin of 29.11\% in precision.
 \item The classifications based on visual only features give an average accuracy of 74.84\%.
-
-\item The classifications based on social only features (with LSI 
-pre-computation) gives an average accuracy of 88.61\% outperforming 
+\item The classifications based on social only features (with LSI pre-computation) gives an average accuracy of 88.61\% outperforming 
 the results obtained from the visual only features by a margin of 13.77\%.
-
-\item Ensemble of all the features leads 
-to the average accuracy of 91.23\%, which is better than accuracy of 
-social only features by a 2.62\% margin. 
-
-\item The results of social features and image features are quite close for `mountain', `tattoo`. This is the result of a great degree 
+\item Ensemble of all the features leads to the average accuracy of 91.23\%, which is better than accuracy of social only features by a 2.62\% margin. 
+\item The results of social features and image features are quite close for 'mountain', 'tattoo'. This is the result of a great degree 
 of visual information present in these images, compared to social data.
-
 \end{itemize}
-
 
 %------------------
 \begin{table}
@@ -1251,7 +1145,7 @@ Average & 88.61 & 73.78 \\  [1ex] \hline
 \centering
 \caption{ NUS Accuracy Comparison: Comparison of Published Results, Results of ensemble and Best of social and visual features} % title of Table % used for centering table
 \vspace*{0.2 cm}
-\begin{tabular}{| p{1.7cm}| p{1.5cm}|p{1.2cm}|p{1.2cm}|} \hline
+\begin{tabular}{|p{2.2cm}| p{1.5cm}|p{1.2cm}|p{1.2cm}|} \hline
 Labels &  Ensemble Method & Social Only & Visual Only  \\  [1ex] \hline
 animal & 91.62 & 88.00 & 72.86 \\  [1ex] \hline
 coral & 95.99 & 92.33 & 79.63 \\  [1ex] \hline
@@ -1265,7 +1159,7 @@ tattoo & 88.83 & 85.17 & 84.07 \\  [1ex] \hline
 temple & 91.5 & 87.67 & 65.00 \\  [1ex] \hline
 waterfall & 93.98 & 93.83 & 86.67 \\  [1ex] \hline
 wedding & 88.57 & 84.83 & 65.93 \\  [1ex] \hline
-Average & 91.23 & 88.61 & 74.65 \\  [1ex] \hline
+Avg & 91.23 & 88.61 & 74.65 \\  [1ex] \hline
 %----------
 \end{tabular}
  \label{NUSAccuracyOverAll} % is used to refer this table in the text
